@@ -1,19 +1,81 @@
 [
 	{
+		"title": "Social Media",
+		"description": "Tasked to design a new social media network, inspired by existing platforms like Facebook, TikTok, Twitter, and Instagram, that connects individuals and businesse.",
+		"image": "/src/assets/website_images/#",
+		"resource_images": [
+			{
+				"title": "Php",
+				"image_link": "/src/assets/logos/Official_PHP_Logo.svg"
+			}
+		],
+		"project_link": "#",
+		"video_link": "",
+		"category": ["personal"],
+		"last_update": "10 October 2024"
+	},
+	{
 		"title": "Ecommerce Connect",
 		"description": "E-commerce website for buyers and sells. Has A CMS for buyers to see their inventory, orders and company stuff. Offer financial records and charts for businesses to better manage their financies.",
 		"image": "/src/assets/website_images/ecommerce_connect.png",
 		"resource_images": [
 			{
 				"title": "Angular",
-				"image_link": "/src/assets/logos/angular.png"
-			},
-			{
+				"image_link": "/src/assets/logos/icon_angular.svg"
+			},{
+				"title": "MongoDB",
+				"image_link": "/src/assets/logos/9074155_mongodb_icon.svg"
+			},{
+				"title": "Redis",
+				"image_link": "/src/assets/logos/redis_logo.svg"
+			},{
 				"title": "SocketIO",
-				"image_link": "#"
+				"image_link": "/src/assets/logos/socketio-icon.svg"
+			}
+		],
+		"project_link": "https://ecommerce-test-3v4i.onrender.com/",
+		"video_link": "",
+		"category": ["personal"],
+		"last_update": "3 March 2024"
+	},{
+		"title": "Travel Vista",
+		"description": "A group project for Richfield Hackathon using Trip Advisor API, Angular, Tailwind and PhP. Created to help travelers plan their ideal adventure by get access to flights,restaurants, hotels and attractions. Website has able to also save card information, trip history and profile page. I was responsible for managing the team and front-end development, and teaching and helping the team with Angular.",
+		"image": "/src/assets/website_images/#",
+		"resource_images": [
+			{
+				"title": "Angular",
+				"image_link": "/src/assets/logos/1174949_js_react js_logo_react_react native_icon.svg"
+			},{
+				"title": "Tailwind",
+				"image_link": "/src/assets/logos/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg"
+			},{
+				"title": "Php",
+				"image_link": "/src/assets/logos/Official_PHP_Logo.svg"
 			}
 		],
 		"project_link": "#",
-		"last_update": "29 Oct 2024"
+		"video_link": "",
+		"category": ["collaborative","hackathon"],
+		"last_update": "22 June 2023"
+	},{
+		"title": "Code Pilot",
+		"description": "This website takes in code and fixes it using chatGPT3/gpt-3. The API has been disabled so contact me if you want to try it out and I'll temporarily activate it",
+		"image": "/src/assets/website_images/code_pilot.png",
+		"resource_images": [
+			{
+				"title": "React",
+				"image_link": "/src/assets/logos/1174949_js_react js_logo_react_react native_icon.svg"
+			},{
+				"title": "Firebase",
+				"image_link": "/src/assets/logos/Logomark_Monochrome_Optimized_Black.svg"
+			},{
+				"title": "Bootstrap",
+				"image_link": "/src/assets/logos/bootstrap-4.svg"
+			}
+		],
+		"project_link": "https://codepilot4.web.app/",
+		"video_link": "",
+		"category": ["collaborative"],
+		"last_update": "22 June 2023"
 	}
 ]
