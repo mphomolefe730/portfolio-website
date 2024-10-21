@@ -1,13 +1,16 @@
 import projects from '../../../assets/jsons/personal_projects.json';
 import ProjectModel from '../../../models/projectModel.ts';
 import { Link } from 'react-router-dom';
-import './projectsPersonal.css';
+import './projectsAll.css';
 
-function Personal(){
-	let personalProjects : ProjectModel[] = projects;
+function ProjectsAll( prop : { category:string } ){
+	let projectsObject : ProjectModel[] = projects;
+	if (prop.category != 'all'){
+		projectsObject = projectsObject.filter((object)=> object.category?.includes(prop.category));
+	}
 
 	return (
-		personalProjects.map((project, index) => {
+		projectsObject.map((project, index) => {
 			return (
 				<Link to={`${project?.title?.replace(' ','-').toLowerCase()}`} key={index}>
 					<div className='projectContainer'>
@@ -30,4 +33,4 @@ function Personal(){
 	)
 }
 
-export default Personal;
+export default ProjectsAll;

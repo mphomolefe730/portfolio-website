@@ -4,14 +4,14 @@
 	font-size: xx-large;*/
 	padding: 12px;
 	border-radius: 12px;
-	margin: 5px;
+	margin: 5px 10px;
 	text-transform: uppercase;
 }
 .navElement{
 	text-transform: uppercase;
+	margin: 5px 10px;
 }
 .navElement:hover{
-	margin: 5px;
 	background-color: rgba(0, 0, 0, 0.05);
 	padding: 12px;
 	border-radius: 12px;

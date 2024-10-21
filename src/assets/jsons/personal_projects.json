@@ -1,8 +1,8 @@
 [
 	{
 		"title": "Social Media",
-		"description": "Tasked to design a new social media network, inspired by existing platforms like Facebook, TikTok, Twitter, and Instagram, that connects individuals and businesse.",
-		"image": "/src/assets/website_images/#",
+		"description": "Tasked to design a new social media network, inspired by existing platforms like Facebook, TikTok, Twitter, and Instagram, that connects individuals and businesses.",
+		"image": "/src/assets/website_images/social_media.png",
 		"resource_images": [
 			{
 				"title": "Php",
@@ -11,8 +11,26 @@
 		],
 		"project_link": "#",
 		"video_link": "",
-		"category": ["personal"],
+		"category": ["all","personal"],
 		"last_update": "10 October 2024"
+	},
+	{
+		"title": "Betway Aviator Analysis",
+		"description": "",
+		"resource_images": [
+			{
+				"title":"Python",
+				"image_link": "/src/assets/logos/python.jpeg"
+			},
+			{
+				"title": "Jutyper Notebook",
+				"image_link": "/src/assets/logos/Jupyter_logo.png"
+			}
+		],
+		"project_link": "https://github.com/mphomolefe730/betway-system/",
+		"video_link": "",
+		"category": ["all","personal","data science"],
+		"last_update": "23 August 2024"
 	},
 	{
 		"title": "Ecommerce Connect",
@@ -35,7 +53,7 @@
 		],
 		"project_link": "https://ecommerce-test-3v4i.onrender.com/",
 		"video_link": "",
-		"category": ["personal"],
+		"category": ["all","personal"],
 		"last_update": "3 March 2024"
 	},{
 		"title": "Travel Vista",
@@ -55,8 +73,8 @@
 		],
 		"project_link": "#",
 		"video_link": "",
-		"category": ["collaborative","hackathon"],
-		"last_update": "22 June 2023"
+		"category": ["all","collaborative","hackathon"],
+		"last_update": "28 September 2023"
 	},{
 		"title": "Code Pilot",
 		"description": "This website takes in code and fixes it using chatGPT3/gpt-3. The API has been disabled so contact me if you want to try it out and I'll temporarily activate it",
@@ -75,7 +93,7 @@
 		],
 		"project_link": "https://codepilot4.web.app/",
 		"video_link": "",
-		"category": ["collaborative"],
+		"category": ["all","collaborative","hackathon"],
 		"last_update": "22 June 2023"
 	}
 ]
