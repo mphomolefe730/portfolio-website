@@ -4,7 +4,11 @@
 	font-size: xx-large;*/
 	padding: 12px;
 	border-radius: 12px;
-	margin: 5px
+	margin: 5px;
+	text-transform: uppercase;
+}
+.navElement{
+	text-transform: uppercase;
 }
 .navElement:hover{
 	margin: 5px;
@@ -15,7 +19,7 @@
 .projects{
 	background-color:white;
 	max-height: 80svh;
-	height: 80svh;
+	height: 100svh;
 	overflow: auto;
 	max-width: 900px;
 	margin: auto;

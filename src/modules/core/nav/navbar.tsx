@@ -10,11 +10,11 @@ function NavBar(){
 			{ /*navPaths.map((object, index) => (
 				<Link key={index} to={`${object.path}`}>{object.title}</Link>
 			)) */}
-			<a href='/about'>About</a>
-			<a href='/projects/personal'>Projects</a>
-			<a href='/blogs'>Blogs</a>
-			<a href='games'>Games</a>
-			<a href='videos'>Videos</a>
+			<a className='navTitle' href='/about'>About</a>
+			<a className='navTitle' href='/projects/personal'>Projects</a>
+			<a className='navTitle' href='/blogs'>Blogs</a>
+			<a className='navTitle' href='games'>Games</a>
+			<a className='navTitle' href='videos'>Videos</a>
 		</div>
         </nav>
     );

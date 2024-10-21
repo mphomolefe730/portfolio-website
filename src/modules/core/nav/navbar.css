@@ -21,8 +21,10 @@ nav{
 	/*border-radius: 50%;*/
 	display: inline-flex;
 }
-a{
+.navTitle, a{
 	color: black;
 	text-decoration: none;
+}
+.navTitle{
 	text-transform: uppercase;
 }

@@ -7,6 +7,7 @@ import HomePage from './modules/homepage/components/homepage.tsx';
 import ProjectMain from './modules/projects/components/projectsMain.tsx';
 import Personal from './modules/projects/components/projectsPersonal.tsx';
 import NavBar from './modules/core/nav/navbar.tsx';
+import ProjectView from './modules/projects/components/projectView.tsx';
 
 const router = createBrowserRouter([
   { 
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: '/projects/personal',
         element: < Personal/>
+      },
+      {
+        path:'/projects/personal/:projectName',
+        element: <ProjectView />
       }
     ]
   },

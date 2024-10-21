@@ -2,13 +2,14 @@
 	/*box-shadow: 0 0 2px 0px black;*/
 	padding: 12px;
 	max-width: 800px;
-	margin: auto;
+	margin: 10px auto;
 	border-radius: 12px;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	background-color: rgba(240, 244, 249, 1);
 }
 .logoImages{
+	width: 100%;
 	max-width:40px;
 	border-radius: 20px;
 }
