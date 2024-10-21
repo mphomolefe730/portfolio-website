@@ -1,0 +1,19 @@
+[
+	{
+		"title": "Ecommerce Connect",
+		"description": "E-commerce website for buyers and sells. Has A CMS for buyers to see their inventory, orders and company stuff. Offer financial records and charts for businesses to better manage their financies.",
+		"image": "/src/assets/website_images/ecommerce_connect.png",
+		"resource_images": [
+			{
+				"title": "Angular",
+				"image_link": "/src/assets/logos/angular.png"
+			},
+			{
+				"title": "SocketIO",
+				"image_link": "#"
+			}
+		],
+		"project_link": "#",
+		"last_update": "29 Oct 2024"
+	}
+]

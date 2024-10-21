@@ -1,0 +1,23 @@
+.active{
+	background-color: rgba(194,231,255);
+	/*font-weight: bold;
+	font-size: xx-large;*/
+	padding: 12px;
+	border-radius: 12px;
+	margin: 5px
+}
+.navElement:hover{
+	margin: 5px;
+	background-color: rgba(0, 0, 0, 0.05);
+	padding: 12px;
+	border-radius: 12px;
+}
+.projects{
+	background-color:white;
+	max-height: 80svh;
+	height: 80svh;
+	overflow: auto;
+	max-width: 900px;
+	margin: auto;
+	border-radius: 12px;
+}
