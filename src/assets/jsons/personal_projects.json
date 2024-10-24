@@ -7,6 +7,9 @@
 			{
 				"title": "Php",
 				"image_link": "/src/assets/logos/Official_PHP_Logo.svg"
+			},{
+				"title": "Docker",
+				"image_link": "/src/assets/logos/docker_logo.png"
 			}
 		],
 		"project_link": "#",
@@ -17,6 +20,7 @@
 	{
 		"title": "Betway Aviator Analysis",
 		"description": "",
+		"image":"src/assets/website_images/betway_video.png",
 		"resource_images": [
 			{
 				"title":"Python",
@@ -25,6 +29,9 @@
 			{
 				"title": "Jutyper Notebook",
 				"image_link": "/src/assets/logos/Jupyter_logo.png"
+			},{
+				"title": "BeatifulSoap",
+				"image_link": "#"
 			}
 		],
 		"project_link": "https://github.com/mphomolefe730/betway-system/",
@@ -49,13 +56,53 @@
 			},{
 				"title": "SocketIO",
 				"image_link": "/src/assets/logos/socketio-icon.svg"
+			},{
+				"title": "Docker",
+				"image_link": "/src/assets/logos/docker_logo.png"
+			},{
+				"title": "ExpressJs",
+				"image_link": "/src/assets/logos/expressjs_logo.png"
+			},{
+				"title": "NGINX",
+				"image_link": "#"
 			}
 		],
 		"project_link": "https://ecommerce-test-3v4i.onrender.com/",
 		"video_link": "",
 		"category": ["all","personal"],
-		"last_update": "3 March 2024"
-	},{
+		"last_update": "03 March 2024"
+	},
+	{
+		"title": "Rydly",
+		"description": "",
+		"image": "/src/assets/website_images/rydly.png",
+		"resource_images": [
+			{
+				"title": "Ionoic Angular",
+				"image_link": "/src/assets/logos/ionic_logo.png"
+			},{
+				"title": "PostgresSQL",
+				"image_link": "/src/assets/logos/postgresSQL_elephant_logo.png"
+			},{
+				"title": "Redis",
+				"image_link": "/src/assets/logos/redis_logo.svg"
+			},{
+				"title": "Dotnet MVC",
+				"image_link": "/src/assets/logos/dotnet_mvc_logo.png"
+			},{
+				"title": "AWS",
+				"image_link": "/src/assets/logos/aws_logo.png"
+			},{
+				"title": "Docker",
+				"image_link": "/src/assets/logos/docker_logo.png"
+			}
+		],
+		"project_link": "",
+		"video_link": "",
+		"category": ["all","commercial"],
+		"last_update": "02 October 2024"
+	},
+	{
 		"title": "Travel Vista",
 		"description": "A group project for Richfield Hackathon using Trip Advisor API, Angular, Tailwind and PhP. Created to help travelers plan their ideal adventure by get access to flights,restaurants, hotels and attractions. Website has able to also save card information, trip history and profile page. I was responsible for managing the team and front-end development, and teaching and helping the team with Angular.",
 		"image": "/src/assets/website_images/#",
@@ -75,7 +122,8 @@
 		"video_link": "",
 		"category": ["all","collaborative","hackathon"],
 		"last_update": "28 September 2023"
-	},{
+	},
+	{
 		"title": "Code Pilot",
 		"description": "This website takes in code and fixes it using chatGPT3/gpt-3. The API has been disabled so contact me if you want to try it out and I'll temporarily activate it",
 		"image": "/src/assets/website_images/code_pilot.png",

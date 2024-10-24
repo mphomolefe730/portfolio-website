@@ -25,7 +25,7 @@ const router = createBrowserRouter([
     children:[
       {
         path: '/projects',
-        element: < ProjectAll category={}/>
+        element: < ProjectAll/>
       },
       {
         path:'/projects/:projectName',
