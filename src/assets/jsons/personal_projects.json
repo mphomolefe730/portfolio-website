@@ -1,12 +1,21 @@
 [
 	{
-		"title": "Social Media",
+		"title": "social media",
 		"description": "Tasked to design a new social media network, inspired by existing platforms like Facebook, TikTok, Twitter, and Instagram, that connects individuals and businesses.",
 		"image": "/src/assets/website_images/social_media.png",
 		"resource_images": [
 			{
 				"title": "Php",
 				"image_link": "/src/assets/logos/Official_PHP_Logo.svg"
+<<<<<<< Updated upstream
+=======
+			},{
+				"title": "Docker",
+				"image_link": "/src/assets/logos/docker_logo.png"
+			},{
+				"title": "MySQL",
+				"image_link": "/src/assets/logos/sql.png"
+>>>>>>> Stashed changes
 			}
 		],
 		"project_link": "#",
@@ -16,7 +25,12 @@
 	},
 	{
 		"title": "Betway Aviator Analysis",
+<<<<<<< Updated upstream
 		"description": "",
+=======
+		"description": "This project aims to analyze a popular gambling game to uncover patterns that can potentially increase the win rate for players. By leveraging data collection techniques such as screen scraping, we gathered extensive data on betting outcomes and odds. The analysis was conducted using Python, Beautiful Soup for web scraping, and Jupyter Notebook for data visualization and exploration - also side Pandasa and more",
+		"image":"src/assets/website_images/betway_video.png",
+>>>>>>> Stashed changes
 		"resource_images": [
 			{
 				"title":"Python",
@@ -54,8 +68,44 @@
 		"project_link": "https://ecommerce-test-3v4i.onrender.com/",
 		"video_link": "",
 		"category": ["all","personal"],
+<<<<<<< Updated upstream
 		"last_update": "3 March 2024"
 	},{
+=======
+		"last_update": "03 March 2024"
+	},
+	{
+		"title": "Rydly",
+		"description": "",
+		"image": "/src/assets/website_images/rydly.png",
+		"resource_images": [
+			{
+				"title": "Ionoic Angular",
+				"image_link": "/src/assets/logos/ionic_logo.png"
+			},{
+				"title": "PostgresSQL",
+				"image_link": "/src/assets/logos/postgresSQL_elephant_logo.png"
+			},{
+				"title": "Redis",
+				"image_link": "/src/assets/logos/redis_logo.svg"
+			},{
+				"title": "Dotnet MVC",
+				"image_link": "/src/assets/logos/dotnet_mvc_logo.png"
+			},{
+				"title": "AWS",
+				"image_link": "/src/assets/logos/aws_logo.png"
+			},{
+				"title": "Docker",
+				"image_link": "/src/assets/logos/docker_logo.png"
+			}
+		],
+		"project_link": "https://play.google.com/store/apps/details%3Fid%3Dio.rydly.driver%26hl%3Den_ZA%26gl%3DUS&ved=2ahUKEwj2r_-qooaGAxWGBdsEHaqAAwwQFnoECA8QAQ&usg=AOvVaw1r6lNy6MrFJUtI1w0QeEwP",
+		"video_link": "",
+		"category": ["all","commercial"],
+		"last_update": "02 October 2023"
+	},
+	{
+>>>>>>> Stashed changes
 		"title": "Travel Vista",
 		"description": "A group project for Richfield Hackathon using Trip Advisor API, Angular, Tailwind and PhP. Created to help travelers plan their ideal adventure by get access to flights,restaurants, hotels and attractions. Website has able to also save card information, trip history and profile page. I was responsible for managing the team and front-end development, and teaching and helping the team with Angular.",
 		"image": "/src/assets/website_images/#",

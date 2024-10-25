@@ -3,6 +3,20 @@ body{
 	background-color: rgba(240, 244, 249, 1);
 	font-family: 'roboto', 'system-ui';
 }
+.active{
+	background-color: rgba(194,231,255);
+	padding: 12px;
+	border-radius: 12px;
+}
+.active1{
+	background-color: rgba(194,231,255);
+	/*font-weight: bold;
+	font-size: xx-large;*/
+	padding: 12px;
+	border-radius: 12px;
+	margin: 5px 10px;
+	text-transform: uppercase;
+}
 @keyframes fadeAnimation{
 	from{
 		opacity: 0;

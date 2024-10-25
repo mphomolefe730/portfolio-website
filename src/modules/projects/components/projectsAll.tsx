@@ -12,7 +12,7 @@ function ProjectsAll( prop : { category:string } ){
 	return (
 		projectsObject.map((project, index) => {
 			return (
-				<Link to={`${project?.title?.replace(' ','-').toLowerCase()}`} key={index}>
+				<Link to={`${project?.title?.replace(' ','-')}`} key={index}>
 					<div className='projectContainer'>
 						<div> <img className='projectImage' src={ (project.image) ? project.image : '' }/></div>
 						<div>
