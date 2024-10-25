@@ -11,7 +11,7 @@ function NavBar(){
 				<Link key={index} to={`${object.path}`}>{object.title}</Link>
 			)) */}
 			<a className='navTitle' href='/about'>About</a>
-			<a className='navTitle' href='/projects/personal'>Projects</a>
+			<a className='navTitle' href='/projects'>Projects</a>
 			<a className='navTitle' href='/blogs'>Blogs</a>
 			<a className='navTitle' href='games'>Games</a>
 			<a className='navTitle' href='videos'>Videos</a>
