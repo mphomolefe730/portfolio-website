@@ -20,7 +20,7 @@ function HomePage(){
 				<div className='elements'>
 					<h1 style={{margin:'5px 0'}}>MPHO MOLEFE</h1>
 					<p style={{margin:'5px 0'}}>Innovating Tomorrow's Technology Today</p>
-					<span>Explore </span> <a href="/projects/ecommerce-connect" className='project'>Ecommerce Connect</a> <a href="/projects/code-pilot" className='project'>Code Pilot </a>
+					<span>Explore </span> <a href="/projects/Ecommerce-Connect" className='project'>Ecommerce Connect</a> <a href="/projects/Code-Pilot" className='project'>Code Pilot </a>
 				</div>
 				<div className='elements' style={{textAlign:'center'}}>
 					<a href='https://www.linkedin.com/posts/mpho-molefe-a67ab9284_screenscraping-softwareabrengineering-python-activity-7232479002160988160-D_jw?utm_source=share&utm_medium=member_desktop'>
