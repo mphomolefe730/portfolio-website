@@ -3,10 +3,13 @@ import ProjectModel from '../../../models/projectModel.ts';
 import { Link } from 'react-router-dom';
 import './projectsAll.css';
 
-function ProjectsAll( prop : { category:string } ){
+function ProjectsAll( prop : { category?: string } ){
 	let projectsObject : ProjectModel[] = projects;
+	if (prop.category == undefined){
+		prop.category == 'all';
+	}
 	if (prop.category != 'all'){
-		projectsObject = projectsObject.filter((object)=> object.category?.includes(prop.category));
+		projectsObject = projectsObject.filter((object)=> object.category?.includes(String(prop.category)));
 	}
 
 	return (
