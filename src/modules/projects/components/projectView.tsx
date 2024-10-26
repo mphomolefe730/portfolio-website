@@ -35,7 +35,7 @@ function ProjectView(){
 					</div>
 					
 					<p  className="text-muted p-2"> { projectInfo?.description } </p>
-					{ projectInfo?.resource_images?.map((lang,index)=>{
+					{ projectInfo?.resource_images?.map((lang:{title:string,image_link:string},index:number)=>{
 						return(
 							<span key={index} className="btn btn-primary m-1"> { lang.title } </span>
 						)
