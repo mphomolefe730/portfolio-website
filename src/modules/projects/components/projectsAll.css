@@ -20,3 +20,9 @@
 	background-repeat: no-repeat;  Do not repeat the image
 	background-size: fill; */
 }
+@media (max-width: 810px) {
+	.projectContainer{
+		display: block;
+		text-align: center;
+	}
+}

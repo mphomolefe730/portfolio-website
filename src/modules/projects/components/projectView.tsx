@@ -11,10 +11,10 @@ function ProjectView(){
 	return(
 		<div className='projectInformationContainer'>
 			<Link to="/projects">
-				<span style={{ position: 'absolute', right: 2, top: 2, margin: '10px', borderRadius: '10px', padding: '10px', backgroundColor: 'rgba(240, 244, 249, 1)' }}>x</span>
+				<span className="x">x</span>
 			</Link>
 
-			<div style={{ margin: 'auto', padding: '10px', width: '100%', maxWidth: '900px', backgroundColor: 'white', display: 'grid', gridTemplateColumns: ' 2fr 2fr', borderRadius: '12px' }}>
+			<div className="projectVideoContainer">
 				<div>
 					 <video style={{ width: '100%' }} height="240" controls autoPlay>
 						<source src="movie.mp4" type="video/mp4"/>

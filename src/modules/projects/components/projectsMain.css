@@ -10,6 +10,7 @@
 .navElement{
 	text-transform: uppercase;
 	margin: 5px 10px;
+	align-content:center;
 }
 .navElement:hover{
 	background-color: rgba(0, 0, 0, 0.05);
@@ -24,4 +25,10 @@
 	max-width: 900px;
 	margin: auto;
 	border-radius: 12px;
+}
+@media (max-width: 810px){
+	.projectMainNav{
+		display:flex;
+		overflow: auto;
+	}
 }

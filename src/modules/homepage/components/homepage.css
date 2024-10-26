@@ -44,3 +44,13 @@
 	border-radius: 12px;
 	width:100%;
 }
+
+
+@media (max-width: 810px) {
+	.mainContainer{
+		display:block;
+	}
+	.elements{
+		margin: 10px;
+	}
+}

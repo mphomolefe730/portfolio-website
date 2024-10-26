@@ -12,7 +12,7 @@ function ProjectMain(){
 	
 	return(
 		<div className="projects">
-			<nav style={{margin: '12px 0'}}>
+			<nav className="projectMainNav" style={{margin: '12px 0'}}>
 			{	
 				tabs.map((tab,index)=>{
 					return (

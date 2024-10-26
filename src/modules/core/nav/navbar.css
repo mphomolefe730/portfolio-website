@@ -28,3 +28,16 @@ nav{
 .navTitle{
 	text-transform: uppercase;
 }
+.mobileNav{
+	display:none;
+}
+
+
+@media (max-width: 810px) {
+	.mobileNav{
+		display: block;
+	}
+	.desktopNav{
+		display: none;
+	}
+}
