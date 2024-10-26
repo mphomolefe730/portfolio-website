@@ -1,11 +1,11 @@
 import './projectView.css';
-import ProjectModel from '../../../models/projectModel.ts';
+// import ProjectModel from '../../../models/projectModel.ts';
 import projects from '../../../assets/jsons/personal_projects.json';
 import { Link, useParams } from 'react-router-dom';
 
 function ProjectView(){
 	let { projectName } = useParams();
-	let projectInfo:ProjectModel | undefined = projects.filter((individualProject)=> individualProject?.title?.replace(' ','-').includes(projectName));
+	let projectInfo:any = projects.filter((individualProject:any)=> individualProject.title.replace(' ','-').includes(projectName));
 	projectInfo = projectInfo[0];
 
 	return(

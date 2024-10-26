@@ -1,4 +1,4 @@
-import { Outlet, NavLink } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import './projectsMain.css';
 import { useState } from 'react';
 import ProjectsAll from './projectsAll.tsx';

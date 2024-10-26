@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter, Routes, createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 
 import NavBar from './modules/core/nav/navbar.tsx';
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
     children:[
       {
         path: '/projects',
-        element: < ProjectAll/>
+        element: < ProjectAll category=''/>
       },
       {
         path:'/projects/:projectName',
