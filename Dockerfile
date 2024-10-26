@@ -17,8 +17,6 @@ RUN rm -rf /usr/share/nginx/html/*
 
 COPY ngnix.config /etc/nginx/conf.d/nginx.conf
 
-COPY /usr/share/nginx/html/src/assets/icons/menu-burger-horizontal-svgrepo-com.svg
-
 COPY --from=builder /app/dist /usr/share/nginx/html
 
 COPY src/* /usr/share/nginx/html/src
