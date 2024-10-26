@@ -3,11 +3,12 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
 import './index.css';
 
+import NavBar from './modules/core/nav/navbar.tsx';
 import HomePage from './modules/homepage/components/homepage.tsx';
 import ProjectMain from './modules/projects/components/projectsMain.tsx';
 import ProjectAll from './modules/projects/components/projectsAll.tsx';
-import NavBar from './modules/core/nav/navbar.tsx';
 import ProjectView from './modules/projects/components/projectView.tsx';
+import AboutMain from './modules/about/components/aboutMain.tsx'
 
 const router = createBrowserRouter([
   { 
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
   },
   {
     path:'/about',
-    element: <HomePage />
+    element: <AboutMain />
   },
   {
     path:'/projects',

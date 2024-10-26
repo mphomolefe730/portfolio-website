@@ -1,0 +1,24 @@
+.splitTwo{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+.aboutContainer{
+	max-height: 80svh;
+	height: 100svh;
+	padding: 12px;
+	background-color: white;
+	border-radius: 12px;
+	overflow: auto;
+}
+.aboutHeroContainer{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.aboutHero{
+	background-color: rgba(240, 244, 249, 1);
+	border-radius: 12px;
+	padding: 12px;
+	margin: 10px 5px;
+	text-transform: uppercase;
+	text-align: center;
+}
