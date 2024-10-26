@@ -6,7 +6,7 @@
   "homepage": "https://mphomolefe730.github.io/portfolio-website",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
@@ -15,6 +15,7 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "dotenv": "^16.4.5",
+    "gh-pages": "^6.2.0",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.5",
     "react-dom": "^18.3.1",
