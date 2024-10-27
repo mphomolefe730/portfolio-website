@@ -19,7 +19,7 @@ COPY ngnix.config /etc/nginx/conf.d/nginx.conf
 
 COPY --from=builder /app/dist /usr/share/nginx/html
 
-COPY /src/* /usr/share/nginx/html/src
+COPY --from=builder /app/src/* /usr/share/nginx/html/src
 
 EXPOSE 80
 
