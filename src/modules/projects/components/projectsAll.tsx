@@ -17,10 +17,17 @@ function ProjectsAll( prop : { category?: string } ){
 			return (
 				<Link to={`${project?.title?.replace(' ','-')}`} key={index}>
 					<div className='projectContainer'>
-						<div> <img className='projectImage' src={ (project.image) ? project.image : '' }/></div>
+						<div> 
+							<img className='projectImage' src={ (project.image) ? project.image : '' }/>
+						</div>
 						<div>
-							<h2 style={{ margin: '5px' }}>{ (project.title) ? project.title : '' } ({ project?.last_update  })</h2>
-							<p style={{ margin: '5px' }}> { (project.description) ? project.description : '' } </p>
+							<div style={{ margin: '0px 5px' }}>
+								<h2 style={{ margin: '2.5px 0', textTransform: 'uppercase'}}>{ (project.title) ? project.title : '' }</h2>
+								<small style={{ color: 'gray' }}> { project?.last_update  }</small>
+							</div>
+							<small>
+								<p className='sdescription'> { (project.description) ? project.description : '' } </p>
+							</small>
 							<div>
 								{ project.resource_images?.map((image,number)=>{
 									return (

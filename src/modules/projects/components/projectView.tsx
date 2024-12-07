@@ -16,11 +16,7 @@ function ProjectView(){
 
 			<div className="projectVideoContainer">
 				<div>
-					 <video style={{ width: '100%' }} height="240" controls autoPlay>
-						<source src="movie.mp4" type="video/mp4"/>
-						<source src="movie.ogg" type="video/ogg"/>
-						Your browser does not support the video tag.
-					</video> 
+					<iframe height="240" style={{ width:"100%"}} src={projectInfo?.video_link} allow="autoplay"></iframe>
 				</div>
 				<div style={{ position: 'relative', margin: '0 5px' }}>
 					<div style={{ display:'grid', gridTemplateColumns: '2fr 1fr' }}>
