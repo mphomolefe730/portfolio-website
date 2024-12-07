@@ -25,7 +25,7 @@ function NavBar(){
 		<div className="mobileNav">
 			<div style={{ display: (open) ? "none": "flex", width:"100%", justifyContent: "space-between", padding: "0 10px"}}>
 				<a style={{ maxWidth: "50px", backgroundColor: "white", padding: "10px", borderRadius: "50%" }} href="/">MM</a>
-				<img style={{ maxWidth: "50px", backgroundColor: "white", padding: "10px", borderRadius: "50%" }} src="src/assets/icons/menu-burger-horizontal-svgrepo-com.svg" onClick={()=> showNav()}/>
+				<img style={{ maxWidth: "50px", backgroundColor: "white", padding: "10px", borderRadius: "50%" }} src="https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/icons/menu-burger-horizontal-svgrepo-com.svg" onClick={()=> showNav()}/>
 			</div>
 			<div style={{ display: (open) ? "grid": "none", height: "98svh", width: "100%", zIndex: 99, position: "absolute", gridTemplateColumns: "2fr 4fr"}}>
 				<div style={{ backgroundColor: "rgba(0,0,0,0.5)" }} onClick={()=> showNav()}></div>

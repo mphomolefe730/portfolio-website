@@ -2,17 +2,17 @@
 	{
 		"title": "social media",
 		"description": "Tasked to design a new social media network, inspired by existing platforms like Facebook, TikTok, Twitter, and Instagram, that connects individuals and businesses.",
-		"image": "/src/assets/website_images/social_media.png",
+		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/social_media.png",
 		"resource_images": [
 			{
 				"title": "Php",
-				"image_link": "/src/assets/logos/Official_PHP_Logo.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/Official_PHP_Logo.svg"
 			},{
 				"title": "Docker",
-				"image_link": "/src/assets/logos/docker_logo.png"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/docker_logo.png"
 			},{
 				"title": "MySQL",
-				"image_link": "/src/assets/logos/sql.png"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/sql.png"
 			}
 		],
 		"project_link": "#",
@@ -23,15 +23,15 @@
 	{
 		"title": "Betway Aviator Analysis",
 		"description": "This project aims to analyze a popular gambling game to uncover patterns that can potentially increase the win rate for players. By leveraging data collection techniques such as screen scraping, we gathered extensive data on betting outcomes and odds. The analysis was conducted using Python, Beautiful Soup for web scraping, and Jupyter Notebook for data visualization and exploration - also side Pandasa and more",
-		"image":"src/assets/website_images/betway_video.png",
+		"image":"https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/betway_video.png",
 		"resource_images": [
 			{
 				"title":"Python",
-				"image_link": "/src/assets/logos/python.jpeg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/python.jpeg"
 			},
 			{
 				"title": "Jutyper Notebook",
-				"image_link": "/src/assets/logos/Jupyter_logo.png"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/Jupyter_logo.png"
 			},{
 				"title": "BeatifulSoap",
 				"image_link": "#"
@@ -45,26 +45,26 @@
 	{
 		"title": "Ecommerce Connect",
 		"description": "E-commerce website for buyers and sells. Has A CMS for buyers to see their inventory, orders and company stuff. Offer financial records and charts for businesses to better manage their financies.",
-		"image": "/src/assets/website_images/ecommerce_connect.png",
+		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/ecommerce_connect.png",
 		"resource_images": [
 			{
 				"title": "Angular",
-				"image_link": "/src/assets/logos/icon_angular.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/icon_angular.svg"
 			},{
 				"title": "MongoDB",
-				"image_link": "/src/assets/logos/9074155_mongodb_icon.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/9074155_mongodb_icon.svg"
 			},{
 				"title": "Redis",
-				"image_link": "/src/assets/logos/redis_logo.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/redis_logo.svg"
 			},{
 				"title": "SocketIO",
-				"image_link": "/src/assets/logos/socketio-icon.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/socketio-icon.svg"
 			},{
 				"title": "Docker",
-				"image_link": "/src/assets/logos/docker_logo.png"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/docker_logo.png"
 			},{
 				"title": "ExpressJs",
-				"image_link": "/src/assets/logos/expressjs_logo.png"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/expressjs_logo.png"
 			},{
 				"title": "NGINX",
 				"image_link": "#"
@@ -78,26 +78,26 @@
 	{
 		"title": "Rydly",
 		"description": "Rydly is a dynamic ride-sharing service that redefines the way users commute, connecting private vehicle owners with individuals sharing similar routes. With Rydly, users can seamlessly carpool, optimizing daily journeys for a more sustainable and cost-effective travel experience.",
-		"image": "/src/assets/website_images/rydly.png",
+		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/rydly.png",
 		"resource_images": [
 			{
 				"title": "Ionoic Angular",
-				"image_link": "/src/assets/logos/ionic_logo.png"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/ionic_logo.png"
 			},{
 				"title": "PostgresSQL",
-				"image_link": "/src/assets/logos/postgresSQL_elephant_logo.png"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/postgresSQL_elephant_logo.png"
 			},{
 				"title": "Redis",
-				"image_link": "/src/assets/logos/redis_logo.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/redis_logo.svg"
 			},{
 				"title": "Dotnet MVC",
-				"image_link": "/src/assets/logos/dotnet_mvc_logo.png"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/dotnet_mvc_logo.png"
 			},{
 				"title": "AWS",
-				"image_link": "/src/assets/logos/aws_logo.png"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/aws_logo.png"
 			},{
 				"title": "Docker",
-				"image_link": "/src/assets/logos/docker_logo.png"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/docker_logo.png"
 			}
 		],
 		"project_link": "https://play.google.com/store/apps/details%3Fid%3Dio.rydly.driver%26hl%3Den_ZA%26gl%3DUS&ved=2ahUKEwj2r_-qooaGAxWGBdsEHaqAAwwQFnoECA8QAQ&usg=AOvVaw1r6lNy6MrFJUtI1w0QeEwP",
@@ -108,17 +108,17 @@
 	{
 		"title": "Travel Vista",
 		"description": "A group project for Richfield Hackathon using Trip Advisor API, Angular, Tailwind and PhP. Created to help travelers plan their ideal adventure by get access to flights,restaurants, hotels and attractions. Website has able to also save card information, trip history and profile page. I was responsible for managing the team and front-end development, and teaching and helping the team with Angular.",
-		"image": "/src/assets/website_images/#",
+		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/#",
 		"resource_images": [
 			{
 				"title": "Angular",
-				"image_link": "/src/assets/logos/1174949_js_react js_logo_react_react native_icon.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/1174949_js_react js_logo_react_react native_icon.svg"
 			},{
 				"title": "Tailwind",
-				"image_link": "/src/assets/logos/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg"
 			},{
 				"title": "Php",
-				"image_link": "/src/assets/logos/Official_PHP_Logo.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/Official_PHP_Logo.svg"
 			}
 		],
 		"project_link": "#",
@@ -129,17 +129,17 @@
 	{
 		"title": "Code Pilot",
 		"description": "This website takes in code and fixes it using chatGPT3/gpt-3. The API has been disabled so contact me if you want to try it out and I'll temporarily activate it",
-		"image": "/src/assets/website_images/code_pilot.png",
+		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/code_pilot.png",
 		"resource_images": [
 			{
 				"title": "React",
-				"image_link": "/src/assets/logos/1174949_js_react js_logo_react_react native_icon.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/1174949_js_react js_logo_react_react native_icon.svg"
 			},{
 				"title": "Firebase",
-				"image_link": "/src/assets/logos/Logomark_Monochrome_Optimized_Black.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/Logomark_Monochrome_Optimized_Black.svg"
 			},{
 				"title": "Bootstrap",
-				"image_link": "/src/assets/logos/bootstrap-4.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/bootstrap-4.svg"
 			}
 		],
 		"project_link": "https://codepilot4.web.app/",
