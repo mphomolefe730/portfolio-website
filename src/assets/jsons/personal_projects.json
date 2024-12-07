@@ -1,6 +1,6 @@
 [
 	{
-		"title": "social media",
+		"title": "Social Media",
 		"description": "Tasked to design a new social media network, inspired by existing platforms like Facebook, TikTok, Twitter, and Instagram, that connects individuals and businesses.",
 		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/social_media.png",
 		"resource_images": [
@@ -71,7 +71,7 @@
 			}
 		],
 		"project_link": "https://ecommerce-test-3v4i.onrender.com/",
-		"video_link": "",
+		"video_link": "https://drive.google.com/file/d/11Ro4Zd11bmnPDBBMVXc8t90WkrNTor7b/preview",
 		"category": ["all","personal"],
 		"last_update": "03 March 2024"
 	},
@@ -143,7 +143,7 @@
 			}
 		],
 		"project_link": "https://codepilot4.web.app/",
-		"video_link": "",
+		"video_link": "https://drive.google.com/file/d/1lfqHzPMpw_wTpJGXIQrXDQGnwsx-50gN/preview",
 		"category": ["all","collaborative","hackathon"],
 		"last_update": "22 June 2023"
 	}
