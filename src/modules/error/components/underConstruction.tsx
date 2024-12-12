@@ -1,6 +1,6 @@
 function UnderConstruction(){
 	return(
-		<div style={{ margin: "auto", maxWidth: "600px", textAlign: "center", alignContent: "center", margin: "auto", height: "80svh"}}>
+		<div style={{ margin: "auto", maxWidth: "600px", textAlign: "center", alignContent: "center", height: "80svh"}}>
 			<h1>
 				#
 			</h1>
