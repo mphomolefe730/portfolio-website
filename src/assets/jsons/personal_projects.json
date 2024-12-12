@@ -15,6 +15,7 @@
 				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/sql.png"
 			}
 		],
+		"warning": false,
 		"project_link": "#",
 		"video_link": "",
 		"category": ["all","personal"],
@@ -37,6 +38,7 @@
 				"image_link": "#"
 			}
 		],
+		"warning": false,
 		"project_link": "https://github.com/mphomolefe730/betway-system/",
 		"video_link": "",
 		"category": ["all","personal","data science"],
@@ -70,6 +72,7 @@
 				"image_link": "#"
 			}
 		],
+		"warning": true,
 		"project_link": "https://ecommerce-test-3v4i.onrender.com/",
 		"video_link": "https://drive.google.com/file/d/11Ro4Zd11bmnPDBBMVXc8t90WkrNTor7b/preview",
 		"category": ["all","personal"],
@@ -100,6 +103,7 @@
 				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/docker_logo.png"
 			}
 		],
+		"warning": false,
 		"project_link": "https://play.google.com/store/apps/details%3Fid%3Dio.rydly.driver%26hl%3Den_ZA%26gl%3DUS&ved=2ahUKEwj2r_-qooaGAxWGBdsEHaqAAwwQFnoECA8QAQ&usg=AOvVaw1r6lNy6MrFJUtI1w0QeEwP",
 		"video_link": "",
 		"category": ["all","commercial"],
@@ -121,6 +125,7 @@
 				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/Official_PHP_Logo.svg"
 			}
 		],
+		"warning": false,
 		"project_link": "#",
 		"video_link": "",
 		"category": ["all","collaborative","hackathon"],
@@ -142,6 +147,7 @@
 				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/bootstrap-4.svg"
 			}
 		],
+		"warning": false,
 		"project_link": "https://codepilot4.web.app/",
 		"video_link": "https://drive.google.com/file/d/1lfqHzPMpw_wTpJGXIQrXDQGnwsx-50gN/preview",
 		"category": ["all","collaborative","hackathon"],

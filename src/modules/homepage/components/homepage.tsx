@@ -19,10 +19,12 @@ function HomePage(){
 			<div className='mainContainer'>
 				<div className='elements'>
 					<h1 style={{margin:'0'}}>MPHO MOLEFE</h1>
-					<p style={{margin:'0'}}><small>Innovating Tomorrow's Technology Today</small></p>
-					<div><span>Explore </span> <a href="/projects/Ecommerce-Connect" className='project'>Ecommerce Connect</a></div>
+					{/*<p style={{margin:'0'}}><small>Innovating Tomorrow's Technology Today</small></p>*/}
+					<div><span>Latest Project(s): </span> <a href="projects/Social-Media" className='project'>Social Media</a></div>
+					<div><a href="/projects/Ecommerce-Connect" className='project'>Ecommerce Connect</a></div>
 				</div>
 				<div className='elements' style={{textAlign:'center'}}>
+					<p>Latest Video:</p>
 					<a href='https://www.linkedin.com/posts/mpho-molefe-a67ab9284_screenscraping-softwareabrengineering-python-activity-7232479002160988160-D_jw?utm_source=share&utm_medium=member_desktop'>
 						<img className='latest_video' alt='Latest Tech Video' src='https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/latest_video.png'/>
 					</a>

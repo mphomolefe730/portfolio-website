@@ -1,16 +1,11 @@
-.active1{
-	background-color: rgba(194,231,255);
-	/*font-weight: bold;
-	font-size: xx-large;*/
-	padding: 12px;
-	border-radius: 12px;
-	margin: 5px 10px;
-	text-transform: uppercase;
-}
 .navElement{
 	text-transform: uppercase;
 	margin: 5px 10px;
-	align-content:center;
+	border: 1.5px solid black;
+	border-radius: 12px;
+	padding: 12px;
+	display: inline-flex;
+	align-items: center;
 }
 .navElement:hover{
 	background-color: rgba(0, 0, 0, 0.05);

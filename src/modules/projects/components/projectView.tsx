@@ -1,5 +1,6 @@
 import './projectView.css';
 // import ProjectModel from '../../../models/projectModel.ts';
+import Alert from 'react-bootstrap/Alert';
 import projects from '../../../assets/jsons/personal_projects.json';
 import { Link, useParams } from 'react-router-dom';
 
@@ -7,6 +8,12 @@ function ProjectView(){
 	let { projectName } = useParams();
 	let projectInfo:any = projects.filter((individualProject:any)=> individualProject.title.replace(' ','-').includes(projectName));
 	projectInfo = projectInfo[0];
+	let warning = `This website is hosted on a free platform. To ensure optimal performance, please note the following: \n
+	1) Inactivity: The website may go offline after period of inactivity. \n 2) Startup Time: Upon loading, the website may take up to 60 seconds to fully initialize. \n3) Page Refresh: To access the latest content, please refresh the page after initializing.`;
+	
+	warning = warning.split('\n').map((line, index) => (
+        <span key={index}> {line} <br /> </span>
+    ));
 
 	return(
 		<div className='projectInformationContainer'>
@@ -17,6 +24,11 @@ function ProjectView(){
 			<div className="projectVideoContainer">
 				<div>
 					<iframe height="240" style={{ width:"100%"}} src={projectInfo?.video_link} allow="autoplay"></iframe>
+					<div style={{ display: projectInfo?.warning ? 'block' : 'none' }}> 
+						<Alert variant="warning">
+							{ warning }
+						</Alert>
+					</div>
 				</div>
 				<div style={{ position: 'relative', margin: '0 5px' }}>
 					<div style={{ display:'grid', gridTemplateColumns: '2fr 1fr' }}>
@@ -25,7 +37,7 @@ function ProjectView(){
 								<div> created: { projectInfo?.last_update } </div>
 							</small>
 						</h5>
-						<button type="button" className="btn btn-outline-success">
+						<button>
 							<a href={ projectInfo?.project_link}>VIEW WEBSITE </a>
 						</button>
 					</div>

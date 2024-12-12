@@ -28,6 +28,7 @@
 	padding: 0 15%; */
 	background-color: white;
 	padding: 12px;
+	border: 1.5px solid black;
 	border-radius: 12px;
 	margin: 0 5px;
 	animation: fadeAnimation 2.5s ease-in;
@@ -35,8 +36,9 @@
 .project{
 	display: inline-block;
 	margin: 5px;
-	border: 2.5px solid blue;
-	color: blue;
+	/*border: 2.5px solid blue;*/
+	background-color: black;	
+	color: white;
 	border-radius: 12px;
 	padding: 5px 10px;
 }

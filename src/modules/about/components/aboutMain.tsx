@@ -12,7 +12,7 @@ function AboutMain(){
 	}
 
 	return (
-		<div style={{ maxWidth: "900px", margin: "auto" }}>
+		<div style={{ maxWidth: "600px", margin: "auto" }}>
 			<div className="aboutContainer">
 				<nav style={{ marginBottom: "10px" }}>
 					{ tabs.map((t,index)=>{ return <span key={index} onClick={ ()=> showTab(index) } className={ (index == activeIndex) ? "active1" : "navElement"}> {t} </span> }) }
@@ -34,14 +34,21 @@ function AboutMain(){
 				<div style={{ display: (activeIndex == 1) ? "block" : "none" }}> 
 					{ about.experience.map((job,index)=>{
 						return(
-							<div key={index} style={{ margin: "5px 0", backgroundColor: "rgba(240, 244, 249, 1)", padding: "10px", borderRadius: "12px" }}>
-								<div className="splitTwo"> 
-									<div>{ job.job_title } </div>
-									<div>{ job.from} - { job.to} </div>
+							<div key={index} className="informationPill">
+								<div>
+									<h3>{ job.company_name.toUpperCase() } </h3>
 								</div>
 								<div className="splitTwo">
-									<div>{ job.company_name } </div>
+									<div> Title: </div>
+									<div>{ job.job_title } </div>
+								</div>
+								<div className="splitTwo">
+									<div> Location: </div>
 									<div>{ job.location } </div>
+								</div>
+								<div className="splitTwo">
+									<div> Date: </div>
+									<div>{ job.from} - { job.to} </div>
 								</div>
 							</div>
 						)
@@ -49,15 +56,22 @@ function AboutMain(){
 				</div>
 				
 				<div style={{ display: (activeIndex == 2) ? "block" : "none"}}> 
-					{ about.education.map((job)=>{
+					{ about.education.map((job, index)=>{
 						return(
-							<div style={{ margin: "5px 0", backgroundColor: "rgba(240, 244, 249, 1)", padding: "10px", borderRadius: "12px"                                  }}>
+							<div key={index} className="informationPill">
+								<div>
+									<h3>{ job.company_name.toUpperCase() } </h3>
+								</div>
+								<div className="splitTwo"> 
+									<div> Title: </div>
+									<div>{ job.course_name } </div>
+								</div>
 								<div className="splitTwo">
-									<div>{ job.company_name } </div>
+									<div> Location: </div>
 									<div>{ job.location } </div>
 								</div>
 								<div className="splitTwo"> 
-									<div>{ job.course_name } </div>
+									<div> Date: </div>
 									<div>{ job.from} - { job.to} </div>
 								</div>
 							</div>

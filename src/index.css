@@ -2,7 +2,7 @@
 
 body{
 	margin: 0;
-	background-color: rgba(240, 244, 249, 1);
+	/*background-color: rgba(240, 244, 249, 1);*/
 	font-family: 'Roboto', 'system-ui';
 }
 .sdescription{
@@ -13,13 +13,21 @@ body{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.active{
-	background-color: rgba(194,231,255);
-	padding: 12px;
+.informationPill{
+	margin: 5px 0;
+	border: 1.5px solid black;
 	border-radius: 12px;
+	padding: 10px;
+}
+.active{
+	/*background-color: rgba(194,231,255);
+	padding: 12px;
+	border-radius: 12px;*/
 }
 .active1{
-	background-color: rgba(194,231,255);
+	background-color: rgba(0,0,0,1);
+	color: white;
+	display: inline-flex;
 	/*font-weight: bold;
 	font-size: xx-large;*/
 	padding: 12px;

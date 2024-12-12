@@ -8,7 +8,8 @@ import HomePage from './modules/homepage/components/homepage.tsx';
 import ProjectMain from './modules/projects/components/projectsMain.tsx';
 import ProjectAll from './modules/projects/components/projectsAll.tsx';
 import ProjectView from './modules/projects/components/projectView.tsx';
-import AboutMain from './modules/about/components/aboutMain.tsx'
+import AboutMain from './modules/about/components/aboutMain.tsx';
+import UnderConstruction from './modules/error/components/underConstruction.tsx';
 
 const router = createBrowserRouter([
   { 
@@ -36,15 +37,15 @@ const router = createBrowserRouter([
   },
   {
     path:'/blogs',
-    element: <HomePage />
+    element: <UnderConstruction />
   },
   {
     path:'/games',
-    element: <HomePage />
+    element: <UnderConstruction />
   },
   {
     path:'/videos',
-    element: <HomePage />
+    element: <UnderConstruction />
   },
 ])
 
