@@ -13,7 +13,7 @@ function ProjectView(){
 	
 	warning = warning.split('\n').map((line, index) => (
         <span key={index}> {line} <br /> </span>
-    ));
+    )).toString();
 
 	return(
 		<div className='projectInformationContainer'>
