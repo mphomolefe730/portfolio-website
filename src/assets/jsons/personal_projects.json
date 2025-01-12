@@ -100,7 +100,12 @@
 	{
 		"title": "Rydly",
 		"description": ["Rydly is a dynamic ride-sharing service that redefines the way users commute, connecting private vehicle owners with individuals sharing similar routes. With Rydly, users can seamlessly carpool, optimizing daily journeys for a more sustainable and cost-effective travel experience."],
-		"timeline":[],
+		"timeline":[
+			{
+				"date": "Oct 2023",
+				"description": ""
+			}
+		],
 		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/rydly.png",
 		"resource_images": [
 			{
@@ -133,7 +138,20 @@
 	{
 		"title": "Travel Vista",
 		"description": ["A group project for Richfield Hackathon using Trip Advisor API, Angular, Tailwind and PhP. Created to help travelers plan their ideal adventure by get access to flights,restaurants, hotels and attractions. Website has able to also save card information, trip history and profile page. I was responsible for managing the team and front-end development, and teaching and helping the team with Angular."],
-		"timeline":[],
+		"timeline":[
+			{
+				"date":"5 - 15 September 2023",
+				"description":"Pre-planning process. All dependencies and file related to QR Code scanning are shared, these will be the initual project for everyone involved. The initual plan for the project was to use PHP and mySQL, but later changed. This is because hackathon topics were changed and as such, the project change from using PHP and mySQL to using Angular and MongoDB. The application was given general styling based on Figma design, this include feeatures like the Navbar, make application mobile responsive, global styles for font and color and linking external links for fonts, logos and more."
+			},
+			{
+				"date":"17 September 2024",
+				"description":"Add tailwind for easier styling. This was need for a large time, mainly full of beginner developers who are unfamiliar with the tools beginning used. The homepage was also completed at this stage. This was done to help those who are unfimiliar with the tools get a framework to use moving forward. This is the point where everyone was assign a page they are responsible for based on a figma design"
+			},
+			{
+				"date":"21 September 2024",
+				"description":"Add ability to search [done by me], view hotels, footer, about section regarding the organisation, user page for managing account (wallet, setting, history) [done by me], explore page[done by me], dark mode [done by me], testimonials, sign in and sign up page and splash page [done by me]. "
+			}
+		],
 		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/#",
 		"resource_images": [
 			{

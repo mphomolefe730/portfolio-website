@@ -11,9 +11,9 @@ function ProjectView(){
 	let warning = `This website is hosted on a free platform. To ensure optimal performance, please note the following: *
 	1) Inactivity: The website may go offline after period of inactivity. * 2) Startup Time: Upon loading, the website may take up to 60 seconds to fully initialize. *3) Page Refresh: To access the latest content, please refresh the page after initializing.`;
 	
-	warning = warning.split('*').map((line, index) => (
-        <span key={index}> {line} <br /> </span>
-    ));
+	warning = warning.split('*').map((line, index) => {
+         return (<span key={index}> {line} <br /> </span>)
+	}).toString();
 
 	return(
 		<div className='projectInformationContainer'>
