@@ -1,8 +1,9 @@
 [
 	{
 		"title": "Social Media",
-		"description": "Tasked to design a new social media network, inspired by existing platforms like Facebook, TikTok, Twitter, and Instagram, that connects individuals and businesses.",
+		"description": ["Tasked to design a new social media network, inspired by existing platforms like Facebook, TikTok, Twitter, and Instagram, that connects individuals and businesses."],
 		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/social_media.png",
+		"timeline":[],
 		"resource_images": [
 			{
 				"title": "Php",
@@ -16,6 +17,7 @@
 			}
 		],
 		"warning": false,
+		"project_status": "Deployment",
 		"project_link": "#",
 		"video_link": "",
 		"category": ["all","personal"],
@@ -23,8 +25,9 @@
 	},
 	{
 		"title": "Betway Aviator Analysis",
-		"description": "This project aims to analyze a popular gambling game to uncover patterns that can potentially increase the win rate for players. By leveraging data collection techniques such as screen scraping, we gathered extensive data on betting outcomes and odds. The analysis was conducted using Python, Beautiful Soup for web scraping, and Jupyter Notebook for data visualization and exploration - also side Pandasa and more",
+		"description": ["This project aims to analyze a popular gambling game to uncover patterns that can potentially increase the win rate for players. By leveraging data collection techniques such as screen scraping, we gathered extensive data on betting outcomes and odds. The analysis was conducted using Python, Beautiful Soup for web scraping, and Jupyter Notebook for data visualization and exploration - also side Pandasa and more"],
 		"image":"https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/betway_video.png",
+		"timeline":[],
 		"resource_images": [
 			{
 				"title":"Python",
@@ -39,6 +42,7 @@
 			}
 		],
 		"warning": false,
+		"project_status": "Done",
 		"project_link": "https://github.com/mphomolefe730/betway-system/",
 		"video_link": "",
 		"category": ["all","personal","data science"],
@@ -46,7 +50,21 @@
 	},
 	{
 		"title": "Ecommerce Connect",
-		"description": "E-commerce website for buyers and sells. Has A CMS for buyers to see their inventory, orders and company stuff. Offer financial records and charts for businesses to better manage their financies.",
+		"description": ["A e-commerce website for both buyers and sells. The web application has a Content Management System (CMS) for buyers to see their inventory, orders, stuff administrative tools and more. It also offer financial records and charts to help businesses to better manage and understand their financies.", "Ecommerce Connect was establish to help small to medium business owner to have a centralized platform where users can find them - It's main audience being the informational section, An unexplored, cash heavy  market who can't meet most populate platforms high start up fees."],
+		"timeline":[
+			{
+				"date":"3 - 24 March 2024",
+				"description":"Convert an existing static website into a dynmamic web application (HTML & Javscript -> Angular, MongoDB & ExpressJS). This process was give basic funtionality to ensure the new feature we working, at this stage - the application was still mainly run on local devices. Introducted feature: Login and Registration, Recent view items, New styling, Search, Recently search and recently viewed history, Connection with api and database, Product description view,& environment file for the api link"
+			},
+			{
+				"date":"9 April - 9 June 2024",
+				"description":"Introduction of sellers portal. The process of dividing the application into sellers version and customer version. This is the phase of allowing seller to edit and their profiles and products ad they see fit. Feature Introducted: Order and sell analytics represented using graphs, Ability to accept and decline orders, Sellers being able to edit thier profiles, Custumers being able to see seller profiles, Customers being able to checkout"
+			},
+			{
+				"date":"3 - 30 Auguest 2024",
+				"description":"Bug fixes and existing feature improvements. Introducted feature: Add business profiles - to help large organisations better manage their stuff, Seller order filtering to better pioritize their orders, Add business portal to help seller better understand platform and tools, Customers can add description to their order(s) - to help seller understand their order."
+			}
+		],
 		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/ecommerce_connect.png",
 		"resource_images": [
 			{
@@ -72,15 +90,17 @@
 				"image_link": "#"
 			}
 		],
-		"warning": true,
-		"project_link": "https://ecommerce-test-3v4i.onrender.com/",
+		"warning": false,
+		"project_status": "Maintenance",
+		"project_link": "https://ecommerce-test-production-1b0f.up.railway.app/",
 		"video_link": "https://drive.google.com/file/d/11Ro4Zd11bmnPDBBMVXc8t90WkrNTor7b/preview",
 		"category": ["all","personal"],
 		"last_update": "03 March 2024"
 	},
 	{
 		"title": "Rydly",
-		"description": "Rydly is a dynamic ride-sharing service that redefines the way users commute, connecting private vehicle owners with individuals sharing similar routes. With Rydly, users can seamlessly carpool, optimizing daily journeys for a more sustainable and cost-effective travel experience.",
+		"description": ["Rydly is a dynamic ride-sharing service that redefines the way users commute, connecting private vehicle owners with individuals sharing similar routes. With Rydly, users can seamlessly carpool, optimizing daily journeys for a more sustainable and cost-effective travel experience."],
+		"timeline":[],
 		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/rydly.png",
 		"resource_images": [
 			{
@@ -104,6 +124,7 @@
 			}
 		],
 		"warning": false,
+		"project_status": "Maintenance",
 		"project_link": "https://play.google.com/store/apps/details%3Fid%3Dio.rydly.driver%26hl%3Den_ZA%26gl%3DUS&ved=2ahUKEwj2r_-qooaGAxWGBdsEHaqAAwwQFnoECA8QAQ&usg=AOvVaw1r6lNy6MrFJUtI1w0QeEwP",
 		"video_link": "",
 		"category": ["all","commercial"],
@@ -111,7 +132,8 @@
 	},
 	{
 		"title": "Travel Vista",
-		"description": "A group project for Richfield Hackathon using Trip Advisor API, Angular, Tailwind and PhP. Created to help travelers plan their ideal adventure by get access to flights,restaurants, hotels and attractions. Website has able to also save card information, trip history and profile page. I was responsible for managing the team and front-end development, and teaching and helping the team with Angular.",
+		"description": ["A group project for Richfield Hackathon using Trip Advisor API, Angular, Tailwind and PhP. Created to help travelers plan their ideal adventure by get access to flights,restaurants, hotels and attractions. Website has able to also save card information, trip history and profile page. I was responsible for managing the team and front-end development, and teaching and helping the team with Angular."],
+		"timeline":[],
 		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/#",
 		"resource_images": [
 			{
@@ -126,6 +148,7 @@
 			}
 		],
 		"warning": false,
+		"project_status": "Deployment",
 		"project_link": "#",
 		"video_link": "",
 		"category": ["all","collaborative","hackathon"],
@@ -133,7 +156,8 @@
 	},
 	{
 		"title": "Code Pilot",
-		"description": "This website takes in code and fixes it using chatGPT3/gpt-3. The API has been disabled so contact me if you want to try it out and I'll temporarily activate it",
+		"description": ["This website takes in code and fixes it using chatGPT3/gpt-3. The API has been disabled so contact me if you want to try it out and I'll temporarily activate it"],
+		"timeline":[],
 		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/code_pilot.png",
 		"resource_images": [
 			{
@@ -148,6 +172,7 @@
 			}
 		],
 		"warning": false,
+		"project_status": "Maintenance",
 		"project_link": "https://codepilot4.web.app/",
 		"video_link": "https://drive.google.com/file/d/1lfqHzPMpw_wTpJGXIQrXDQGnwsx-50gN/preview",
 		"category": ["all","collaborative","hackathon"],
