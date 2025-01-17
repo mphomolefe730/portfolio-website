@@ -3,7 +3,7 @@ import './aboutMain.css'
 import { useState } from 'react';
 
 function AboutMain(){
-	const tabs = ['About','Experience','Education'];
+	const tabs = ['About','Experience','Education', 'Certificates'];
 	let [activeIndex, setActiveIndex] = useState(0);
 	
 	let showTab = (index:number) => {
@@ -77,6 +77,25 @@ function AboutMain(){
 							</div>
 						)
 					}) } 
+				</div>
+				<div style={{ display: (activeIndex == 3) ? "block" : "none" }}> 
+					{ about.certificates.map((certificate,index)=>{
+						return(
+							<div key={index} className="informationPill">
+								<div style={{backgroundImage: "{certificate.image}"}}>
+									<h3> { certificate.company_name.toUpperCase() } </h3>
+								</div>
+								<div className="splitTwo"> 
+									<div> Course: </div>
+									<div>{ certificate.certificate_name } </div>
+								</div>
+								<div className="splitTwo"> 
+									<div> Date: </div>
+									<div>{ certificate.date } </div>
+								</div>
+							</div>
+						)
+					}) }
 				</div>
 			</div>
 		</div>
