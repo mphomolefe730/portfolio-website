@@ -16,6 +16,12 @@ function HomePage(){
 					<img className="carouselImage" src="https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/background_images/WhatsApp Image 2024-08-29 at 9.23.45 PM.jpeg" alt="Third slide"/>
 				</Carousel.Item>
 			</Carousel>
+			{/*
+			<div style={{ backgroundImage: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)", padding: "5px", borderRadius: "12px"}}>
+				<p><a style={ {color: "white" }} href="https://za.linkedin.com/in/mpho-molefe-a67ab9284">LinkedIn</a></p>
+				<p><a style={{ color: "white" }} href="https://x.com/mphomolefeww">Twitter</a></p>
+			</div>
+			*/}
 			<div className='mainContainer'>
 				<div className='elements'>
 					<h1 style={{margin:'0'}}>MPHO MOLEFE</h1>
