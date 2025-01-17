@@ -12,7 +12,12 @@
 			}
 		],
 		"certificates":[
-		
+			{
+				"company_name": "Amazon Web Service",
+				"certificate_name": "Cloud Practitioner Essentials",
+				"date": "17 January 2025",
+				"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/certificates/cloud_practitioner_essentials.png"
+			}
 		],
 		"education": [
 			{
