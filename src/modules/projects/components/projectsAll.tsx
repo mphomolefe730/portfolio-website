@@ -23,7 +23,7 @@ function ProjectsAll( prop : { category?: string } ){
 						<div>
 							<div style={{ margin: '0px 5px' }}>
 								<h2 style={{ margin: '2.5px 0', textTransform: 'uppercase'}}>{ (project.title) ? project.title : '' } </h2>
-								<small style={{ color: 'gray' }}> { project?.last_update  }</small>
+								<small style={{ color: 'gray', alignItems: "center",display: "flex" }}> { project?.last_update  } <span style={{padding:"2.5px", backgroundColor: "green", color: "white", marginLeft: "5px", borderRadius: "5px", display: (project?.project_status == "Maintenance")?"block":"none"}}>Live</span></small>
 							</div>
 							<small>
 								<p className='sdescription'> { (project.description) ? project.description : '' } </p>
