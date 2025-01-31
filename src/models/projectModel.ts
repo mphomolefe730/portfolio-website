@@ -6,6 +6,7 @@ export default class ProjectModel {
 	timeline?:{date:string,description:string}[] | [];
 	image?: string;
 	resource_images?: {title:string,image_link:string}[];
+	project_status?: string;
 	project_link?:string;
 	video_link?:string;
 	category?: categoryTypes[];
