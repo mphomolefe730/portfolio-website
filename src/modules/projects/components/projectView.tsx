@@ -61,9 +61,10 @@ function ProjectView(){
 						}) 
 					}
 					
+					<h5 className="dateContainer">Tools Involved</h5>
 					{ projectInfo?.resource_images?.map((lang:{title:string,image_link:string},index:number)=>{
 						return(
-							<span key={index} className="btn btn-primary m-1"> { lang.title } </span>
+							<span key={index} > { lang.title }, </span>
 						)
 						})
 					}	
