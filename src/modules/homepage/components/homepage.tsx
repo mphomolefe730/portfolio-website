@@ -8,12 +8,21 @@ function HomePage(){
 			<Carousel fade className='carouselHolder'>
 				<Carousel.Item>
 					<img className="carouselImage" src="https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/background_images/53232095831_d69beeb347_k.jpg" alt="First slide"/>
+					<Carousel.Caption style={{backgroundColor: "rgba(0,0,0,0.25)"}}>
+						<p>Geekulture Unisa Hackathon 2023</p>
+					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item>
 					<img className="carouselImage" src="https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/background_images/WhatsApp Image 2023-10-01 at 08.53.24.jpeg" alt="Second slide"/>
+					<Carousel.Caption style={{backgroundColor: "rgba(0,0,0,0.25)"}}>
+						<p>Geekulture Unisa Hackathon 2023</p>
+					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item>
 					<img className="carouselImage" src="https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/background_images/WhatsApp Image 2024-08-29 at 9.23.45 PM.jpeg" alt="Third slide"/>
+					<Carousel.Caption style={{backgroundColor: "rgba(0,0,0,0.25)"}}>
+						<p>AWS Summit Johannesburg 2024</p>
+					</Carousel.Caption>
 				</Carousel.Item>
 			</Carousel>
 			{/*
