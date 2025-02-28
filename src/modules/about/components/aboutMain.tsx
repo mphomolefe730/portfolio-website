@@ -36,7 +36,7 @@ function AboutMain(){
 						return(
 							<div key={index} className="informationPill">
 								<div>
-									<h3>{ job.company_name.toUpperCase() } </h3>
+									<h3 className="company_name">{ job.company_name.toUpperCase() } </h3>
 								</div>
 								<div className="splitTwo">
 									<div> Title: </div>
@@ -60,7 +60,7 @@ function AboutMain(){
 						return(
 							<div key={index} className="informationPill">
 								<div>
-									<h3>{ job.company_name.toUpperCase() } </h3>
+									<h3 className="company_name">{ job.company_name.toUpperCase() } </h3>
 								</div>
 								<div className="splitTwo"> 
 									<div> Title: </div>
@@ -83,7 +83,7 @@ function AboutMain(){
 						return(
 							<div key={index} className="informationPill">
 								<div style={{backgroundImage: "{certificate.image}"}}>
-									<h3> { certificate.company_name.toUpperCase() } </h3>
+									<h3 className="company_name">{ certificate.company_name.toUpperCase() } </h3>
 								</div>
 								<div className="splitTwo"> 
 									<div> Course: </div>

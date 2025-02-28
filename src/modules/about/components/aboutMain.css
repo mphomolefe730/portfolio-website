@@ -24,3 +24,6 @@
 	text-transform: uppercase;
 	text-align: center;
 }
+.company_name{
+	animation: bounceAnimation 0.75s;
+}

@@ -57,13 +57,14 @@ a:hover{
 	}
 }
 
-@keyframes bottomAnimation{
-	 from{
-		position: absolute;
-		bottom: 100%;
+@keyframes bounceAnimation{
+	 0%{
+		letter-spacing: normal;
+	 }
+	 50%{
+		letter-spacing: 0.15rem;
 	 }
 	 to{
-		position: relative;
-		/*right:0;*/
+		letter-spacing: normal;
 	 }
 }
