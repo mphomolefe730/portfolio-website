@@ -16,6 +16,16 @@
 	font-size: larger;
 	margin: auto;
 }
+.x:hover{
+	background-color: white;
+	background: #005aa7; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #432371, #faae7b); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #432371, #faae7b);
+	padding: 12px;
+	border-radius: 12px;
+	cursor: none;
+}
+
 .projectVideoContainer{
 	margin: auto;
 	max-height: 90svh;

@@ -2,8 +2,22 @@
 
 body{
 	margin: 0;
+	cursor:url("https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/icons/cursor.png"), auto;
 	/*background-color: rgba(240, 244, 249, 1);*/
 	font-family: 'Roboto', 'system-ui';
+}
+a{
+	cursor: none;
+	color: black;
+	padding: 10px 0;
+	text-decoration: none;
+}
+a:hover{
+	background: #005aa7; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #432371, #faae7b); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #432371, #faae7b);
+	color: white;
+	border-radius: 15px;
 }
 .sdescription{
 	padding: 0 5px;         

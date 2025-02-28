@@ -18,7 +18,7 @@ function ProjectView(){
 	return(
 		<div className='projectInformationContainer'>
 			<Link to="/projects">
-				<div className="x">x</div>
+				<div className="x">close</div>
 			</Link>
 
 			<div className="projectVideoContainer">
