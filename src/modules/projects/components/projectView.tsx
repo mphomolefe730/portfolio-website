@@ -17,12 +17,27 @@ function ProjectView(){
 
 	return(
 		<div className='projectInformationContainer'>
-			<Link to="/projects">
-				<div className="x">close</div>
-			</Link>
+			<div className="navcenter">
+				<div>
+					<Link to="/projects">
+						<span className="x"> CLOSE </span>
+					</Link>
+				</div>
+				<div>
+					<span className="x">
+						SHARE
+					</span>
+					<span className="x">
+						<a href={ projectInfo?.project_link}>VIEW WEBSITE </a>
+					</span>
+				</div>
+			</div>
 
 			<div className="projectVideoContainer">
-				<div style={{ display:'grid', gridTemplateColumns: '2fr 1fr', marginBottom: "10px" }}>
+				<div style={{backgroundColor: "black"}}>
+					<iframe height="240" style={{ width:"100%"}} src={projectInfo?.video_link} allow="autoplay"></iframe>
+				</div>
+				<div style={{ display:'grid', gridTemplateColumns: '2fr 1fr', margin: " 10px 5px" }}>
 					<div>
 						<h5 className="card-text m-0"> { projectInfo?.title?.toUpperCase() }</h5>
 						<small>
@@ -30,13 +45,9 @@ function ProjectView(){
 							<div> status: { projectInfo?.project_status } </div>
 						</small>
 					</div>
-					<button className="btn btn-primary m-1">
-						<a href={ projectInfo?.project_link}>VIEW WEBSITE </a>
-					</button>
+
 				</div>
-				<div style={{backgroundColor: "black"}}>
-					<iframe height="240" style={{ width:"100%"}} src={projectInfo?.video_link} allow="autoplay"></iframe>
-				</div>
+
 				<div style={{ display: projectInfo?.warning ? 'block' : 'none' }}> 
 					<Alert variant="warning">
 						{ warning }

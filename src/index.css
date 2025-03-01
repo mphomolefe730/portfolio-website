@@ -19,6 +19,16 @@ a:hover{
 	color: white;
 	border-radius: 15px;
 }
+.navcenter{
+	margin: 5px auto;
+	border-radius: 12px;
+	padding: 10px 2.5px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 900px;
+	background-color: white;
+}
 .sdescription{
 	padding: 0 5px;         
     display: -webkit-box; 
@@ -62,7 +72,7 @@ a:hover{
 		letter-spacing: normal;
 	 }
 	 50%{
-		letter-spacing: 0.15rem;
+		letter-spacing: 0.05rem;
 	 }
 	 to{
 		letter-spacing: normal;
