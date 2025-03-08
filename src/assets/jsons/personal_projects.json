@@ -58,11 +58,11 @@
 			},
 			{
 				"date":"9 April - 9 June 2024",
-				"description":"Introduction of sellers portal. The process of dividing the application into sellers version and customer version. This is the phase of allowing seller to edit and their profiles and products ad they see fit. Feature Introducted: Order and sell analytics represented using graphs, Ability to accept and decline orders, Sellers being able to edit thier profiles, Custumers being able to see seller profiles, Customers being able to checkout"
+				"description":"Introduction of sellers portal. The process of dividing the application into sellers and customer version. This is the phase of allowing seller to edit and their profiles and products as they see fit. Feature Introducted: Order and sell analytics represented using graphs, Ability to accept and decline orders, Sellers being able to edit thier profiles, Custumers being able to see seller profiles, Customers being able to checkout, Chat function for all orders."
 			},
 			{
 				"date":"3 - 30 August 2024",
-				"description":"Bug fixes and existing feature improvements. Introducted feature: Add business profiles - to help large organisations better manage their stuff, Seller order filtering to better pioritize their orders, Add business portal to help seller better understand platform and tools, Customers can add description to their order(s) - to help seller understand their order."
+				"description":"Bug fixes and existing feature improvements. Introducted feature: Add business profiles - to help large organisations better manage their stuff, Seller order filtering to better pioritize their orders, Add business portal to help seller better understand platform and tools, Customers can add notes to their order(s) - to help seller understand their order better."
 			}
 		],
 		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/ecommerce_connect.png",
@@ -103,9 +103,12 @@
 		"timeline":[
 			{
 				"date": "Oct 2023",
-				"description": "Introduction to the team and project. Member are made familiar to the tech stack being used, given time to familiarise themselves with the code based of the already existing project, individual goal setting and given an clear vision of what is expected from each individual involved."
+				"description": "Introduction to the team and project. Member are made familiar eith exist tech stack being used by company, given time to familiarise themselves with the code based of the project, individual goal setting and given an clear vision of what is expected from each individual involved. During this time, testing and analysis is done for both the project and individual members of the team to identify gaps and a plan of action."
 			},{
-				"date":"",
+				"date":"November 2023 - April 2024",
+				"description":"Implementation of fixes, feature and structure based on stackholder requirements. The plan was structured into 3 phase (Structure, Fixes/Improvement and Feature). Structure, The team changes the overall structure of existing project to not just help it scale better by adding cloud platform like AWS and Azure into the project, removing anything that hard coded and divide services to improve and optimizethem based on company resources. Fixes/Improvements, since its an already existing project and has functionality and feature, the team is asked to fix and adjust them to current infrustructure and make improvements where is needed. This phase involved a lot of end-to-end testing as it introducted some breaking change in some services - alongside some unexpected behaviour and bugs. As an NDA was signed I can not mention everything but here are a few im allowed to share - some pages in the application were mixing with each other or not closing at all, we needed to implement a new way of managing state and use tags associated with the library of the framework as it was not done before. Another involved is the map and locaction services not working on some device (mainly huawei device because the application is using google map and service), a solution to this was constantly change and implemented different dependence and library and using the one with the most promising results. Feature, the stakeholder had some requires for new feature to be added or check if they can be done. Some of the things in the application we did not have full control of and as such flexibilty was limited, whether that be payment, information authoritarian using state systems and services ETC. During this phase, it was about getting as much done and updating their status whether it can be done or not and also managing the time and resources needed for them."
+			},{
+				"date":"May 2024",
 				"description":""
 			}
 		],
@@ -133,7 +136,7 @@
 		],
 		"warning": false,
 		"project_status": "Maintenance",
-		"project_link": "https://play.google.com/store/apps/details%3Fid%3Dio.rydly.driver%26hl%3Den_ZA%26gl%3DUS&ved=2ahUKEwj2r_-qooaGAxWGBdsEHaqAAwwQFnoECA8QAQ&usg=AOvVaw1r6lNy6MrFJUtI1w0QeEwP",
+		"project_link": "https://rydly.co.za",
 		"video_link": "",
 		"category": ["all","commercial"],
 		"last_update": "02 October 2023"
