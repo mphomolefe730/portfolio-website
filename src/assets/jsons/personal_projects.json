@@ -61,7 +61,7 @@
 				"description":"Introduction of sellers portal. The process of dividing the application into sellers version and customer version. This is the phase of allowing seller to edit and their profiles and products ad they see fit. Feature Introducted: Order and sell analytics represented using graphs, Ability to accept and decline orders, Sellers being able to edit thier profiles, Custumers being able to see seller profiles, Customers being able to checkout"
 			},
 			{
-				"date":"3 - 30 Auguest 2024",
+				"date":"3 - 30 August 2024",
 				"description":"Bug fixes and existing feature improvements. Introducted feature: Add business profiles - to help large organisations better manage their stuff, Seller order filtering to better pioritize their orders, Add business portal to help seller better understand platform and tools, Customers can add description to their order(s) - to help seller understand their order."
 			}
 		],
@@ -99,11 +99,14 @@
 	},
 	{
 		"title": "Rydly",
-		"description": ["Rydly is a dynamic ride-sharing service that redefines the way users commute, connecting private vehicle owners with individuals sharing similar routes. With Rydly, users can seamlessly carpool, optimizing daily journeys for a more sustainable and cost-effective travel experience."],
+		"description": ["Rydly is a dynamic ride-sharing service that refines the way users commute, connecting private vehicle owners with individuals sharing similar routes. Rydly offers carpool services, optimized journeys for a more sustainable and cost-effective travel experience, Emergency services like SOS dispatch, ride sharing and live tracking for both driver and commuter, Communication features like on platform live chat and calls, Intergration with state services for account verification and auditting, On demand invoices and trip details, Different ride and pricing options to meet individual needs."],
 		"timeline":[
 			{
 				"date": "Oct 2023",
-				"description": ""
+				"description": "Introduction to the team and project. Member are made familiar to the tech stack being used, given time to familiarise themselves with the code based of the already existing project, individual goal setting and given an clear vision of what is expected from each individual involved."
+			},{
+				"date":"",
+				"description":""
 			}
 		],
 		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/rydly.png",
