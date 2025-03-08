@@ -105,17 +105,20 @@
 				"date": "Oct 2023",
 				"description": "Introduction to the team and project. Member are made familiar eith exist tech stack being used by company, given time to familiarise themselves with the code based of the project, individual goal setting and given an clear vision of what is expected from each individual involved. During this time, testing and analysis is done for both the project and individual members of the team to identify gaps and a plan of action."
 			},{
-				"date":"November 2023 - April 2024",
-				"description":"Implementation of fixes, feature and structure based on stackholder requirements. The plan was structured into 3 phase (Structure, Fixes/Improvement and Feature). Structure, The team changes the overall structure of existing project to not just help it scale better by adding cloud platform like AWS and Azure into the project, removing anything that hard coded and divide services to improve and optimizethem based on company resources. Fixes/Improvements, since its an already existing project and has functionality and feature, the team is asked to fix and adjust them to current infrustructure and make improvements where is needed. This phase involved a lot of end-to-end testing as it introducted some breaking change in some services - alongside some unexpected behaviour and bugs. As an NDA was signed I can not mention everything but here are a few im allowed to share - some pages in the application were mixing with each other or not closing at all, we needed to implement a new way of managing state and use tags associated with the library of the framework as it was not done before. Another involved is the map and locaction services not working on some device (mainly huawei device because the application is using google map and service), a solution to this was constantly change and implemented different dependence and library and using the one with the most promising results. Feature, the stakeholder had some requires for new feature to be added or check if they can be done. Some of the things in the application we did not have full control of and as such flexibilty was limited, whether that be payment, information authoritarian using state systems and services ETC. During this phase, it was about getting as much done and updating their status whether it can be done or not and also managing the time and resources needed for them."
+				"date":"November 2023 - December 2023",
+				"description":"Implementation of fixes, feature and structure based on stackholder requirements. The plan was structured into 3 phase (Structure, Fixes/Improvement and Feature). Structure, The team changes the overall structure of existing project to not just help it scale better by adding cloud platform like AWS and Azure into the project, removing anything that hard coded and divide services to improve and optimizethem based on company resources."
 			},{
-				"date":"May 2024",
-				"description":""
+				"date":"January 2024 - April 2024",
+				"description":"Fixes/Improvements, since its an already existing project and has functionality and feature, the team is asked to fix and adjust them to current infrustructure and make improvements where is needed. This phase involved a lot of end-to-end testing as it introducted some breaking change in some services - alongside some unexpected behaviour and bugs. As an NDA was signed I can not mention everything but here are a few im allowed to share - some pages in the application were mixing with each other or not closing at all, we needed to implement a new way of managing state and use tags associated with the library of the framework as it was not done before. Another involved is the map and locaction services not working on some device (mainly huawei device because the application is using google map and service), a solution to this was constantly change and implemented different dependence and library and using the one with the most promising results."
+			},{
+				"date":"May 2024 - December 2024",
+				"description":"Feature, the stakeholder had some requires for new feature to be added or check if they can be done. Some of the things in the application we did not have full control of and as such flexibilty was limited, whether that be payment, information authoritarian using state systems and services ETC. During this phase, it was about getting as much done and updating their status whether it can be done or not and also managing the time and resources needed for them."
 			}
 		],
 		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/rydly.png",
 		"resource_images": [
 			{
-				"title": "Ionoic Angular",
+				"title": "Ionic Angular",
 				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/ionic_logo.png"
 			},{
 				"title": "PostgresSQL",
