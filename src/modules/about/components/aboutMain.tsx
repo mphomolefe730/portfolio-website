@@ -5,6 +5,7 @@ import { useState } from 'react';
 function AboutMain(){
 	const tabs = ['About','Experience','Education', 'Certificates'];
 	let [activeIndex, setActiveIndex] = useState(0);
+	const dateV = new Date();
 	
 	let showTab = (index:number) => {
 		setActiveIndex(index);
@@ -25,8 +26,8 @@ function AboutMain(){
 						}) 
 					}
 					<div className='aboutHeroContainer'>
-						<div className='aboutHero'><h1>full stack</h1>developer</div>
-						<div className='aboutHero'><h1>2+</h1>years</div>
+						<div className='aboutHero'><h1>full-stack</h1>developer</div>
+						<div className='aboutHero'><h1>{dateV.getFullYear() - (dateV.getFullYear()-3)}+</h1>years</div>
 						<div className='aboutHero'><h1>Open</h1>to work</div>
 					</div>
 				</div>
