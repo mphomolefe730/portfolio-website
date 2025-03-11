@@ -41,7 +41,7 @@ function ProjectView(){
 			</div>
 
 			<div className="projectVideoContainer">
-				<div class="iframe-container">
+				<div className="iframe-container">
 					<div id='loader'></div>
 					<iframe height="240" onLoad={ () => hideLoader() } style={{ width:"100%"}} src={projectInfo?.video_link} allow="autoplay"></iframe>
 				</div>
