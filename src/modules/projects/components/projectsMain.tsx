@@ -11,18 +11,23 @@ function ProjectMain(){
 	}
 	
 	return(
-		<div className="projects">
-			<nav className="projectMainNav" style={{margin: '12px 0'}}>
-			{	
-				tabs.map((tab,index)=>{
-					return (
-						<span key={index} onClick={ ()=> filterContent( Number(index)) } className={(tabIndex == index) ? 'active1' : 'navElement'}> { tab } </span>
-					)
-				})
-			}
-			</nav>
-			<Outlet/>
-			<ProjectsAll category={ tabs[tabIndex] }/>
+		<div>
+			<div className="projects">
+				<nav className="projectMainNav" style={{margin: '12px 0'}}>
+				{	
+					tabs.map((tab,index)=>{
+						return (
+							<span key={index} onClick={ ()=> filterContent( Number(index)) } className={(tabIndex == index) ? 'active1' : 'navElement'}> { tab } </span>
+						)
+					})
+				}
+				</nav>
+				<Outlet/>
+				<ProjectsAll category={ tabs[tabIndex] }/>
+			</div>
+			<div style={{textAlign: 'center', backgroundColor: 'red', color: 'white', padding: '5px', margin: '5px auto', borderRadius: '10px', maxWidth: '900px'}}>
+				<span>IMPORTANT: scroll more, click item for more details</span>
+			</div>
 		</div>
 	)
 }

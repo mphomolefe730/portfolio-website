@@ -14,6 +14,13 @@ function ProjectView(){
 	warning = warning.split('*').map((line, index) => {
          return (<span key={index}> {line} <br /> </span>)
 	}).toString();
+	let hideLoader = () => {
+		const loader = document.getElementById('loader');
+		const iframe = document.querySelector('iframe');
+
+		loader.style.display = 'none';
+		iframe.style.display = 'block';
+	}
 
 	return(
 		<div className='projectInformationContainer'>
@@ -34,8 +41,9 @@ function ProjectView(){
 			</div>
 
 			<div className="projectVideoContainer">
-				<div style={{backgroundColor: "black"}}>
-					<iframe height="240" style={{ width:"100%"}} src={projectInfo?.video_link} allow="autoplay"></iframe>
+				<div class="iframe-container">
+					<div id='loader'></div>
+					<iframe height="240" onLoad={ () => hideLoader() } style={{ width:"100%"}} src={projectInfo?.video_link} allow="autoplay"></iframe>
 				</div>
 				<div style={{ display:'grid', gridTemplateColumns: '2fr 1fr', margin: " 10px 5px" }}>
 					<div>
