@@ -6,9 +6,9 @@ nav{
 }
 .navContainer{
 	/*background-color: white;
-	box-shadow: 0 1px 2px 0 black;
-	border: 1.5px solid black;*/
-	border-radius: 6px;
+	box-shadow: 0 1px 2px 0 black;*/
+	border-bottom: 1.5px solid black;
+	/*border-radius: 6px;*/
 	padding: 5px 0px;
 	display: inline-flex;
 	min-width: 50%;
