@@ -35,7 +35,7 @@ function ProjectView(){
 						SHARE
 					</span>
 					<span className="x">
-						<a href={ projectInfo?.project_link}>VIEW WEBSITE </a>
+						<a href={ projectInfo?.project_link} target="_blank" rel="noopener noreferrer"                                                                        >VIEW WEBSITE </a>
 					</span>
 				</div>
 			</div>

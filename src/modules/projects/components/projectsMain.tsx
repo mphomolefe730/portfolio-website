@@ -26,7 +26,7 @@ function ProjectMain(){
 				<ProjectsAll category={ tabs[tabIndex] }/>
 			</div>
 			<div style={{textAlign: 'center', backgroundColor: 'red', color: 'white', padding: '5px', margin: '5px auto', borderRadius: '10px', maxWidth: '900px'}}>
-				<span>IMPORTANT: scroll more, click item for more details</span>
+				<span>IMPORTANT: scroll for more, click item for more details</span>
 			</div>
 		</div>
 	)
