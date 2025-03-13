@@ -94,6 +94,10 @@ function AboutMain(){
 									<div> Date: </div>
 									<div>{ certificate.date } </div>
 								</div>
+								<div className="splitTwo" style={{"display": (certificate.link != "#") ? "grid" : "none"}}>
+									<div> Credly: </div>
+									<div> <a href={certificate.link} target="_blank" rel="noopener noreferrer"> {certificate.link} </a> </div>
+								</div>
 							</div>
 						)
 					}) }
