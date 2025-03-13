@@ -13,16 +13,25 @@
 		],
 		"certificates":[
 			{
+				"company_name": "Amazon Web Services Training and Certification",
+				"certificate_name": "AWS Academy Graduate - AWS Academy Cloud Foundations",
+				"date": "12 March 2025",
+				"image": "#",
+				"link": "https://www.credly.com/badges/20b1f41f-839f-4e78-85b9-9f375db73edb"
+			},
+			{
 				"company_name": "Cisco",
 				"certificate_name": "Cisco Data Analytics Essentials",
 				"date": "31 January 2025",
-				"image": "#"
+				"image": "#",
+				"link": "https://www.credly.com/badges/4f228b09-28e0-4f11-99a9-c6e0eff2fa3f"
 			},
 			{
 				"company_name": "Amazon Web Service",
 				"certificate_name": "Cloud Practitioner Essentials",
 				"date": "17 January 2025",
-				"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/certificates/cloud_practitioner_essentials.png"
+				"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/certificates/cloud_practitioner_essentials.png",
+				"link": "#"
 			}
 		],
 		"education": [
