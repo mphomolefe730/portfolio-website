@@ -34,14 +34,14 @@ function ProjectView(){
 					<span className="x">
 						SHARE
 					</span>
-					<span className="x">
+					<span className="x" style={{ display: (projectInfo.project_link == '#') ? "none": "" }}>
 						<a href={ projectInfo?.project_link} target="_blank" rel="noopener noreferrer"                                                                        >VIEW WEBSITE </a>
 					</span>
 				</div>
 			</div>
 
 			<div className="projectVideoContainer">
-				<div className="iframe-container">
+				<div className="iframe-container" style={{ display: (projectInfo.video_link == '#') ? "none" : "block" }}>
 					<div id='loader'></div>
 					<iframe height="240" onLoad={ () => hideLoader() } style={{ width:"100%"}} src={projectInfo?.video_link} allow="autoplay"></iframe>
 				</div>
