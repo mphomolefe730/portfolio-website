@@ -95,10 +95,18 @@ a:hover{
 	 }
 	 50%{
 		letter-spacing: 0.05rem;
+		background: linear-gradient(to right, #432371, #faae7b);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	 }
 	 to{
 		letter-spacing: normal;
 	 }
+}
+@keyframes colorAnimation{
+	background: linear-gradient(to right, #432371, #faae7b);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 @keyframes spin {
