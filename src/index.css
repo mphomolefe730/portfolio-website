@@ -81,6 +81,14 @@ a:hover{
 	}
 }
 
+@keyframes rfadeAnimation{
+	from{
+		opacity: 100;
+	}to{
+		opacity: 0;
+	}
+}
+
 @keyframes bounceAnimation{
 	 0%{
 		letter-spacing: normal;
