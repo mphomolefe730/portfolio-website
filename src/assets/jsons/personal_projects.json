@@ -19,7 +19,7 @@
 		"warning": false,
 		"project_status": "Deployment",
 		"project_link": "#",
-		"video_link": "",
+		"video_link": "#",
 		"category": ["all","personal"],
 		"last_update": "10 October 2024"
 	},
@@ -44,7 +44,7 @@
 		"warning": false,
 		"project_status": "Done",
 		"project_link": "https://github.com/mphomolefe730/betway-system/",
-		"video_link": "",
+		"video_link": "#",
 		"category": ["all","personal","data science"],
 		"last_update": "23 August 2024"
 	},
@@ -63,6 +63,18 @@
 			{
 				"date":"3 - 30 August 2024",
 				"description":"Bug fixes and existing feature improvements. Introducted feature: Add business profiles - to help large organisations better manage their stuff, Seller order filtering to better pioritize their orders, Add business portal to help seller better understand platform and tools, Customers can add notes to their order(s) - to help seller understand their order better."
+			},
+			{
+				"date": "8 March 2025",
+				"description": "Add product activity status, this will allow sells to choose whether they want their product to be seen by people or not."
+			},
+			{
+				"date": "19 March 2025",
+				"description": "Add product review section, people can see a products reviews regardless logged in or not, but you will need to logged in to interact with the reviews and you will need to have purchased the product to leave a review. currently, you have countless attempts at leave review but future will e limited to amount of times purchased.  "
+			},
+			{
+				"date": "21 March 2025",
+				"description": "Add product recommendation. Product recommednation are based on category relation, and future user patterns. There is a limit of 10 product recommendtions."
 			}
 		],
 		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/ecommerce_connect.png",
@@ -140,7 +152,7 @@
 		"warning": false,
 		"project_status": "Maintenance",
 		"project_link": "https://rydly.co.za",
-		"video_link": "",
+		"video_link": "#",
 		"category": ["all","commercial"],
 		"last_update": "02 October 2023"
 	},
@@ -177,7 +189,7 @@
 		"warning": false,
 		"project_status": "Deployment",
 		"project_link": "#",
-		"video_link": "",
+		"video_link": "#",
 		"category": ["all","collaborative","hackathon"],
 		"last_update": "28 September 2023"
 	},
