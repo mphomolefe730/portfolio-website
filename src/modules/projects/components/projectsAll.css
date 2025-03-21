@@ -37,6 +37,6 @@
 @media (max-width: 810px) {
 	.projectContainer{
 		display: block;
-		/*text-align: center;*/
+		border-bottom: 2px solid black;
 	}
 }
