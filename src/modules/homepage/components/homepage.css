@@ -4,11 +4,22 @@
 	max-width: 600px;
 	margin: auto;
 	/* place-content:end; */
-	animation: fadeAnimation 2.5s;
+	animation: fadeAnimation 4.5s;
 	/* background: url('/src/assets/background_picture.png');
 	background-position: center;  Center the image 
 	background-repeat: no-repeat;  Do not repeat the image
 	background-size: cover; */
+}
+.welcomeText{
+	height: 89svh;
+	margin: auto;
+	width: 100%;
+	max-width: 900px;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to right, #432371, #faae7b);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 .carouselImage{
 	width: 100%;
