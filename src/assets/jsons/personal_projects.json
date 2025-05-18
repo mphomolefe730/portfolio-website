@@ -2,7 +2,7 @@
 	{
 		"title": "Reverse 2048",
 		"description": [
-			"Write C++ code for a program that reads in an unknown num- ber of “Reverse 2048” games. The program must then use an algorithm to solve each of the solvable puzzles given in the input file", 
+			"Write C++ code for a program that reads in an unknown number of “Reverse 2048” games. The program must then use an algorithm to solve each of the solvable puzzles given in the input file", 
 			"Reverse 2048 is a variation of the classic 2048 puzzle game, a sliding tile game that is played on a 4×4 grid. Unlike the original game, where the goal is to merge tiles to reach 2048, in Reverse 2048, the player must divide tiles to reach the smallest possible value, typically tile 2. The game is played using numerical tiles, each having values that are powers of 2. The main rules of the game are:", 
 			"1) Players slide tiles in four possible directions (up, down, left, right).",
 			"2) When two tiles of the same value collide, they merge into one tile with half the value.",
@@ -36,6 +36,7 @@
 				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/ISO_C++_Logo.png"
 			}
 		],
+		"type": "game",
 		"warning": false,
 		"project_status": "Done",
 		"project_link": "https://github.com/mphomolefe730/reverse-2048-game",
@@ -59,6 +60,7 @@
 				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/sql.png"
 			}
 		],
+		"type": "website",
 		"warning": false,
 		"project_status": "Deployment",
 		"project_link": "#",
@@ -84,6 +86,7 @@
 				"image_link": "#"
 			}
 		],
+		"type": "analysis",
 		"warning": false,
 		"project_status": "Done",
 		"project_link": "https://github.com/mphomolefe730/betway-system/",
@@ -145,6 +148,7 @@
 				"image_link": "#"
 			}
 		],
+		"type": "website",
 		"warning": false,
 		"project_status": "Maintenance",
 		"project_link": "https://ecommerce-test-production-1b0f.up.railway.app/",
@@ -192,6 +196,7 @@
 				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/docker_logo.png"
 			}
 		],
+		"type": "website",
 		"warning": false,
 		"project_status": "Maintenance",
 		"project_link": "https://rydly.co.za",
@@ -229,6 +234,7 @@
 				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/Official_PHP_Logo.svg"
 			}
 		],
+		"type": "website",
 		"warning": false,
 		"project_status": "Deployment",
 		"project_link": "#",
@@ -253,6 +259,7 @@
 				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/bootstrap-4.svg"
 			}
 		],
+		"type": "website",
 		"warning": false,
 		"project_status": "Maintenance",
 		"project_link": "https://codepilot4.web.app/",

@@ -35,7 +35,9 @@ function ProjectView(){
 						SHARE
 					</span>
 					<span className="x" style={{ display: (projectInfo.project_link == '#') ? "none": "" }}>
-						<a href={ projectInfo?.project_link} target="_blank" rel="noopener noreferrer"                                                                        >VIEW WEBSITE </a>
+						<a style={{ display: (projectInfo.type == 'website') ? "": "none" }} href={ projectInfo?.project_link} target="_blank" rel="noopener noreferrer">VIEW WEBSITE </a>
+						<a style={{ display: (projectInfo.type == 'game') ? "": "none" }} href={ projectInfo?.project_link} target="_blank" rel="noopener noreferrer">VIEW GITHUB </a>
+						<a style={{ display: (projectInfo.type == 'analysis') ? "": "none" }}href={ projectInfo?.project_link} target="_blank" rel="noopener noreferrer">VIEW ARTICLE </a>
 					</span>
 				</div>
 			</div>
@@ -48,7 +50,7 @@ function ProjectView(){
 				<div style={{ display:'grid', gridTemplateColumns: '2fr 1fr', margin: " 10px 5px" }}>
 					<div>
 						<h5 className="card-text m-0"> { projectInfo?.title?.toUpperCase() }</h5>
-						<small>
+						<small className="text-muted">
 							<div> created: { projectInfo?.last_update } </div>
 							<div> status: { projectInfo?.project_status } </div>
 						</small>
@@ -73,7 +75,7 @@ function ProjectView(){
 								<h5 className="dateContainer"> {object?.date}</h5>
 								<div style={{display: "grid", gridTemplateColumns: "0.5fr 10fr"}}>
 									<div className="timelineBody"> </div>
-									<p key={index} className="text-muted p-2"> { object?.description } </p>
+									<p key={index} className="p-2"> { object?.description } </p>
 								</div>
 							</div>
 							)

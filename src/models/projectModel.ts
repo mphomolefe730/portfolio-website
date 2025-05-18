@@ -11,4 +11,5 @@ export default class ProjectModel {
 	video_link?:string;
 	category?: categoryTypes[];
 	last_update?:string;
+	type?: string;
 }
