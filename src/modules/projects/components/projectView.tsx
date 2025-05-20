@@ -45,7 +45,7 @@ function ProjectView(){
 			<div className="projectVideoContainer">
 				<div className="iframe-container" style={{ display: (projectInfo.video_link == '#') ? "none" : "block" }}>
 					<div id='loader'></div>
-					<iframe height="240" onLoad={ () => hideLoader() } style={{ width:"100%"}} src={projectInfo?.video_link} allow="autoplay"></iframe>
+					<iframe height="240" onLoad={ () => hideLoader() } style={{ width:"100%", borderRadius: '10px'}} src={projectInfo?.video_link} allow="autoplay"></iframe>
 				</div>
 				<div style={{ display:'grid', gridTemplateColumns: '2fr 1fr', margin: " 10px 5px" }}>
 					<div>

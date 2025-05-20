@@ -10,10 +10,10 @@ function NavBar(){
 	
 	return(
         <nav>
+			<a className='mm desktopNav' href='/'> 
+				MM
+			</a>
 			<div className="desktopNav">
-				<div className='mm'> 
-					<a href='/'>MM </a>
-				</div>
 				<div className='navContainer'>
 					<a className='navTitle' href='/about'>About</a>
 					<a className='navTitle' href='/projects'>Projects</a>

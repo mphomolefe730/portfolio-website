@@ -15,12 +15,30 @@ nav{
 	justify-content: space-evenly;
 }
 .mm{
-	/*padding: 15px;
-	box-shadow: 0 0 2px 0 black;
-	background-color: white;*/
+	padding: 15px 5px;
+	border: 2px solid;
+	border-image: linear-gradient(to right, #432371, #faae7b) 1;
 	margin: 0 15px;
-	/*border-radius: 50%;*/
 	display: inline-flex;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	background: linear-gradient(to right, #432371, #faae7b);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.mm:hover{
+	border-radius: 0;
+	color: white;
+	border: 0;
+	background: none;
+	-webkit-background-clip: initial;
+	-webkit-text-fill-color: initial;
+	background-clip: initial;
+	color: white;
+	padding: 17px 7px;
+	background: linear-gradient(to right, #432371, #faae7b);
 }
 .navTitle{
 	text-transform: uppercase;
@@ -29,7 +47,6 @@ nav{
 .mobileNav{
 	display:none;
 }
-
 
 @media (max-width: 810px) {
 	.mobileNav{
