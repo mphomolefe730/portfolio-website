@@ -22,9 +22,18 @@
 		8px 8px 16px rgba(0,0,0,0.15), /* drop shadow for lift */
 		-4px -4px 12px rgba(255,255,255,0.7); /* soft outer glow */
 }
+.alert{
+	text-align: center;
+	background-color: red;
+	color: white;
+	padding: 5px;
+	margin: 5px auto;
+	border-radius: 10px;
+	max-width: 900px;
+}
 .projects{
 	background-color:white;
-	max-height: 80svh;
+	max-height: 85svh;
 	height: 100svh;
 	overflow: auto;
 	max-width: 900px;
