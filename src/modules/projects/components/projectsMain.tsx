@@ -25,7 +25,7 @@ function ProjectMain(){
 				<Outlet/>
 				<ProjectsAll category={ tabs[tabIndex] }/>
 			</div>
-			<div className='alert'>
+			<div className='alert1'>
 				<span>IMPORTANT: scroll for more, click item for more details</span>
 			</div>
 		</div>
