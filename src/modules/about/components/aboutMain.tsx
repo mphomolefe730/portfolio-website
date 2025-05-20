@@ -26,9 +26,9 @@ function AboutMain(){
 						}) 
 					}
 					<div className='aboutHeroContainer'>
-						<div className='aboutHero'><h1>full-stack</h1>developer</div>
-						<div className='aboutHero'><h1>{dateV.getFullYear() - (dateV.getFullYear()-3)}+</h1>years</div>
-						<div className='aboutHero'><h1>Open</h1>to work</div>
+						<div className='aboutHero informationPill'><h1>full</h1>stack developer</div>
+						<div className='aboutHero informationPill'><h1>{dateV.getFullYear() - (dateV.getFullYear()-3)}+</h1>years experience</div>
+						<div className='aboutHero informationPill'><h1>Open</h1>to work</div>
 					</div>
 				</div>
 				

@@ -8,7 +8,7 @@
 	align-items: center;
 }
 .navElement:hover{
-	background-color: white;
+	color: white;
 	background: #005aa7; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #432371, #faae7b); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #432371, #faae7b);
@@ -16,6 +16,11 @@
 	border-radius: 12px;
 	border: 0px;
 	cursor: none;
+	box-shadow:
+		inset 2px 2px 4px #c1c1c1,   /* inner shadow (top-left) for depth */
+		inset -2px -2px 4px #ffffff, /* inner highlight (bottom-right) for light */
+		8px 8px 16px rgba(0,0,0,0.15), /* drop shadow for lift */
+		-4px -4px 12px rgba(255,255,255,0.7); /* soft outer glow */
 }
 .projects{
 	background-color:white;

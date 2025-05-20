@@ -18,7 +18,7 @@ function ProjectsAll( prop : { category?: string } ){
 				<Link to={`${project?.title?.replace(' ','-')}`} key={index}>
 					<div className='projectContainer'>
 						<div> 
-							<img className='projectImage' src={ (project.image) ? project.image : '' }/>
+							<img className='projectImage informationPill' src={ (project.image) ? project.image : '' }/>
 						</div>
 						<div>
 							<div style={{ margin: '0px 5px' }}>
@@ -31,7 +31,7 @@ function ProjectsAll( prop : { category?: string } ){
 							<div>
 								{ project.resource_images?.map((image,number)=>{
 									return (
-										<img className='logoImages' key={number} src={image.image_link} alt={image.title} />
+										<img className='logoImages informationPill' key={number} src={image.image_link} alt={image.title} />
 									)
 								}) }
 							</div>

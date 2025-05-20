@@ -18,6 +18,12 @@ a:hover{
 	background: linear-gradient(to right, #432371, #faae7b);
 	color: white;
 	border-radius: 15px;
+	cursor: none;
+	box-shadow:
+		inset 2px 2px 4px #c1c1c1,   /* inner shadow (top-left) for depth */
+		inset -2px -2px 4px #ffffff, /* inner highlight (bottom-right) for light */
+		8px 8px 16px rgba(0,0,0,0.15), /* drop shadow for lift */
+		-4px -4px 12px rgba(255,255,255,0.7); /* soft outer glow */
 }
 
 #loader {
@@ -53,9 +59,14 @@ a:hover{
 }
 .informationPill{
 	margin: 5px 0;
-	border: 1.5px solid black;
 	border-radius: 12px;
 	padding: 10px;
+	background: linear-gradient(145deg,#f0f0f0,#cacaca);
+	box-shadow:
+		inset 2px 2px 4px #c1c1c1,   /* inner shadow (top-left) for depth */
+		inset -2px -2px 4px #ffffff, /* inner highlight (bottom-right) for light */
+		8px 8px 16px rgba(0,0,0,0.15), /* drop shadow for lift */
+		-4px -4px 12px rgba(255,255,255,0.7); /* soft outer glow */
 }
 .active{
 	/*background-color: rgba(194,231,255);
