@@ -35,8 +35,8 @@
 
 .projects{
 	background-color:white;
-	max-height: 85svh;
-	height: 100svh;
+	max-height: 80svh;
+	/*height: 100svh;*/
 	overflow: auto;
 	max-width: 900px;
 	margin: auto;
