@@ -10,6 +10,7 @@ import ProjectAll from './modules/projects/components/projectsAll.tsx';
 import ProjectView from './modules/projects/components/projectView.tsx';
 import AboutMain from './modules/about/components/aboutMain.tsx';
 import UnderConstruction from './modules/error/components/underConstruction.tsx';
+import Contact from './modules/contact/components/contact.tsx';
 
 const router = createBrowserRouter([
   { 
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path:'/about',
     element: <AboutMain />
+  },
+  {
+    path:'/contact',
+    element: <Contact />
   },
   {
     path:'/projects',
