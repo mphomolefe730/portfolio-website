@@ -51,12 +51,6 @@ function HomePage(){
 					</Carousel.Caption>
 				</Carousel.Item>
 			</Carousel>
-			{/*
-			<div style={{ backgroundImage: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)", padding: "5px", borderRadius: "12px"}}>
-				<p><a style={ {color: "white" }} href="https://za.linkedin.com/in/mpho-molefe-a67ab9284">LinkedIn</a></p>
-				<p><a style={{ color: "white" }} href="https://x.com/mphomolefeww">Twitter</a></p>
-			</div>
-			*/}
 
 			<div className='mainContainer'>
 				<div className='elements informationPill'>
