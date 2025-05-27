@@ -29,7 +29,7 @@ function NavBar(){
 				{
 					socials.map((socialMedia,index) => {
 						return(
-							<a className='informationPill' target="_blank" href={socialMedia.link}> {socialMedia.name} </a>
+							<a className='informationPill' key={index} target="_blank" href={socialMedia.link}> {socialMedia.name} </a>
 						)
 					})
 				}
@@ -55,7 +55,7 @@ function NavBar(){
 							{
 								socials.map((socialMedia,index) => {
 									return(
-										<a className='informationPill' target="_blank" href={socialMedia.link}> {socialMedia.name} </a>
+										<a className='informationPill' key={index} target="_blank" href={socialMedia.link}> {socialMedia.name} </a>
 									)
 								})
 							}
