@@ -47,6 +47,15 @@ nav{
 .mobileNav{
 	display:none;
 }
+.socialContainer{
+	position: absolute;
+	left: 5px;
+	margin: 0 15px;
+	top: 40%;
+	display: inline-grid;
+	text-transform: uppercase;
+	border-radius: 16px;
+  }
 
 @media (max-width: 810px) {
 	.mobileNav{
