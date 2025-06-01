@@ -14,12 +14,14 @@ function ProjectView(){
 	warning = warning.split('*').map((line, index) => {
          return (<span key={index}> {line} <br /> </span>)
 	}).toString();
+
 	let hideLoader = () => {
 		const loader = document.getElementById('loader');
 		const iframe = document.querySelector('iframe');
 
 		loader.style.display = 'none';
 		iframe.style.display = 'block';
+		
 	}
 
 	return(
@@ -42,7 +44,7 @@ function ProjectView(){
 				</div>
 			</div>
 
-			<div className="projectVideoContainer">
+			<div className="projectVideoContainer childGrown .element-to-remove">
 				<div className="iframe-container" style={{ display: (projectInfo.video_link == '#') ? "none" : "block" }}>
 					<div id='loader'></div>
 					<iframe height="240" onLoad={ () => hideLoader() } style={{ width:"100%", borderRadius: '10px'}} src={projectInfo?.video_link} allow="autoplay"></iframe>

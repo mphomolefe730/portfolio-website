@@ -2,6 +2,7 @@
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	border-top: 1.5px solid black;
+	animation: unblur 0.25s linear forwards;
 }
 .aboutContainer{
 	/*max-height: 80svh;*/

@@ -41,7 +41,6 @@
 	padding: 12px;
 	border-radius: 12px;
 	margin: 0 5px;
-	animation: fadeAnimation 2.5s ease-in;
 }
 .project{
 	display: inline-block;

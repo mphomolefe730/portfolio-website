@@ -24,6 +24,8 @@ a:hover{
 		inset -2px -2px 4px #ffffff, /* inner highlight (bottom-right) for light */
 		8px 8px 16px rgba(0,0,0,0.15), /* drop shadow for lift */
 		-4px -4px 12px rgba(255,255,255,0.7); /* soft outer glow */
+
+	animation: unblur 0.2s linear forwards;
 }
 
 #loader {
@@ -78,11 +80,7 @@ a:hover{
 	justify-content: center;
 	border-radius: 6px;
 }
-.active{
-	/*background-color: rgba(194,231,255);
-	padding: 12px;
-	border-radius: 12px;*/
-}
+
 .active1{
 	background-color: rgba(0,0,0,1);
 	color: white;
@@ -94,6 +92,11 @@ a:hover{
 	margin: 5px 10px;
 	text-transform: uppercase;
 }
+
+.childGrown{
+	animation: fadeInScaleUp 0.25s forwards;
+}
+
 @keyframes fadeAnimation{
 	from{
 		opacity: 0;
@@ -124,6 +127,7 @@ a:hover{
 		letter-spacing: normal;
 	 }
 }
+
 @keyframes colorAnimation{
 	background: linear-gradient(to right, #432371, #faae7b);
 	-webkit-background-clip: text;
@@ -136,5 +140,24 @@ a:hover{
 	}
 	100% {
 		transform: rotate(360deg);
+	}
+}
+
+@keyframes unblur {
+	from {
+		filter: blur(6px);
+	}
+	to {
+		filter: blur(0);
+	}
+} 
+@keyframes fadeInScaleUp {
+	from {
+		opacity: 0;
+		transform: scale(0);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
 	}
 }

@@ -31,7 +31,7 @@ function HomePage(){
 	return(
 		<div style={{ height: '89svh', display:'grid' , gridTemplateRows: '2fr 4fr'}}>
 			<h1 style={{ display: (visible < 5)? 'flex' : 'none'}} className='welcomeText' >{ welcomeMessage }</h1>
-			<Carousel fade className='carouselHolder' style={{ display: (visible == 5) ? 'block' : 'none', animation: 'fadeAnimation 2s' }}>
+			<Carousel fade className='carouselHolder childGrown' style={{ display: (visible == 5) ? 'block' : 'none' }}>
 				<Carousel.Item>
 					<img className="carouselImage" src="https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/background_images/53232095831_d69beeb347_k.jpg" alt="First slide"/>
 					<Carousel.Caption>
