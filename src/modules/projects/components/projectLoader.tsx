@@ -30,7 +30,7 @@ function ProjectLoader(){
         return () => clearInterval(interval);
     }, []);
 
-  const loadingIndicator = Array(length).fill("-").map((char, index) => (index === position ? "|" : "=")).join("");
+  const loadingIndicator = Array(length).fill("-").map((_char, index) =>  (index === position ? "|" : "=")).join("");
 
     return(
 		<div style={{ margin: "auto", maxWidth: "600px", textAlign: "center", alignContent: "center", position: 'relative', height: "80svh"}}>
