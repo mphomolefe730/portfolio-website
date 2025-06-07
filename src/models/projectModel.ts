@@ -8,6 +8,7 @@ export default class ProjectModel {
 	resource_images?: {title:string,image_link:string}[];
 	project_status?: string;
 	project_link?:string;
+	confirmation_link?:string;
 	video_link?:string;
 	category?: categoryTypes[];
 	last_update?:string;

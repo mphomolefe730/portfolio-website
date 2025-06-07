@@ -151,7 +151,8 @@
 		"type": "website",
 		"warning": false,
 		"project_status": "Maintenance",
-		"project_link": "https://ecommerce-test-production-1b0f.up.railway.app/",
+		"project_link": "https://ecommerce-test-3v4i.onrender.com/",
+		"confirmation_link": "https://ecommerce-test-api-i2se.onrender.com/api/products",
 		"video_link": "https://drive.google.com/file/d/11Ro4Zd11bmnPDBBMVXc8t90WkrNTor7b/preview",
 		"category": ["all","personal"],
 		"last_update": "03 March 2024"

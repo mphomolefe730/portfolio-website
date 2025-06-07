@@ -11,6 +11,7 @@ import ProjectView from './modules/projects/components/projectView.tsx';
 import AboutMain from './modules/about/components/aboutMain.tsx';
 import UnderConstruction from './modules/error/components/underConstruction.tsx';
 import Contact from './modules/contact/components/contact.tsx';
+import ProjectLoader from './modules/projects/components/projectLoader.tsx';
 
 const router = createBrowserRouter([
   { 
@@ -39,6 +40,9 @@ const router = createBrowserRouter([
         element: <ProjectView />
       }
     ]
+  },{
+    path: '/load/:projectName',
+    element: <ProjectLoader />
   },
   {
     path:'/blogs',
