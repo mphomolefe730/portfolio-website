@@ -67,7 +67,7 @@ function NavBar(){
 						<a className='navTitle' href='/blogs'><p>Blogs</p></a>
 						<a className='navTitle' href='/games'><p>Games</p></a>
 						<a className='navTitle' href='/videos'><p>Videos</p></a>
-						<a className='navTitle contactButton' href='/contact'> GET IN TOUCH</a>
+						{ /* <a className='navTitle contactButton' href='/contact'> GET IN TOUCH</a> */ }
 					</div>
 				</div>
 			</div>
