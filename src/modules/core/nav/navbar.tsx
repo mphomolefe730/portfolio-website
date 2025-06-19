@@ -4,21 +4,26 @@ import { useState } from 'react';
 
 function NavBar(){
 	let [open, setOpen] = useState(false);
-	let socials: {name:string,link:string}[] = [
+	let qrcode: { alt:string, text: string, linkToPhoto: string } = {
+		alt: 'QR code to view webiste on phone',
+		text: 'scan/view on phone',
+		linkToPhoto: 'https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/website_qr_code.png'
+	};
+	let socials: { name: string, link: string }[] = [
 		{
 			name: "LinkedIn",
 			link: "http://linkedin.com/in/mpho-molefe-a67ab9284/"
-		},{
+		}, {
 			name: "github",
 			link: "https://github.com/mphomolefe730"
-		},{
+		}, {
 			name: "email",
 			link: "mailto:mphomolefe730@gmail.com"
 		}
-	]
+	];
 	let showNav = () => {
 		setOpen(!open);
-	}
+	};
 	
 	return(
         <nav>
@@ -34,6 +39,12 @@ function NavBar(){
 					})
 				}
 			</div>
+
+			<div className='qrcodeContainer desktopNav'>
+				<img className='informationPill' src={qrcode.linkToPhoto} alt={qrcode.alt} />
+				<h6> {qrcode.text.toUpperCase()} </h6>
+			</div>
+
 			<div className="desktopNav">
 				<div className='navContainer'>
 					<a className='navTitle' href='/about'>About</a>

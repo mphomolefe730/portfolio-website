@@ -55,9 +55,22 @@ nav{
 	display: inline-grid;
 	text-transform: uppercase;
 	border-radius: 16px;
-  }
+ }
 
-@media (max-width: 810px) {
+.qrcodeContainer {
+	position: absolute;
+	right: 5px;
+	margin: 0 15px;
+	top: 40%;
+	text-transform: uppercase;
+	border-radius: 16px;
+}
+.qrcodeContainer img {
+	max-width: 150px;
+	transform: rotate(90deg);
+}
+
+@media (max-width: 950px) {
 	.mobileNav{
 		display: block;
 	}
