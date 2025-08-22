@@ -3,14 +3,48 @@ import { useState, useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
 function HomePage(){
-	let [ welcomeMessage, setWelcomeMessage ] = useState('WELCOME');
+	const key = 'alertPortfolioWebsite';
+	const expiryDays = 7;
+
+	const [welcomeMessage, setWelcomeMessage] = useState('WELCOME');
 	const [visible, setVisible] = useState(1);
-	let [ count, setCount] = useState(0);
-	let [ close, setClose] = useState(false);
+	const [count, setCount] = useState(0);
+	const [close, setClose] = useState(false);
+
+	const [storedValue, setStoredValue] = useState(() => {
+		if (typeof window === "undefined") return false;
+		try {
+			const item = localStorage.getItem(key);
+			if (!item) {
+				const now = new Date();
+				const item_1 = {
+					value: false,
+					expiry: now.getTime() + expiryDays * 24 * 60 * 60 * 1000,
+				};
+				localStorage.setItem(key, JSON.stringify(item_1));
+				return false;
+			} else {
+				const parsedItem = JSON.parse(item);
+				const now = new Date();
+				if (now.getTime() > parsedItem.expiry) {
+					localStorage.removeItem(key);
+					return false;
+				}
+				return parsedItem.value;
+			}
+		} catch {
+			return false;
+		}
+	});
 
 	useEffect(() => {
+		setClose(storedValue); 
+	}, [storedValue]);
+
+	useEffect(() => {
+		if (close) return;
 		const timer = setTimeout(() => {
-			switch(visible){
+			switch (visible) {
 				case 1:
 					setWelcomeMessage('UYAKWAMUKELA');
 					break;
@@ -24,19 +58,30 @@ function HomePage(){
 					setWelcomeMessage('WELCOME');
 					break;
 			}
-			if(visible < 5 && count < 9999){
-				(visible == 4) ? setVisible(0) : setVisible(visible+1);
-				setCount(count++);
+			if (visible < 4 && count < 9999) {
+				setVisible(prev => prev + 1);
+				setCount(prev => prev + 1);
+			} else {
+				setVisible(0);
 			}
 		}, 500);
 		return () => clearTimeout(timer);
-	},[visible]);
+	}, [visible, count, close]);
 
-	function closeWelcomeMessage(){
+	function closeWelcomeMessage() {
 		setCount(9999);
 		setVisible(0);
-		setClose(!close);
+		setClose(true);
+
+		const now = new Date();
+		const item = {
+			value: true,
+			expiry: now.getTime() + expiryDays * 24 * 60 * 60 * 1000,
+		};
+		localStorage.setItem(key, JSON.stringify(item));
+		setStoredValue(true);
 	}
+
 
 	return(
 		<div style={{ height: '89svh', display:'grid' , gridTemplateRows: '2fr 4fr'}}>
