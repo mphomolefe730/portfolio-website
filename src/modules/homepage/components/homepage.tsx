@@ -5,6 +5,9 @@ import Carousel from 'react-bootstrap/Carousel';
 function HomePage(){
 	let [ welcomeMessage, setWelcomeMessage ] = useState('WELCOME');
 	const [visible, setVisible] = useState(1);
+	let [ count, setCount] = useState(0);
+	let [ close, setClose] = useState(false);
+
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			switch(visible){
@@ -21,17 +24,33 @@ function HomePage(){
 					setWelcomeMessage('WELCOME');
 					break;
 			}
-			if(visible < 5){
-				setVisible(visible+1);
+			if(visible < 5 && count < 9999){
+				(visible == 4) ? setVisible(0) : setVisible(visible+1);
+				setCount(count++);
 			}
 		}, 500);
 		return () => clearTimeout(timer);
 	},[visible]);
 
+	function closeWelcomeMessage(){
+		setCount(9999);
+		setVisible(0);
+		setClose(!close);
+	}
+
 	return(
 		<div style={{ height: '89svh', display:'grid' , gridTemplateRows: '2fr 4fr'}}>
-			<h1 style={{ display: (visible < 5)? 'flex' : 'none'}} className='welcomeText' >{ welcomeMessage }</h1>
-			<Carousel fade className='carouselHolder childGrown' style={{ display: (visible == 5) ? 'block' : 'none' }}>
+			<div style={{ display: (close) ? 'none' : 'flex'}} className='welcomeText'>
+				<h1>{ welcomeMessage }</h1>
+				<p>Welcome to my portfolio website, your gateway to exploring my professional skills, creative projects, 
+					and accomplishments. Here, you'll find a curated selection of my work that demonstrates my expertise 
+					and passion in my field. Whether you're a potential client, employer, or collaborator, this portfolio
+					offers a clear and concise showcase of what I can bring to the table. Take your time to browse through 
+					the various sections and discover how my experience and creativity align with your needs.
+				</p>
+				<button type="button" onClick={ closeWelcomeMessage }>CONTINUE</button>
+			</div>
+			<Carousel fade className='carouselHolder childGrown' style={{ display: (close) ? 'block' : 'none' }}>
 				<Carousel.Item>
 					<img className="carouselImage" src="https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/background_images/53232095831_d69beeb347_k.jpg" alt="First slide"/>
 					<Carousel.Caption>

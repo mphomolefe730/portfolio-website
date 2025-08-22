@@ -14,13 +14,22 @@
 	height: 89svh;
 	margin: auto;
 	width: 100%;
-	max-width: 900px;
+	max-width: 500px;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
+	display: flex;
+}
+
+.welcomeText h1{
 	background: linear-gradient(to right, #432371, #faae7b);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+.welcomeText p{
+	text-align: center;
+}
+
 .carouselImage{
 	width: 100%;
 	margin:auto;
