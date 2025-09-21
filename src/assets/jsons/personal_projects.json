@@ -1,5 +1,35 @@
 [
 	{
+		"title": "LM MOKOENA'S CUT & EDGE, KITCHEN UNITS & BUILT-IN CUPBOARDS",
+		"description": [
+			"When I first built this project, it lived entirely on Google Sites. While it was a great starting point, I quickly ran into the platform’s limits: restricted layouts, minimal control over styling, and little room for interactivity. I decided to rebuild the entire site from scratch using HTML, CSS, and JavaScript. This wasn’t just a cosmetic change—it meant rethinking how the content was structured, how the design responded to different screen sizes, and how users interacted with the site.",
+			"Key steps in the transformation:",
+			"Planning the structure: I mapped out a clean, semantic HTML layout to make future updates easier.",
+			"Custom design & styling: Using modern CSS (Flexbox & Grid), I recreated and improved the visual design, ensuring a fully responsive experience across devices.",
+			"Interactive features: Vanilla JavaScript added subtle animations, smooth navigation, and improved usability—features that weren’t possible on Google Sites.",
+			"Performance & SEO: With direct control over the code, I optimized loading times, used best-practice metadata, and implemented accessible markup."
+		],
+		"image": "",
+		"timeline": [
+			{
+				"date": "",
+				"description": ""
+			}
+		],
+		"resource_images": [
+			{
+				"title": "HTML",
+				"image_link": "#"
+			}
+		],
+		"type": "website",
+		"warning": false,
+		"project_status": "Done",
+		"project_link": "#",
+		"video_link": "#",
+		"category": ["all","personal"],
+		"last_update": "8 September 2025"
+	},{
 		"title": "Reverse 2048",
 		"description": [
 			"Write C++ code for a program that reads in an unknown number of “Reverse 2048” games. The program must then use an algorithm to solve each of the solvable puzzles given in the input file", 
