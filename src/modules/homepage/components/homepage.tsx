@@ -120,7 +120,7 @@ function HomePage(){
 				<div className='elements informationPill'>
 					<h1 style={{margin:'0'}}>MPHO MOLEFE</h1>
 					{/*<p style={{margin:'0'}}><small>Innovating Tomorrow's Technology Today</small></p>*/}
-					<div><span>Latest Project(s): </span> <a href="projects/Reverse-2048" className='project'>Reverse 2048</a></div>
+					<div><span>Starred Project(s): </span> <a href="projects/Reverse-2048" className='project'>Reverse 2048</a></div>
 					<div><a href="/projects/Ecommerce-Connect" className='project'>Ecommerce Connect</a></div>
 				</div>
 				<div className='elements informationPill' style={{textAlign:'center'}}>
