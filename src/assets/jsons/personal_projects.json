@@ -9,7 +9,7 @@
 			"Interactive features: Vanilla JavaScript added subtle animations, smooth navigation, and improved usability—features that weren’t possible on Google Sites.",
 			"Performance & SEO: With direct control over the code, I optimized loading times, used best-practice metadata, and implemented accessible markup."
 		],
-		"image": "",
+		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/lmmokoena.png",
 		"timeline": [
 			{
 				"date": "",
@@ -120,7 +120,7 @@
 		"warning": false,
 		"project_status": "Done",
 		"project_link": "https://github.com/mphomolefe730/betway-system/",
-		"video_link": "#",
+		"video_link": "https://drive.google.com/file/d/1Q3l1GKrNAgFdK9dF_5EUqbjiUix1Pexk/preview",
 		"category": ["all","personal","data science"],
 		"last_update": "23 August 2024"
 	},
