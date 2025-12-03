@@ -1,0 +1,89 @@
+[
+    
+	{
+		"title": "Travel Vista",
+		"description": [
+			"A hackathon project developed for the Richfield Hackathon, integrating Trip Advisor API to help travelers plan trips with access to flights, hotels, restaurants, and attractions.",
+			"As team lead and front-end developer, managed project execution and mentored team members in Angular development while implementing responsive design with Tailwind CSS."
+		],
+		"timeline":[
+			{
+				"date":"September 2023",
+				"description":"Led project planning and technology stack selection, transitioning from PHP/MySQL to Angular/MongoDB based on hackathon requirements. Established foundational styling and mobile-responsive framework."
+			},
+			{
+				"date":"September 2023",
+				"description":"Integrated Tailwind CSS for streamlined styling, completed homepage template, and assigned development tasks to team members based on Figma designs and individual skill levels."
+			},
+			{
+				"date":"September 2023",
+				"description":"Implemented core features: Trip Advisor API integration for travel searches, user account management with wallet functionality, dark/light mode toggle, and comprehensive travel exploration interface."
+			}
+		],
+		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/#",
+		"resource_images": [
+			{
+				"title": "Angular",
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/icon_angular.svg"
+			},
+			{
+				"title": "Tailwind",
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg"
+			},
+			{
+				"title": "Php",
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/Official_PHP_Logo.svg"
+			}
+		],
+		"type": "website",
+		"warning": false,
+		"project_status": "Deployment",
+		"project_link": "#",
+		"video_link": "#",
+		"category": ["all","collaborative","hackathon"],
+		"last_update": "28 September 2023"
+	},
+	{
+		"title": "Social Media Platform",
+		"description": [
+			"Designed and developed a comprehensive social media network inspired by major platforms like Facebook and Instagram. The platform connects individuals and businesses with features for content sharing, user interaction, and community building.",
+			"Built with PHP and MySQL for robust backend functionality, and Docker for containerized deployment ensuring scalability and consistent environments."
+		],
+		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/social_media.png",
+		"timeline": [
+			{
+				"date": "Architecture Planning",
+				"description": "Designed platform architecture incorporating user profiles, content feeds, messaging systems, and business pages based on analysis of existing social media platforms."
+			},
+			{
+				"date": "Backend Development",
+				"description": "Implemented core functionality using PHP and MySQL for user authentication, post management, friend connections, and data persistence."
+			},
+			{
+				"date": "Containerization",
+				"description": "Configured Docker containers for consistent development and deployment environments, simplifying setup and ensuring application portability."
+			}
+		],
+		"resource_images": [
+			{
+				"title": "Php",
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/Official_PHP_Logo.svg"
+			},
+			{
+				"title": "Docker",
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/docker_logo.png"
+			},
+			{
+				"title": "MySQL",
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/sql.png"
+			}
+		],
+		"type": "website",
+		"warning": false,
+		"project_status": "Deployment",
+		"project_link": "#",
+		"video_link": "#",
+		"category": ["all","personal"],
+		"last_update": "10 October 2024"
+	}
+]
