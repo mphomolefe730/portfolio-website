@@ -33,9 +33,9 @@ function ProjectView(){
 					</Link>
 				</div>
 				<div>
-					<span className="x">
+					{/* <span className="x">
 						SHARE
-					</span>
+					</span> */}
 					<span className="x" style={{ display: (projectInfo.project_link == '#') ? "none": "" }}>
 						<a style={{ display: (projectInfo.type == 'website') ? "": "none" }} href={ `/load/${projectInfo?.title}` } target="_blank" rel="noopener noreferrer">VIEW WEBSITE </a>
 						<a style={{ display: (projectInfo.type == 'game') ? "": "none" }} href={ projectInfo?.project_link} target="_blank" rel="noopener noreferrer">VIEW GITHUB </a>

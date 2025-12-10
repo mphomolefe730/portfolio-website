@@ -1,35 +1,5 @@
 [
 	{
-		"title": "LM MOKOENA'S CUT & EDGE, KITCHEN UNITS & BUILT-IN CUPBOARDS",
-		"description": [
-			"When I first built this project, it lived entirely on Google Sites. While it was a great starting point, I quickly ran into the platform’s limits: restricted layouts, minimal control over styling, and little room for interactivity. I decided to rebuild the entire site from scratch using HTML, CSS, and JavaScript. This wasn’t just a cosmetic change—it meant rethinking how the content was structured, how the design responded to different screen sizes, and how users interacted with the site.",
-			"Key steps in the transformation:",
-			"Planning the structure: I mapped out a clean, semantic HTML layout to make future updates easier.",
-			"Custom design & styling: Using modern CSS (Flexbox & Grid), I recreated and improved the visual design, ensuring a fully responsive experience across devices.",
-			"Interactive features: Vanilla JavaScript added subtle animations, smooth navigation, and improved usability—features that weren’t possible on Google Sites.",
-			"Performance & SEO: With direct control over the code, I optimized loading times, used best-practice metadata, and implemented accessible markup."
-		],
-		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/lmmokoena.png",
-		"timeline": [
-			{
-				"date": "",
-				"description": ""
-			}
-		],
-		"resource_images": [
-			{
-				"title": "HTML",
-				"image_link": "#"
-			}
-		],
-		"type": "website",
-		"warning": false,
-		"project_status": "Done",
-		"project_link": "#",
-		"video_link": "#",
-		"category": ["all","personal"],
-		"last_update": "8 September 2025"
-	},{
 		"title": "Reverse 2048",
 		"description": [
 			"Write C++ code for a program that reads in an unknown number of “Reverse 2048” games. The program must then use an algorithm to solve each of the solvable puzzles given in the input file", 
@@ -74,31 +44,6 @@
 		"category": ["all","personal"],
 		"last_update": "27 April 2025"
 	},{
-		"title": "Social Media",
-		"description": ["Tasked to design a new social media network, inspired by existing platforms like Facebook, TikTok, Twitter, and Instagram, that connects individuals and businesses."],
-		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/social_media.png",
-		"timeline":[],
-		"resource_images": [
-			{
-				"title": "Php",
-				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/Official_PHP_Logo.svg"
-			},{
-				"title": "Docker",
-				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/docker_logo.png"
-			},{
-				"title": "MySQL",
-				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/sql.png"
-			}
-		],
-		"type": "website",
-		"warning": false,
-		"project_status": "Deployment",
-		"project_link": "#",
-		"video_link": "#",
-		"category": ["all","personal"],
-		"last_update": "10 October 2024"
-	},
-	{
 		"title": "Betway Aviator Analysis",
 		"description": ["This project aims to analyze a popular gambling game to uncover patterns that can potentially increase the win rate for players. By leveraging data collection techniques such as screen scraping, we gathered extensive data on betting outcomes and odds. The analysis was conducted using Python, Beautiful Soup for web scraping, and Jupyter Notebook for data visualization and exploration - also side Pandasa and more"],
 		"image":"https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/betway_video.png",
@@ -123,8 +68,7 @@
 		"video_link": "https://drive.google.com/file/d/1Q3l1GKrNAgFdK9dF_5EUqbjiUix1Pexk/preview",
 		"category": ["all","personal","data science"],
 		"last_update": "23 August 2024"
-	},
-	{
+	},{
 		"title": "Ecommerce Connect",
 		"description": ["A e-commerce website for both buyers and sells. The web application has a Content Management System (CMS) for buyers to see their inventory, orders, stuff administrative tools and more. It also offer financial records and charts to help businesses to better manage and understand their financies.", "Ecommerce Connect was establish to help small to medium business owner to have a centralized platform where users can find them - It's main audience being the informational section, An unexplored, cash heavy  market who can't meet most populate platforms high start up fees."],
 		"timeline":[
@@ -183,11 +127,10 @@
 		"project_status": "Maintenance",
 		"project_link": "https://ecommerce-test-3v4i.onrender.com/",
 		"confirmation_link": "https://ecommerce-test-api-i2se.onrender.com/api/products",
-		"video_link": "https://drive.google.com/file/d/11Ro4Zd11bmnPDBBMVXc8t90WkrNTor7b/preview",
+		"video_link": "https://drive.google.com/file/d/1zoKyHoTBm4O3awmU-TY4h7z3oDg4Pibx/preview",
 		"category": ["all","personal"],
 		"last_update": "03 March 2024"
-	},
-	{
+	},{
 		"title": "Rydly",
 		"description": ["Rydly is a dynamic ride-sharing service that refines the way users commute, connecting private vehicle owners with individuals sharing similar routes. Rydly offers carpool services, optimized journeys for a more sustainable and cost-effective travel experience, Emergency services like SOS dispatch, ride sharing and live tracking for both driver and commuter, Communication features like on platform live chat and calls, Intergration with state services for account verification and auditting, On demand invoices and trip details, Different ride and pricing options to meet individual needs."],
 		"timeline":[
@@ -234,46 +177,7 @@
 		"video_link": "#",
 		"category": ["all","commercial"],
 		"last_update": "02 October 2023"
-	},
-	{
-		"title": "Travel Vista",
-		"description": ["A group project for Richfield Hackathon using Trip Advisor API, Angular, Tailwind and PhP. Created to help travelers plan their ideal adventure by get access to flights,restaurants, hotels and attractions. Website has able to also save card information, trip history and profile page. I was responsible for managing the team and front-end development, and teaching and helping the team with Angular."],
-		"timeline":[
-			{
-				"date":"5 - 15 September 2023",
-				"description":"Pre-planning process. All dependencies and file related to QR Code scanning are shared, these will be the initual project for everyone involved. The initual plan for the project was to use PHP and mySQL, but later changed. This is because hackathon topics were changed and as such, the project change from using PHP and mySQL to using Angular and MongoDB. The application was given general styling based on Figma design, this include feeatures like the Navbar, make application mobile responsive, global styles for font and color and linking external links for fonts, logos and more."
-			},
-			{
-				"date":"17 September 2024",
-				"description":"Add tailwind for easier styling. This was need for a large time, mainly full of beginner developers who are unfamiliar with the tools beginning used. The homepage was also completed at this stage. This was done to help those who are unfimiliar with the tools get a framework to use moving forward. This is the point where everyone was assign a page they are responsible for based on a figma design"
-			},
-			{
-				"date":"21 September 2024",
-				"description":"Add ability to search [done by me], view hotels, footer, about section regarding the organisation, user page for managing account (wallet, setting, history) [done by me], explore page[done by me], dark mode [done by me], testimonials, sign in and sign up page and splash page [done by me]. "
-			}
-		],
-		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/#",
-		"resource_images": [
-			{
-				"title": "Angular",
-				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/1174949_js_react js_logo_react_react native_icon.svg"
-			},{
-				"title": "Tailwind",
-				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg"
-			},{
-				"title": "Php",
-				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/Official_PHP_Logo.svg"
-			}
-		],
-		"type": "website",
-		"warning": false,
-		"project_status": "Deployment",
-		"project_link": "#",
-		"video_link": "#",
-		"category": ["all","collaborative","hackathon"],
-		"last_update": "28 September 2023"
-	},
-	{
+	},{
 		"title": "Code Pilot",
 		"description": ["This website takes in code and fixes it using chatGPT3/gpt-3. The API has been disabled so contact me if you want to try it out and I'll temporarily activate it"],
 		"timeline":[],
