@@ -108,7 +108,7 @@ function HomePage(){
 								<Link to={`blogs/${blog?.title?.replace(' ','-')}`}>
 								<img onLoad={() => setLoading(false)} className="carouselImage" src={blog.image}/>
 								<Carousel.Caption>
-									<h3>{ blog.title }</h3>
+									<p>{ blog.title }</p>
 								</Carousel.Caption>
 								</Link>
 							</Carousel.Item>

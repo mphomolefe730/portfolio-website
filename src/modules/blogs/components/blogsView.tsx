@@ -48,7 +48,7 @@ function BlogsView() {
                                     key={index}
                                     onLoad={() => setLoading(false)}
                                     style={{
-                                        maxWidth: '500px',
+                                        maxWidth: '350px',
                                         width: "100%",
                                         borderRadius: '10px',
                                         margin: '10px',
