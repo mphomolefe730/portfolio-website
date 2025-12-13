@@ -8,6 +8,9 @@ import HomePage from './modules/homepage/components/homepage.tsx';
 import ProjectMain from './modules/projects/components/projectsMain.tsx';
 import ProjectAll from './modules/projects/components/projectsAll.tsx';
 import ProjectView from './modules/projects/components/projectView.tsx';
+import BlogsMain from './modules/blogs/components/blogsMain.tsx';
+import BlogsAll from './modules/blogs/components/blogsAll.tsx';
+import BlogsView from './modules/blogs/components/blogsView.tsx';
 import AboutMain from './modules/about/components/aboutMain.tsx';
 import UnderConstruction from './modules/error/components/underConstruction.tsx';
 import Contact from './modules/contact/components/contact.tsx';
@@ -41,14 +44,22 @@ const router = createBrowserRouter([
       }
     ]
   },{
+    path:'/blogs',
+    element: <BlogsMain />,
+    children:[
+      {
+        path: '/blogs',
+        element: < BlogsAll/>
+      },
+      {
+        path:'/blogs/:blogName',
+        element: <BlogsView />
+      }
+    ]
+  },{
     path: '/load/:projectName',
     element: <ProjectLoader />
-  },
-  {
-    path:'/blogs',
-    element: <UnderConstruction />
-  },
-  {
+  },{
     path:'/games',
     element: <UnderConstruction />
   },

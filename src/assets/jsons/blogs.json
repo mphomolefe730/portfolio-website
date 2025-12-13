@@ -1,0 +1,55 @@
+[
+    {
+        "title": "AWS Summit Johannesburg 2024",
+        "description": [
+            "Thank you to Amazon Web Services (AWS) for hosting us at their Summit. While the event exceeded expectations in some areas, I found the overall experience to be a mix of familiar and novel elements.",
+            "I particularly appreciated the inclusive nature of the Summit, offering something for everyone. One highlight was attending Mohammed Zaakir Ally's session at the AWSome Theater, where he discussed TriState Capital Bank's integration with PayShap SA's real-time money transfer technology—no account numbers needed. His in-person demo, which he showed me during our chat, was impressive and sparked my interest in their innovative approach.",
+            "I also enjoyed the ML/AI presentation and was impressed by AWS's commitment to using their own infrastructure to develop new protocols like Nitro. Their re-imagining of hypervisors, hardware, and security demonstrates dedication to cutting-edge solutions.",
+            "I wish I'd networked more with participants—something I'll prioritize at the next one. Special thanks to Amogelang Chaane, Ororiseng Mabaso, Letlotlo Leballo, and Qualtrix Software Technologies for their support."
+        ],
+        "image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/background_images/WhatsApp Image 2024-08-29 at 9.23.45 PM.jpeg",
+        "display_images": [
+            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/background_images/WhatsApp Image 2024-08-29 at 9.23.45 PM.jpeg"
+        ],
+        "timeline": [],
+        "people_mentioned": [
+            {
+                "name": "Mohammed Zaakir Ally",
+                "image": "",
+                "socials": [
+                    {
+                        "social_name": "LinkedIn",
+                        "link": "https://www.linkedin.com/in/mzally/"
+                    }
+                ]
+            }
+        ],
+        "highlight": true,
+        "video_link": "https://drive.google.com/file/d/1GrIg0EkcoKcyRTy5-fTH2AJKxaQ4Fymm/preview",
+        "tags": ["all", "summit", "aws", "networking"],
+        "last_update": "14 December 2025"
+    },
+    {
+        "title": "What the Industry Has Shown Me - Halfway Through My Internship Journey ✨",
+        "description": [
+            "This month marks the halfway point of my 6-month internship with the Department of Correctional Services, and the experience has been eye-opening in ways I didn’t expect.",
+            "One of the biggest lessons I’ve learned is that you’re never a one-man team. Asking for help isn’t weakness—it's collaboration. I’ve also realized that no one will hand you everything on a silver platter; to grow, you need to be curious, proactive, and driven to learn.",
+            "Working in such a sensitive environment has shown me the powerful role the Department plays—not only in ensuring security, but also in rehabilitation. Rehabilitation goes beyond physical systems; it includes mental and spiritual well-being. Just this week, I attended a service hosted by the Spiritual Care Department that focused on strengthening mental health and spiritual growth, a reminder of the holistic approach the Department takes.",
+            "On the technical side, my learning has been just as rich: strengthening social and communication skills while working in diverse teams, gaining hands-on exposure to security groups and large-scale network configurations, adapting to internal systems unique to the Department, and recognizing the impact of my work on something larger than myself."
+        ],
+        "image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1755420827757.jpg",
+        "display_images": [
+            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1755420827757.jpg",
+            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1755420783378.jpg",
+            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1755420746512.jpg",
+            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1755420679216.jpg",
+            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1755420273039.jpg"
+        ],
+        "timeline": [],
+        "people_mentioned": [],
+        "highlight": true,
+        "video_link": "https://drive.google.com/file/d/1GrIg0EkcoKcyRTy5-fTH2AJKxaQ4Fymm/preview",
+        "tags": ["all", "internship", "career", "tech"],
+        "last_update": "14 December 2025"
+    }
+]

@@ -1,6 +1,8 @@
 import './homepage.css';
+import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import blogs from '../../../assets/jsons/blogs.json';
 
 function HomePage(){
 	const key = 'alertPortfolioWebsite';
@@ -10,6 +12,7 @@ function HomePage(){
 	const [visible, setVisible] = useState(1);
 	const [count, setCount] = useState(0);
 	const [close, setClose] = useState(false);
+	const [loading, setLoading] = useState(true);
 
 	const [storedValue, setStoredValue] = useState(() => {
 		if (typeof window === "undefined") return false;
@@ -95,7 +98,25 @@ function HomePage(){
 				</p>
 				<button type="button" onClick={ closeWelcomeMessage }>CONTINUE</button>
 			</div>
-			<Carousel fade className='carouselHolder childGrown' style={{ display: (close) ? 'block' : 'none' }}>
+			
+			<Carousel fade className='carouselHolder childGrown'>
+				{ 
+					blogs.map((blog, index) => {
+						return(
+							<Carousel.Item key={index} style={{ display: (blog.highlight) ? 'block' :'none' }}>
+								{loading && <div id="loader" />}
+								<Link to={`blogs/${blog?.title?.replace(' ','-')}`}>
+								<img onLoad={() => setLoading(false)} className="carouselImage" src={blog.image}/>
+								<Carousel.Caption>
+									<h3>{ blog.title }</h3>
+								</Carousel.Caption>
+								</Link>
+							</Carousel.Item>
+						)
+					})                    
+				}
+			</Carousel>
+			{/* <Carousel fade className='carouselHolder childGrown' style={{ display: (close) ? 'block' : 'none' }}>
 				<Carousel.Item>
 					<img className="carouselImage" src="https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/background_images/53232095831_d69beeb347_k.jpg" alt="First slide"/>
 					<Carousel.Caption>
@@ -114,7 +135,7 @@ function HomePage(){
 						<p>AWS Summit Johannesburg 2024</p>
 					</Carousel.Caption>
 				</Carousel.Item>
-			</Carousel>
+			</Carousel> */}
 
 			<div className='mainContainer'>
 				<div className='elements informationPill'>
