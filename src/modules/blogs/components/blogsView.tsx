@@ -49,6 +49,7 @@ function BlogsView() {
                                     onLoad={() => setLoading(false)}
                                     style={{
                                         maxWidth: '350px',
+                                        maxHeight: '350px',
                                         width: "100%",
                                         borderRadius: '10px',
                                         margin: '10px',
