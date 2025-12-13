@@ -20,14 +20,14 @@ function BlogsView() {
         return <p>Blog not found.</p>;
     }
 
-    const warning = (
-        <>
-            <span>This website is hosted on a free platform.</span><br />
-            <span>1) Inactivity: The website may go offline after inactivity.</span><br />
-            <span>2) Startup Time: May take up to 60 seconds.</span><br />
-            <span>3) Page Refresh: Refresh to see latest content.</span>
-        </>
-    );
+    // const warning = (
+    //     <>
+    //         <span>This website is hosted on a free platform.</span><br />
+    //         <span>1) Inactivity: The website may go offline after inactivity.</span><br />
+    //         <span>2) Startup Time: May take up to 60 seconds.</span><br />
+    //         <span>3) Page Refresh: Refresh to see latest content.</span>
+    //     </>
+    // );
 
     return (
         <div className='projectInformationContainer'>
@@ -89,6 +89,25 @@ function BlogsView() {
                             </div>
                         </div>
                     ))}
+
+                    {
+                        blogInfo.people_mentioned?.length > 0 && (
+                            <div>
+                                <h4 className="dateContainer">People Mentioned</h4>
+                                <div style={{ display: 'flex', overflowX: 'scroll', scrollbarWidth: 'none' }}>
+                                    {
+                                        blogInfo.people_mentioned.map((person: any, index: number) => (
+                                            <div key={index} style={{ margin: '0.25rem', padding: '0.25rem', minWidth: '150px', textAlign: 'center' }}>
+                                                <a href={person.socials[0].link} target="_blank" rel="noopener noreferrer">
+                                                    <span className="personName">{person.name}</span>
+                                                </a>
+                                            </div>
+                                        ))
+                                    }
+                                </div>
+                            </div>
+                        )
+                    }
                 </div>
             </div>
         </div>

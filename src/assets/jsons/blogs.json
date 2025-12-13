@@ -1,34 +1,5 @@
 [
-    {
-        "title": "AWS Summit Johannesburg 2024",
-        "description": [
-            "Thank you to Amazon Web Services (AWS) for hosting us at their Summit. While the event exceeded expectations in some areas, I found the overall experience to be a mix of familiar and novel elements.",
-            "I particularly appreciated the inclusive nature of the Summit, offering something for everyone. One highlight was attending Mohammed Zaakir Ally's session at the AWSome Theater, where he discussed TriState Capital Bank's integration with PayShap SA's real-time money transfer technology—no account numbers needed. His in-person demo, which he showed me during our chat, was impressive and sparked my interest in their innovative approach.",
-            "I also enjoyed the ML/AI presentation and was impressed by AWS's commitment to using their own infrastructure to develop new protocols like Nitro. Their re-imagining of hypervisors, hardware, and security demonstrates dedication to cutting-edge solutions.",
-            "I wish I'd networked more with participants—something I'll prioritize at the next one. Special thanks to Amogelang Chaane, Ororiseng Mabaso, Letlotlo Leballo, and Qualtrix Software Technologies for their support."
-        ],
-        "image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/background_images/WhatsApp Image 2024-08-29 at 9.23.45 PM.jpeg",
-        "display_images": [
-            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/background_images/WhatsApp Image 2024-08-29 at 9.23.45 PM.jpeg"
-        ],
-        "timeline": [],
-        "people_mentioned": [
-            {
-                "name": "Mohammed Zaakir Ally",
-                "image": "",
-                "socials": [
-                    {
-                        "social_name": "LinkedIn",
-                        "link": "https://www.linkedin.com/in/mzally/"
-                    }
-                ]
-            }
-        ],
-        "highlight": true,
-        "video_link": "https://drive.google.com/file/d/1GrIg0EkcoKcyRTy5-fTH2AJKxaQ4Fymm/preview",
-        "tags": ["all", "summit", "aws", "networking"],
-        "last_update": "14 December 2025"
-    },
+    
     {
         "title": "What the Industry Has Shown Me - Halfway Through My Internship Journey ✨",
         "description": [
@@ -48,8 +19,65 @@
         "timeline": [],
         "people_mentioned": [],
         "highlight": true,
+        "tags": ["all", "career"],
+        "last_update": "14 December 2025"
+    },{
+        "title": "AWS Summit Johannesburg 2024",
+        "description": [
+            "Thank you to Amazon Web Services (AWS) for hosting us at their Summit. While the event exceeded expectations in some areas, I found the overall experience to be a mix of familiar and novel elements.",
+            "I particularly appreciated the inclusive nature of the Summit, offering something for everyone. One highlight was attending Mohammed Zaakir Ally's session at the AWSome Theater, where he discussed TriState Capital Bank's integration with PayShap SA's real-time money transfer technology—no account numbers needed. His in-person demo, which he showed me during our chat, was impressive and sparked my interest in their innovative approach.",
+            "I also enjoyed the ML/AI presentation and was impressed by AWS's commitment to using their own infrastructure to develop new protocols like Nitro. Their re-imagining of hypervisors, hardware, and security demonstrates dedication to cutting-edge solutions.",
+            "I wish I'd networked more with participants—something I'll prioritize at the next one. Special thanks to Amogelang Chaane, Ororiseng Mabaso, Letlotlo Leballo, and Qualtrix Software Technologies for their support."
+        ],
+        "image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/background_images/WhatsApp Image 2024-08-29 at 9.23.45 PM.jpeg",
+        "display_images": [
+            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/background_images/WhatsApp Image 2024-08-29 at 9.23.45 PM.jpeg",
+            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1725023741171.jpeg",
+            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1725023741119.jpeg",
+            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1725023741268.jpeg"
+        ],
+        "timeline": [],
+        "people_mentioned": [
+            {
+                "name": "Mohammed Zaakir Ally",
+                "socials": [
+                    {
+                        "social_name": "LinkedIn",
+                        "link": "https://www.linkedin.com/in/mzally/"
+                    }
+                ]
+            },
+            {
+                "name": "Amogelang Chaane",
+                "socials": [
+                    {
+                        "social_name": "LinkedIn",
+                        "link": "https://www.linkedin.com/in/amogelang-chaane-927b621b4/"
+                    }
+                ]
+            },
+            {
+                "name": "Ororiseng Mabaso",
+                "socials": [
+                    {
+                        "social_name": "LinkedIn",
+                        "link": "https://www.linkedin.com/in/ororiseng-mabaso-355480234/"
+                    }
+                ]
+            },
+            {
+                "name": "Letlotlo Leballo",
+                "socials": [
+                    {
+                        "social_name": "LinkedIn",
+                        "link": "https://www.linkedin.com/in/letlotlo-leballo-236164261/"
+                    }
+                ]
+            }
+        ],
+        "highlight": true,
         "video_link": "https://drive.google.com/file/d/1GrIg0EkcoKcyRTy5-fTH2AJKxaQ4Fymm/preview",
-        "tags": ["all", "internship", "career", "tech"],
+        "tags": ["all", "summit", "aws", "networking"],
         "last_update": "14 December 2025"
     }
 ]

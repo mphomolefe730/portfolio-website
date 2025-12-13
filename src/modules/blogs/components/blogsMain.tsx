@@ -5,7 +5,7 @@ import BlogAll from './blogsAll.tsx';
 import '../../homepage/components/homepage.css';
 
 function BlogsMain(){
-    const tabs = ['all','summit'];
+    const tabs = ['all', 'career','summit'];
     let [tabIndex,setTabIndex] = useState(0);
     let filterContent = (index:number) => {
         setTabIndex(index);
