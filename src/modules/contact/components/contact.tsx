@@ -1,22 +1,26 @@
 import './contact.css';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { env } from '../../../configs/environment';
 
 interface Errors {
     firstName?: string;
     lastName?: string;
     email?: string;
     whoAreYou?: string;
+    message?: string;
 }
   
 function Contact() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const [whoAreYou, setWhoAreYou] = useState("");
   const [errors, setErrors] = useState<Errors>({});
 
   const heroCaption = 'Let’s Connect!';
-  const heroSubCaption = 'I’d love to hear from you—whether you have a question, a project, or just want to say hi. Looking for a creative partner? I’m just a message away. Fill out the form below or email me directly';
+  const heroSubCaption = 'I’d love to hear from you—whether you have a question, a project, or just want to say hi. Looking for a creative partner? I’m just a message away. Fill out the form below or email me';
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -28,6 +32,9 @@ function Contact() {
     }
     if (!lastName.trim()) {
       newErrors.lastName = "Last name is required";
+    }
+    if (!message.trim()) {
+      newErrors.message = "Message is required";
     }
     if (!email.trim()) {
       newErrors.email = "Email is required";
@@ -44,11 +51,20 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    
     if (validate()) {
-      // Form is valid - handle submission
-      alert(`Thank you, ${firstName}! We'll be in touch.`);
-      // Reset form or send data to server here
+      emailjs.sendForm(
+        env.VITE_EMAILJS_SERVICE_ID, 
+        env.VITE_EMAILJS_TEMPLATE_ID, 
+        e.target, 
+        env.VITE_EMAILJS_PUBLIC_KEY
+      ).then((result) => {
+        console.log('Success!', result.text);
+        alert(`Thank you, ${firstName}! We'll be in touch.`);
+      }, (error) => {
+        console.log('Failed...', error.text);
+        alert("Something went wrong, please try again.");
+      });
     }
   };
 
@@ -57,14 +73,13 @@ function Contact() {
       <h1 className="card-text m-0">{heroCaption.toUpperCase()}</h1>
       <p className="text-muted">
         {heroSubCaption}
-        <a style={{ textDecoration: 'underline' }} href="mailto:mphomolefe730@gmail.com"> click here </a>
       </p>
       <form onSubmit={handleSubmit} noValidate>
         <div>
           <input
             className='inputTag'
             type="text"
-            id="firstName"
+            name="user_firstName"
             value={firstName}
             placeholder='First Name'
             onChange={(e) => setFirstName(e.target.value)}
@@ -74,7 +89,7 @@ function Contact() {
           <input
             className='inputTag'
             type="text"
-            id="lastName"
+            name="user_lastName"
             value={lastName}
             placeholder='Last Name'
             onChange={(e) => setLastName(e.target.value)}
@@ -84,7 +99,7 @@ function Contact() {
           <input
             className='inputTag'
             type="email"
-            id="email"
+            name="email"
             value={email}
             placeholder='Email'
             onChange={(e) => setEmail(e.target.value)}
@@ -127,6 +142,16 @@ function Contact() {
             </div>
           </div>
           {errors.whoAreYou && <p className="error">{errors.whoAreYou}</p>}
+          
+          <input
+            className='inputTag'
+            type="text"
+            name="message"
+            value={message}
+            placeholder='message'
+            onChange={(e) => setMessage(e.target.value)}
+          />
+          {errors.message && <p className="error">{errors.message}</p>}
         </div>
         <button className='contactButton' type="submit">{('GET IN TOUCH').toUpperCase()}</button>
       </form>

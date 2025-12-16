@@ -16,9 +16,6 @@ function NavBar(){
 		}, {
 			name: "github",
 			link: "https://github.com/mphomolefe730"
-		}, {
-			name: "email",
-			link: "mailto:mphomolefe730@gmail.com"
 		}
 	];
 	let showNav = () => {
@@ -31,17 +28,19 @@ function NavBar(){
 				MM
 			</a>
 			<div className='socialContainer desktopNav'>
+				<p>Connect with me:</p>
 				{
 					socials.map((socialMedia,index) => {
 						return(
-							<a className='informationPill' key={index} target="_blank" href={socialMedia.link}> {socialMedia.name} </a>
+							<a className='project' key={index} target="_blank" href={socialMedia.link}> {socialMedia.name} </a>
 						)
 					})
 				}
+				<a className='project' href='/contact'> GET IN TOUCH</a>
 			</div>
 
 			<div className='qrcodeContainer desktopNav'>
-				<img className='informationPill' src={qrcode.linkToPhoto} alt={qrcode.alt} />
+				<img src={qrcode.linkToPhoto} alt={qrcode.alt} />
 				<h6> {qrcode.text.toUpperCase()} </h6>
 			</div>
 
@@ -61,7 +60,7 @@ function NavBar(){
 					<img style={{ maxWidth: "50px", backgroundColor: "white", padding: "10px", borderRadius: "50%" }} src="https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/icons/menu-burger-horizontal-svgrepo-com.svg" onClick={()=> showNav()}/>
 				</div>
 				<div style={{ display: (open) ? "grid": "none", height: "98svh", width: "100%", zIndex: 99, position: "absolute", gridTemplateColumns: "2fr 4fr"}}>
-					<div style={{ backgroundColor: "rgba(0,0,0,0.5)" }} onClick={()=> showNav()}>
+					<div style={{ backgroundColor: "rgba(0,0,0,1)" }} onClick={()=> showNav()}>
 						<div className='socialContainer '>
 							{
 								socials.map((socialMedia,index) => {
@@ -78,7 +77,7 @@ function NavBar(){
 						<a className='navTitle' href='/blogs'><p>Blogs</p></a>
 						<a className='navTitle' href='/games'><p>Games</p></a>
 						<a className='navTitle' href='/videos'><p>Videos</p></a>
-						{ /* <a className='navTitle contactButton' href='/contact'> GET IN TOUCH</a> */ }
+						<a className='navTitle contactButton' href='/contact'> GET IN TOUCH</a>
 					</div>
 				</div>
 			</div>

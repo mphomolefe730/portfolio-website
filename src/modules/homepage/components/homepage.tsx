@@ -99,7 +99,7 @@ function HomePage(){
 				<button type="button" onClick={ closeWelcomeMessage }>CONTINUE</button>
 			</div>
 			
-			<Carousel fade className='carouselHolder childGrown'>
+			<Carousel fade className='carouselHolder childGrown' style={{ backgroundColor: 'black', borderRadius: '0.5rem'}}>
 				{ 
 					blogs.map((blog, index) => {
 						return(

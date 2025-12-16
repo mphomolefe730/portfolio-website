@@ -28,6 +28,29 @@ a:hover{
 	animation: unblur 0.2s linear forwards;
 }
 
+.projectContainer{
+	padding: 12px;
+	max-width: 800px;
+	margin: 10px auto;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+.projectContainer:hover{
+	background-color: white;
+	background: #005aa7; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #432371, #faae7b); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #432371, #faae7b);
+	padding: 12px;
+	border-radius: 16px;
+	box-shadow:
+		inset 2px 2px 4px #c1c1c1,   /* inner shadow (top-left) for depth */
+		inset -2px -2px 4px #ffffff, /* inner highlight (bottom-right) for light */
+		8px 8px 16px rgba(0,0,0,0.15), /* drop shadow for lift */
+		-4px -4px 12px rgba(255,255,255,0.7); /* soft outer glow */
+	font-size: 18px;
+}
+
 #loader {
 	border: 5px solid #f3f3f3;
 	border-top: 5px solid #3498db;
@@ -52,6 +75,7 @@ a:hover{
 	background-color: white;
 }
 .sdescription{
+	margin: 0;
 	padding: 0 5px;         
     display: -webkit-box; 
     -webkit-box-orient: vertical; 
