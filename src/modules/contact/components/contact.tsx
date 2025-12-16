@@ -17,6 +17,7 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [whoAreYou, setWhoAreYou] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState<Errors>({});
 
   const heroCaption = 'Let’s Connect!';
@@ -25,6 +26,7 @@ function Contact() {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   const validate = () => {
+    setIsSubmitting(true);
     const newErrors:Errors = {};
 
     if (!firstName.trim()) {
@@ -51,7 +53,6 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
     if (validate()) {
       emailjs.sendForm(
         env.VITE_EMAILJS_SERVICE_ID, 
@@ -60,11 +61,15 @@ function Contact() {
         env.VITE_EMAILJS_PUBLIC_KEY
       ).then((result) => {
         console.log('Success!', result.text);
+        setIsSubmitting(false);
         alert(`Thank you, ${firstName}! We'll be in touch.`);
       }, (error) => {
         console.log('Failed...', error.text);
+        setIsSubmitting(false);
         alert("Something went wrong, please try again.");
       });
+    }else{
+      setIsSubmitting(false);
     }
   };
 
@@ -153,7 +158,8 @@ function Contact() {
           />
           {errors.message && <p className="error">{errors.message}</p>}
         </div>
-        <button className='contactButton' type="submit">{('GET IN TOUCH').toUpperCase()}</button>
+        <button className='contactButton' style={{ display: isSubmitting ? 'none' : 'block' }} type="submit">{('GET IN TOUCH').toUpperCase()}</button>
+        <p style={{ display: isSubmitting ? 'block' : 'none' }}>processing...</p>
       </form>
     </div>
   );
