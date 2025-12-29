@@ -4,6 +4,7 @@ export default class ProjectModel {
 	title?: string;
 	description?: string[];
 	timeline?:{date:string,description:string}[] | [];
+	function?:{title:string, description:string, src:string[]}[] | [];
 	image?: string;
 	resource_images?: {title:string,image_link:string}[];
 	project_status?: string;
