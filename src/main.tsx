@@ -16,6 +16,27 @@ import UnderConstruction from './modules/error/components/underConstruction.tsx'
 import Contact from './modules/contact/components/contact.tsx';
 import ProjectLoader from './modules/projects/components/projectLoader.tsx';
 
+let isScrolling = false;
+let scrollTimeout: NodeJS.Timeout;
+
+window.addEventListener('wheel', () => {
+  isScrolling = true;
+  document.body.classList.add('is-scrolling');
+
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(() => {
+    isScrolling = false;
+    document.body.classList.remove('is-scrolling');
+  }, 150);
+});
+
+window.addEventListener('mousemove', () => {
+  if (!isScrolling) {
+    document.body.classList.remove('is-scrolling');
+  }
+});
+
+
 const router = createBrowserRouter([
   { 
     path: '/', 

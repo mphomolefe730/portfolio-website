@@ -7,6 +7,10 @@ body{
 	font-family: 'Roboto', 'system-ui';
 }
 
+body.is-scrolling {
+  cursor: url("https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/icons/cursor_scrolling.png"), auto;
+}
+
 a{
 	color: black;
 	padding: 10px 0;
@@ -14,6 +18,7 @@ a{
 }
 
 a:hover{
+	cursor: none;
 	background: #005aa7; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #432371, #faae7b); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #432371, #faae7b);
@@ -25,7 +30,7 @@ a:hover{
 		8px 8px 16px rgba(0,0,0,0.15), /* drop shadow for lift */
 		-4px -4px 12px rgba(255,255,255,0.7); /* soft outer glow */
 
-	animation: unblur 0.2s linear forwards;
+	animation: unblur 0.15s linear forwards;
 }
 
 .projectContainer{
