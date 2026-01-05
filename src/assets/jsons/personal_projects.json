@@ -3,10 +3,7 @@
 		"title": "Reverse 2048",
 		"description": [
 			"Write C++ code for a program that reads in an unknown number of “Reverse 2048” games. The program must then use an algorithm to solve each of the solvable puzzles given in the input file", 
-			"Reverse 2048 is a variation of the classic 2048 puzzle game, a sliding tile game that is played on a 4×4 grid. Unlike the original game, where the goal is to merge tiles to reach 2048, in Reverse 2048, the player must divide tiles to reach the smallest possible value, typically tile 2. The game is played using numerical tiles, each having values that are powers of 2. The main rules of the game are:", 
-			"1) Players slide tiles in four possible directions (up, down, left, right).",
-			"2) When two tiles of the same value collide, they merge into one tile with half the value.",
-			"3) The game ends when there are no more valid moves or when the smallest achievable value has been reached."
+			"Reverse 2048 is a variation of the classic 2048 puzzle game, a sliding tile game that is played on a 4×4 grid. Unlike the original game, where the goal is to merge tiles to reach 2048, in Reverse 2048, the player must divide tiles to reach the smallest possible value, typically tile 2. The game is played using numerical tiles, each having values that are powers of 2. The main rules of the game are:"
 		],
 		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/reverse_2048.png",
 		"timeline": [
@@ -30,7 +27,29 @@
 				"description": "The file holding the configurations is called reverse 2048.txt. An example of the input would be as follows: 512 , 3 (a game of reverse 512 on a board size of 3 × 3)"
 			}
 		],
-		"function":[],
+		"function":[
+			{
+				"title":"Board Representation",
+				"description":"The game board is represented as a 2D vector - vector<vector<int>> gridAlgOne, gridAlgTwo. Empty cells are represented by 0 and occupied cells by their respective tile values. There are variables to keep track of Move count (max 1000), Empty cell count, Win condition (presence of tile 2), No-move condition.",
+				"src": []
+			},{
+				"title":"Algorithm 1 – Greedy Reduction Strategy",
+				"description":"Simulate all four directions and select the move that reduces the maximum tile value the most.",
+				"src": []
+			},{
+				"title":"Algorithm 2 – Strategic Minimax Strategy",
+				"description":"Each possible first move is done then is evaluated, from the resulting board the algorithm simulate all possible second moves and record their resulting scores. Throughout the process The algorithm computes Worst-case score (maximum), Best-case score (minimum), Risk factor (worst − best), Average future potential. These values help compute strategic value, the move with the lowest strategic value is selected.",
+				"src": []
+			},{
+				"title":"Movement Logic",
+				"description":"If the neighboring cell in the movement direction is empty, The tile slides into that position. If two adjacent tiles have equal values, they merge into a single tile with half the value. The merged tile cannot merge again in the same move, to prevent a tile from merging multiple times in a single move, The game tracks recently merged tiles using borderNeighbourWhoWasMerged, Before merging, checkIfElementWasChanged() ensures the tile has not already merged this turn. After each valid move, a new tile of max value is added to a random empty cell on the board. A second sweep removes any remaining gaps, ensures all tiles are fully compacted in the movement direction.",
+				"src": []
+			},{
+				"title":"Move Evaluation",
+				"description":"Before committing to a move, the game evaluates its impact using evaluateMove(direction, grid). The function clone the original grid and stores the value in a previousScore (sum of all tiles before move) variable and simulates the move on the clone and is store in newScore(sum of all tiles after move) variable - this my way of measuring progress",
+				"src": []
+			}
+		],
 		"resource_images": [
 			{
 				"title": "C++",

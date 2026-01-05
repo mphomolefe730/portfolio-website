@@ -1,11 +1,12 @@
 import './projectView.css';
-// import ProjectModel from '../../../models/projectModel.ts';
 import Alert from 'react-bootstrap/Alert';
 import projects from '../../../assets/jsons/personal_projects.json';
+import { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 function ProjectView(){
 	let { projectName } = useParams();
+	let [ activeFeature, setActiveFeature ] = useState(0);
 	let projectInfo:any = projects.filter((individualProject:any)=> individualProject.title.replace(' ','-').includes(projectName));
 	projectInfo = projectInfo[0];
 	let warning = `This website is hosted on a free platform. To ensure optimal performance, please note the following: *
@@ -51,7 +52,7 @@ function ProjectView(){
 				</div>
 				<div style={{ display:'grid', gridTemplateColumns: '2fr 1fr', margin: " 10px 5px" }}>
 					<div>
-						<h5 className="card-text m-0"> { projectInfo?.title?.toUpperCase() }</h5>
+						<h5 className="company_name card-text m-0"> { projectInfo?.title?.toUpperCase() }</h5>
 						<small className="text-muted">
 							<div> created: { projectInfo?.last_update } </div>
 							<div> status: { projectInfo?.project_status } </div>
@@ -70,6 +71,29 @@ function ProjectView(){
 							return (<p key={index} className="text-muted p-2"> { sentence } </p>)
 						}) 
 					}
+					
+					<div style={{ display: (projectInfo?.function.length > 0) ? 'block' : 'none', marginBottom: '20px' }}>
+						<h3>Project Functions</h3>
+						{ projectInfo?.function.map((object,index)=>{
+							return (
+								<div className='function informationPill' style={{ display: (index == activeFeature) ? 'block' : 'none' }} key={index}>
+									<h5>{object?.title}</h5>
+									<p key={index} className="p-2"> { object?.description } </p>
+									<div>
+										<span>
+											{(index) + 1} of {projectInfo?.function.length}
+										</span>
+										<span style={{ float: 'right', cursor: 'pointer' }} onClick={ () => {} }>
+											{ (index > 0) ? <span onClick={ () => setActiveFeature(activeFeature - 1) }> PREV </span> : <span style={{ color: 'grey' }}> PREV </span> }
+											&nbsp; | &nbsp;
+											{ (index < projectInfo?.function.length - 1) ? <span onClick={ () => setActiveFeature(activeFeature + 1) }> NEXT </span> : <span style={{ color: 'grey' }}> NEXT </span> }
+										</span>
+									</div>
+								</div>
+							)
+							})
+						}
+					</div>
 					
 					{ projectInfo?.timeline.map((object,index)=>{
 							return (

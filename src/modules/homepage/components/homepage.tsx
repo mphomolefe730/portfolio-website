@@ -116,29 +116,9 @@ function HomePage(){
 					})                    
 				}
 			</Carousel>
-			{/* <Carousel fade className='carouselHolder childGrown' style={{ display: (close) ? 'block' : 'none' }}>
-				<Carousel.Item>
-					<img className="carouselImage" src="https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/background_images/53232095831_d69beeb347_k.jpg" alt="First slide"/>
-					<Carousel.Caption>
-						<p>Geekulture Unisa Hackathon 2023</p>
-					</Carousel.Caption>
-				</Carousel.Item>
-				<Carousel.Item>
-					<img className="carouselImage" src="https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/background_images/WhatsApp Image 2023-10-01 at 08.53.24.jpeg" alt="Second slide"/>
-					<Carousel.Caption>
-						<p>Geekulture Unisa Hackathon 2023</p>
-					</Carousel.Caption>
-				</Carousel.Item>
-				<Carousel.Item>
-					<img className="carouselImage" src="https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/background_images/WhatsApp Image 2024-08-29 at 9.23.45 PM.jpeg" alt="Third slide"/>
-					<Carousel.Caption>
-						<p>AWS Summit Johannesburg 2024</p>
-					</Carousel.Caption>
-				</Carousel.Item>
-			</Carousel> */}
 
 			<div className='mainContainer'>
-				<div className='elements informationPill'>
+				<div className='elements company_name informationPill'>
 					<h1 style={{margin:'0'}}>MPHO MOLEFE</h1>
 					{/*<p style={{margin:'0'}}><small>Innovating Tomorrow's Technology Today</small></p>*/}
 					<div><span>Starred Project(s): </span> <a href="projects/Reverse-2048" className='project'>Reverse 2048</a></div>

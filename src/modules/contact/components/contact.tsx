@@ -1,5 +1,5 @@
 import './contact.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { env } from '../../../configs/environment';
 
@@ -22,64 +22,66 @@ function Contact() {
 
   const heroCaption = 'Let’s Connect!';
   const heroSubCaption = 'I’d love to hear from you—whether you have a question, a project, or just want to say hi. Looking for a creative partner? I’m just a message away. Fill out the form below or email me';
+  const LOADER_LENGTH = 15;
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+  const [position, setPosition] = useState(0);
+  const loadingIndicator = Array.from({ length: LOADER_LENGTH }, (_, index) => index === position ? "|" : "=").join("");
 
   const validate = () => {
-    setIsSubmitting(true);
-    const newErrors:Errors = {};
-
-    if (!firstName.trim()) {
-      newErrors.firstName = "First name is required";
-    }
-    if (!lastName.trim()) {
-      newErrors.lastName = "Last name is required";
-    }
-    if (!message.trim()) {
-      newErrors.message = "Message is required";
-    }
+    const newErrors: Errors = {};
+    if (!firstName.trim()) newErrors.firstName = "First name is required";
+    if (!lastName.trim()) newErrors.lastName = "Last name is required";
+    if (!message.trim()) newErrors.message = "Message is required";
     if (!email.trim()) {
       newErrors.email = "Email is required";
     } else if (!emailRegex.test(email)) {
       newErrors.email = "Email is invalid";
     }
-    if (!whoAreYou) {
-      newErrors.whoAreYou = "Please select who you are";
-    }
-
+    if (!whoAreYou) newErrors.whoAreYou = "Please select who you are";
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
+  
+  useEffect(() => {
+    if (!isSubmitting) return;
+
+    const interval = setInterval(() => {
+      setPosition(prev => (prev + 1) % LOADER_LENGTH);
+    }, 250);
+    return () => clearInterval(interval);
+  }, [isSubmitting]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validate()) {
-      emailjs.sendForm(
-        env.VITE_EMAILJS_SERVICE_ID, 
-        env.VITE_EMAILJS_TEMPLATE_ID, 
-        e.target, 
-        env.VITE_EMAILJS_PUBLIC_KEY
-      ).then((result) => {
-        console.log('Success!', result.text);
+    if (!validate()) return;
+    setIsSubmitting(true);
+    emailjs.sendForm(
+      env.VITE_EMAILJS_SERVICE_ID,
+      env.VITE_EMAILJS_TEMPLATE_ID,
+      e.target,
+      env.VITE_EMAILJS_PUBLIC_KEY
+    ).then((result) => {
+      console.log('Success!', result.text);
         setIsSubmitting(false);
         alert(`Thank you, ${firstName}! We'll be in touch.`);
       }, (error) => {
         console.log('Failed...', error.text);
         setIsSubmitting(false);
         alert("Something went wrong, please try again.");
-      });
-    }else{
-      setIsSubmitting(false);
-    }
+      }
+    );
   };
+
 
   return (
     <div className='contactContainer'>
-      <h1 className="card-text m-0">{heroCaption.toUpperCase()}</h1>
-      <p className="text-muted">
-        {heroSubCaption}
-      </p>
-      <form onSubmit={handleSubmit} noValidate>
+      <form onSubmit={handleSubmit}  style={{ display: isSubmitting ? 'none' : 'block' }} noValidate>
+        <h1 className="company_name card-text m-0">{heroCaption.toUpperCase()}</h1>
+        <p className="text-muted">
+          {heroSubCaption}
+        </p>
         <div>
           <input
             className='inputTag'
@@ -158,9 +160,12 @@ function Contact() {
           />
           {errors.message && <p className="error">{errors.message}</p>}
         </div>
-        <button className='contactButton' style={{ display: isSubmitting ? 'none' : 'block' }} type="submit">{('GET IN TOUCH').toUpperCase()}</button>
-        <p style={{ display: isSubmitting ? 'block' : 'none' }}>processing...</p>
+        <button className='contactButton' type="submit">{('GET IN TOUCH').toUpperCase()}</button>
       </form>
+      <div style={{ display: isSubmitting ? 'block' : 'none', margin: "auto", maxWidth: "600px", textAlign: "center", alignContent: "center", position: 'relative', height: "50svh" }}>
+        <h1> {loadingIndicator} </h1>
+        <p className="company_name">PROCESSING...</p>
+      </div>
     </div>
   );
 }

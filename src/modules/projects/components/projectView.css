@@ -35,7 +35,12 @@ iframe {
 	width: 100%;
 	height: 100%;
 	border: none;
-	display: none; /* Hide iframe initially */
+	display: none;
+}
+.function{
+	background: -webkit-linear-gradient(to right, #432371, #faae7b); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #432371, #faae7b);
+	color: white;
 }
 
 .projectVideoContainer{
