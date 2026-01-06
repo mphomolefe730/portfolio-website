@@ -76,17 +76,17 @@ function ProjectView(){
 						<h3>Project Functions</h3>
 						{ projectInfo?.function.map((object,index)=>{
 							return (
-								<div className='function informationPill' style={{ display: (index == activeFeature) ? 'block' : 'none' }} key={index}>
+								<div className='informationPill' style={{ display: (index == activeFeature) ? 'block' : 'none' }} key={index}>
 									<h5>{object?.title}</h5>
 									<p key={index} className="p-2"> { object?.description } </p>
-									<div>
+									<div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'	}}>
 										<span>
 											{(index) + 1} of {projectInfo?.function.length}
 										</span>
 										<span style={{ float: 'right', cursor: 'pointer' }} onClick={ () => {} }>
-											{ (index > 0) ? <span onClick={ () => setActiveFeature(activeFeature - 1) }> PREV </span> : <span style={{ color: 'grey' }}> PREV </span> }
+											{ (index > 0) ? <span className='navElement' onClick={ () => setActiveFeature(activeFeature - 1) }> PREV </span> : <span style={{ color: 'grey' }}> PREV </span> }
 											&nbsp; | &nbsp;
-											{ (index < projectInfo?.function.length - 1) ? <span onClick={ () => setActiveFeature(activeFeature + 1) }> NEXT </span> : <span style={{ color: 'grey' }}> NEXT </span> }
+											{ (index < projectInfo?.function.length - 1) ? <span className='navElement' onClick={ () => setActiveFeature(activeFeature + 1) }> NEXT </span> : <span style={{ color: 'grey' }}> NEXT </span> }
 										</span>
 									</div>
 								</div>
