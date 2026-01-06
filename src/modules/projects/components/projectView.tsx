@@ -83,7 +83,7 @@ function ProjectView(){
 										<span>
 											{(index) + 1} of {projectInfo?.function.length}
 										</span>
-										<span style={{ float: 'right', cursor: 'pointer' }} onClick={ () => {} }>
+										<span onClick={ () => {} }>
 											{ (index > 0) ? <span className='navElement' onClick={ () => setActiveFeature(activeFeature - 1) }> PREV </span> : <span style={{ color: 'grey' }}> PREV </span> }
 											&nbsp; | &nbsp;
 											{ (index < projectInfo?.function.length - 1) ? <span className='navElement' onClick={ () => setActiveFeature(activeFeature + 1) }> NEXT </span> : <span style={{ color: 'grey' }}> NEXT </span> }
