@@ -83,25 +83,28 @@ function Contact() {
           {heroSubCaption}
         </p>
         <div>
-          <input
-            className='inputTag'
-            type="text"
-            name="user_firstName"
-            value={firstName}
-            placeholder='First Name'
-            onChange={(e) => setFirstName(e.target.value)}
-          />
-          {errors.firstName && <p className="error">{errors.firstName}</p>}
+          <div className='widget-radio-group'>
 
-          <input
-            className='inputTag'
-            type="text"
-            name="user_lastName"
-            value={lastName}
-            placeholder='Last Name'
-            onChange={(e) => setLastName(e.target.value)}
-          />
-          {errors.lastName && <p className="error">{errors.lastName}</p>}
+            <input
+              className='inputTag'
+              type="text"
+              name="user_firstName"
+              value={firstName}
+              placeholder='First Name'
+              onChange={(e) => setFirstName(e.target.value)}
+            />
+            {errors.firstName && <p className="error">{errors.firstName}</p>}
+
+            <input
+              className='inputTag'
+              type="text"
+              name="user_lastName"
+              value={lastName}
+              placeholder='Last Name'
+              onChange={(e) => setLastName(e.target.value)}
+            />
+            {errors.lastName && <p className="error">{errors.lastName}</p>}
+          </div>
 
           <input
             className='inputTag'
@@ -112,8 +115,18 @@ function Contact() {
             onChange={(e) => setEmail(e.target.value)}
           />
           {errors.email && <p className="error">{errors.email}</p>}
+
+          <input
+            className='inputTag'
+            type="text"
+            name="message"
+            value={message}
+            placeholder='message'
+            onChange={(e) => setMessage(e.target.value)}
+          />
+          {errors.message && <p className="error">{errors.message}</p>}
           
-          <h5 style={{marginTop: '5%'}}>{('Who are you?').toUpperCase()}</h5>
+          <h5>{('Who are you?').toUpperCase()}</h5>
           <div className='widget-radio-group'>
             <div>
               <input
@@ -150,15 +163,6 @@ function Contact() {
           </div>
           {errors.whoAreYou && <p className="error">{errors.whoAreYou}</p>}
           
-          <input
-            className='inputTag'
-            type="text"
-            name="message"
-            value={message}
-            placeholder='message'
-            onChange={(e) => setMessage(e.target.value)}
-          />
-          {errors.message && <p className="error">{errors.message}</p>}
         </div>
         <button className='contactButton' type="submit">{('GET IN TOUCH').toUpperCase()}</button>
       </form>

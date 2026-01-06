@@ -13,9 +13,9 @@ function AboutMain(){
 	}
 
 	return (
-		<div style={{ maxWidth: "600px", margin: "auto" }}>
-			<div className="aboutContainer">
-				<nav style={{ marginBottom: "10px" }}>
+		<div>
+			<div className="projects" style={{ maxWidth: "650px"}}>
+				<nav>
 					{ tabs.map((t,index)=>{ return <span key={index} onClick={ ()=> showTab(index) } className={ (index == activeIndex) ? "active1" : "navElement"}> {t} </span> }) }
 				</nav>
 
@@ -102,6 +102,9 @@ function AboutMain(){
 						)
 					}) }
 				</div>
+			</div>
+			<div className='alert1'>
+				<span>IMPORTANT: scroll for more, click filters for more</span>
 			</div>
 		</div>
 	);

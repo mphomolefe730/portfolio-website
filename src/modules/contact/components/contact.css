@@ -1,7 +1,7 @@
 .contactContainer {
     max-width: 600px;
     margin: auto;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 .inputTag {
@@ -16,7 +16,6 @@
 .widget-radio-group {
     display: flex;
     gap: 1rem;
-    margin-bottom: 5%;
 }
 
 .widget-radio-group input[type="radio"] {
