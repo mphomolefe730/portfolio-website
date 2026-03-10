@@ -14,7 +14,7 @@ body{
 	scrollbar-width: thin;
 	height: 100svh;
 	/* background-image: linear-gradient(#ffffff, 90%, #cfd3de);*/
-	animation: backgroundChangeColors 60s ease-in-out forwards infinite; 
+	/* animation: backgroundChangeColors 60s ease-in-out forwards infinite;  */
 }
 
 body.is-scrolling {
@@ -182,7 +182,7 @@ a:hover{
 		transform: rotate(360deg);
 	}
 }
-@keyframes backgroundChangeColors{
+/* @keyframes backgroundChangeColors{
 	0%{
 		background-image: linear-gradient(#ffffff, 90%, #cfd3de);
 	}
@@ -192,7 +192,7 @@ a:hover{
 	100%{
 		background-image: linear-gradient(#ffffff, 90%, #faae7b8f);
 	}
-}
+} */
 
 @keyframes unblur {
 	from {

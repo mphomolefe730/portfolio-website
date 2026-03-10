@@ -14,8 +14,11 @@ function NavBar(){
 			name: "LinkedIn",
 			link: "http://linkedin.com/in/mpho-molefe-a67ab9284/"
 		}, {
-			name: "github",
-			link: "https://github.com/mphomolefe730"
+			name: "TikTok",
+			link: "https://tiktok.com/@mphomolefe730"
+		}, {
+			name: "X",
+			link: "https://x.com/mphomolefeww"
 		}
 	];
 	let showNav = () => {
@@ -36,7 +39,7 @@ function NavBar(){
 						)
 					})
 				}
-				<a className='project' href='/contact'> GET IN TOUCH</a>
+				<a className='project' href='/contact'> EMAIL</a>
 			</div>
 
 			<div className='qrcodeContainer desktopNav'>
