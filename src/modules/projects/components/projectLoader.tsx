@@ -16,7 +16,7 @@ function ProjectLoader(){
     
     useEffect(() => {
       fetch((projectInfo?.confirmation_link)? projectInfo?.confirmation_link : "https://ecommerce-test-api-i2se.onrender.com/api/products")
-      .then((response) => response.json())
+      .then((response) => console.log(response.json()))
       .then(() => {
           setMessageContext(prev => ({
             ...prev,

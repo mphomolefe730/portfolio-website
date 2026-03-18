@@ -1,11 +1,13 @@
 import about from '../../../assets/jsons/about_me.json';
 import './aboutMain.css'
 import { useState } from 'react';
+import Carousel from 'react-bootstrap/Carousel';
 
 function AboutMain(){
 	const tabs = ['About','Experience','Education', 'Certificates'];
 	let [activeIndex, setActiveIndex] = useState(0);
 	const dateV = new Date();
+	const [loading, setLoading] = useState(true);
 	
 	let showTab = (index:number) => {
 		setActiveIndex(index);
@@ -15,6 +17,19 @@ function AboutMain(){
 	return (
 		<div>
 			<div className="projects" style={{ maxWidth: "650px"}}>
+				<Carousel fade className='carouselHolder childGrown' style={{ backgroundColor: 'black', borderRadius: '0.5rem'}}>
+					{ 
+						about.images.map((img, index) => {
+							return(
+								<Carousel.Item key={index}>
+									{loading && <div id="loader" />}
+									<img onLoad={() => setLoading(false)} className="carouselImage" src={img}/>
+								</Carousel.Item>
+							)
+						})                    
+					}
+				</Carousel>
+
 				<nav>
 					{ tabs.map((t,index)=>{ return <span key={index} onClick={ ()=> showTab(index) } className={ (index == activeIndex) ? "active1" : "navElement"}> {t} </span> }) }
 				</nav>

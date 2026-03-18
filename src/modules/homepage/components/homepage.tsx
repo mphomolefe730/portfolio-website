@@ -126,7 +126,7 @@ function HomePage(){
 				</div>
 				<div className='elements informationPill' style={{textAlign:'center'}}>
 					<p>Latest Video:</p>
-					<a href='https://www.linkedin.com/posts/mpho-molefe-a67ab9284_screenscraping-softwareabrengineering-python-activity-7232479002160988160-D_jw?utm_source=share&utm_medium=member_desktop'>
+					<a href='https://www.linkedin.com/posts/mpho-molefe-a67ab9284_eduverge-opensource-softwareengineering-activity-7437029634392776704-N2hg?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEU39a8BRgf2xosbm5ZS2K-k5xWeguq_n5M'>
 						<img className='latest_video' alt='Latest Tech Video' src='https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/latest_video.png'/>
 					</a>
 				</div>

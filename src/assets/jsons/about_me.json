@@ -68,6 +68,11 @@
 				"from": "January 2011",
 				"to": "Decemeber 2020"
 			}
+		],
+		"images":[
+			"https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/01_me.png",
+			"https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/02_me.jpg",
+			"https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/03_me.jpg"
 		]
 	}
 
