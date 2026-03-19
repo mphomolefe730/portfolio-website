@@ -55,6 +55,7 @@ function NavBar(){
 					<a className='navTitle' href='/games'>Games</a>
 					<a className='navTitle' href='/videos'>Videos</a>
 				</div>
+				<p className="stat-ticker"><small ><span>Current Status: </span> Joined Kubenetes African Training Program</small></p>
 			</div>
 			<div className="mobileNav">
 				{/* display: (open) ? "none": "flex"*/}

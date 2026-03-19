@@ -116,11 +116,10 @@ function HomePage(){
 					})                    
 				}
 			</Carousel>
-
+			
 			<div className='mainContainer'>
 				<div className='elements company_name informationPill'>
 					<h1 style={{margin:'0'}}>MPHO MOLEFE</h1>
-					{/*<p style={{margin:'0'}}><small>Innovating Tomorrow's Technology Today</small></p>*/}
 					<div><span>Starred Project(s): </span> <a href="projects/Reverse-2048" className='project'>Reverse 2048</a></div>
 					<div><a href="/projects/Ecommerce-Connect" className='project'>Ecommerce Connect</a></div>
 				</div>

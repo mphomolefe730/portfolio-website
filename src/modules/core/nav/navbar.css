@@ -70,6 +70,17 @@ nav{
 	transform: rotate(90deg);
 }
 
+.stat-ticker {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+	margin: 0.25rem auto;
+	max-width: 700px;
+	background-color: #00ff00;
+	color: black;
+	border-radius: 0.5rem;
+	padding: 0.15rem;
+}
+
 @media (max-width: 950px) {
 	.mobileNav{
 		display: block;

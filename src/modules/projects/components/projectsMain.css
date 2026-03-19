@@ -35,7 +35,7 @@
 }
 
 .projects{
-	max-height: 80svh;
+	max-height: 75svh;
 	padding: 0 10px;
 	overflow: auto;
 	max-width: 900px;
