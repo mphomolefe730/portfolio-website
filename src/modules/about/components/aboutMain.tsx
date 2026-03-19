@@ -17,24 +17,32 @@ function AboutMain(){
 	return (
 		<div>
 			<div className="projects" style={{ maxWidth: "650px"}}>
-				<Carousel fade className='carouselHolder childGrown' style={{ backgroundColor: 'black', borderRadius: '0.5rem'}}>
-					{ 
-						about.images.map((img, index) => {
-							return(
-								<Carousel.Item key={index}>
-									{loading && <div id="loader" />}
-									<img onLoad={() => setLoading(false)} className="carouselImage" src={img}/>
-								</Carousel.Item>
-							)
-						})                    
-					}
-				</Carousel>
-
 				<nav>
 					{ tabs.map((t,index)=>{ return <span key={index} onClick={ ()=> showTab(index) } className={ (index == activeIndex) ? "active1" : "navElement"}> {t} </span> }) }
 				</nav>
 
 				<div style={{ display: (activeIndex == 0) ? "block" : "none" }}> 
+					<div>
+						{loading && <div id="loader" />}
+						<div style={{ display: 'flex', scrollbarWidth: 'none', overflow: 'scroll', width: "100%", borderRadius: '10px', marginBottom: '10px' }}>
+							{about.images.map((image: string, index: number) => (
+								<img
+									key={index}
+									onLoad={() => setLoading(false)}
+									style={{
+										maxWidth: '250px',
+										maxHeight: '250px',
+										width: "100%",
+										borderRadius: '10px',
+										margin: '10px',
+										display: loading ? 'none' : 'block'
+									}}
+									src={image}
+									alt={`about-me-image-${index}`}
+								/>
+							))}
+						</div>
+					</div>
 					{
 						about.about_me.map((ele,index)=>{
 							return <p key={index}> { ele } </p>;
