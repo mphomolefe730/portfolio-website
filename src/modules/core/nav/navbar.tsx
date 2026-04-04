@@ -48,6 +48,7 @@ function NavBar(){
 			</div>
 
 			<div className="desktopNav">
+				<p className="stat-ticker"><small ><span>Current Status: </span> Joined Kubenetes African Training Program</small></p>
 				<div className='navContainer'>
 					<a className='navTitle' href='/about'>About</a>
 					<a className='navTitle' href='/projects'>Projects</a>
@@ -55,10 +56,10 @@ function NavBar(){
 					<a className='navTitle' href='/games'>Games</a>
 					<a className='navTitle' href='/videos'>Videos</a>
 				</div>
-				<p className="stat-ticker"><small ><span>Current Status: </span> Joined Kubenetes African Training Program</small></p>
 			</div>
 			<div className="mobileNav">
 				{/* display: (open) ? "none": "flex"*/}
+				<p className="stat-ticker"><small ><span>Current Status: </span> Joined Kubenetes African Training Program</small></p>
 				<div style={{ display:  "flex", width:"100%", justifyContent: "space-between", padding: "0 10px"}}>
 					<a style={{ maxWidth: "50px", backgroundColor: "white", padding: "10px", borderRadius: "50%" }} href="/">MM</a>
 					<img style={{ maxWidth: "50px", backgroundColor: "white", padding: "10px", borderRadius: "50%" }} src="https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/icons/menu-burger-horizontal-svgrepo-com.svg" onClick={()=> showNav()}/>

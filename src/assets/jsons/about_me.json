@@ -25,6 +25,13 @@
 		],
 		"certificates":[
 			{
+				"company_name": "The Linux Foundation",
+				"certificate_name": "Introduction to Kubernetes (LFS158)",
+				"date": "24 March 2025",
+				"image": "#",
+				"link": "https://www.credly.com/badges/41958af5-2b7b-4316-8491-86fb26934a6e"
+			},
+			{
 				"company_name": "Amazon Web Services Training and Certification",
 				"certificate_name": "AWS Academy Graduate - AWS Academy Cloud Foundations",
 				"date": "12 March 2025",

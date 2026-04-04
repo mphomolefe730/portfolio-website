@@ -1,7 +1,6 @@
 import about from '../../../assets/jsons/about_me.json';
 import './aboutMain.css'
 import { useState } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
 
 function AboutMain(){
 	const tabs = ['About','Experience','Education', 'Certificates'];
