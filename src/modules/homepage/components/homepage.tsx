@@ -99,7 +99,7 @@ function HomePage(){
 				<button type="button" onClick={ closeWelcomeMessage }>CONTINUE</button>
 			</div>
 			
-			<Carousel fade className='carouselHolder childGrown' style={{ backgroundColor: 'black', borderRadius: '0.5rem'}}>
+			<Carousel fade className='carouselHolder childGrown' style={{ display: (!close) ? 'none' : 'block', backgroundColor: 'black', borderRadius: '0.5rem'}}>
 				{ 
 					blogs.map((blog, index) => {
 						return(
@@ -117,7 +117,7 @@ function HomePage(){
 				}
 			</Carousel>
 			
-			<div className='mainContainer'>
+			<div className='mainContainer' style={{ display: (!close) ? 'none' : 'grid'}}>
 				<div className='elements company_name informationPill'>
 					<h1 style={{margin:'0'}}>MPHO MOLEFE</h1>
 					<div><span>Starred Project(s): </span> <a href="projects/Reverse-2048" className='project'>Reverse 2048</a></div>
