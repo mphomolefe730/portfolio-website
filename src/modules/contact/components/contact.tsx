@@ -111,7 +111,7 @@ function Contact() {
             type="email"
             name="email"
             value={email}
-            placeholder='Email'
+            placeholder='Your Email'
             onChange={(e) => setEmail(e.target.value)}
           />
           {errors.email && <p className="error">{errors.email}</p>}
@@ -121,7 +121,7 @@ function Contact() {
             type="text"
             name="message"
             value={message}
-            placeholder='message'
+            placeholder='Message'
             onChange={(e) => setMessage(e.target.value)}
           />
           {errors.message && <p className="error">{errors.message}</p>}

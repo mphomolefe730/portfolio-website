@@ -107,7 +107,7 @@ a:hover{
 	margin: 5px 0;
 	border-radius: 12px;
 	padding: 10px;
-	background: linear-gradient(145deg,#f0f0f0,#cacaca);
+	/* background: linear-gradient(145deg,#f0f0f0,#cacaca); */
 	box-shadow:
 		inset 2px 2px 4px #c1c1c1,   /* inner shadow (top-left) for depth */
 		inset -2px -2px 4px #ffffff, /* inner highlight (bottom-right) for light */
