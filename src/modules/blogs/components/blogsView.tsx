@@ -11,6 +11,15 @@ function BlogsView() {
         blog.title.replace(' ', '-').includes(blogName || '')
     );
 
+    let hideLoader = () => {
+		const loader = document.getElementById('loader');
+		const iframe = document.querySelector('iframe');
+
+		loader.style.display = 'none';
+		iframe.style.display = 'block';
+		
+	}
+
     useEffect(() => {
         console.log(blogName);
         console.log(blogInfo);
@@ -59,6 +68,10 @@ function BlogsView() {
                                     alt={`blog-${index}`}
                                 />
                             ))}
+                        </div>
+                        <div className="iframe-container" style={{ display: (blogInfo.video_link == '#') ? "none" : "block" }}>
+                            <div id='loader'></div>
+                            <iframe height="240" onLoad={ () => hideLoader() } style={{ width:"100%", borderRadius: '10px'}} src={blogInfo?.video_link} allow="autoplay"></iframe>
                         </div>
                     </div>
                 )}

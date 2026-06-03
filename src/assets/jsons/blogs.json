@@ -1,5 +1,21 @@
 [
-    
+    {
+        "title": "Unlocking the Future of Physical Security: My Insights from Securex 2026",
+        "description": [
+            "Attending Day 1 of Securex South Africa 2026 at the Gallagher Convention Centre was an incredible experience that completely shifted my perspective on where software meets physical infrastructure.",
+            "Walking through the exhibition floors, I had the chance to dive deep into technologies from industry giants like Hikvision, Eagle Eye Networks, Suprema, and DJI Enterprise. From autonomous drone grids managed by 24:7 Drone Force to smart perimeter fencing systems by ClearVu and Nemtek, one thing became crystal clear - the gap between physical security installations and full-stack software development has completely vanished.",
+            "As a developer with hands-on experience configuring security group, access control and VMS - seeing these systems in action was highly validating. Modern security endpoints are no longer just isolated hardware blocks, they are highly interconnected, API-driven IoT networks. Drones demand precise geospatial mapping, smart access controls require ultra-secure backend authorization layers; and hybrid VMS systems rely heavily on webhook event flows to process live streaming metadata.",
+            "This event highlighted exactly how we can leverage modern DevOps and full-stack engineering within the security industry. By containerizing lightweight microservices at the network edge—even on resource-constrained hardware—we can build smart middleware applications that parse real-time security alerts and automate monitoring workflows. The future belongs to those who bridge the physical and digital worlds, and I’m incredibly excited to weave these cutting-edge tech architectures into my ongoing systems and upcoming software."
+        ],
+        "image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1785777129000.jpeg",
+        "display_images": [],
+        "timeline": [],
+        "people_mentioned": [],
+        "highlight": true,
+        "tags": ["all", "summit", "security", "networking"],
+        "last_update": "3 June 2026",
+        "video_link": "#"
+    },    
     {
         "title": "What the Industry Has Shown Me - Halfway Through My Internship Journey ✨",
         "description": [
@@ -20,7 +36,8 @@
         "people_mentioned": [],
         "highlight": true,
         "tags": ["all", "career"],
-        "last_update": "14 December 2025"
+        "last_update": "14 December 2025",
+        "video_link": "#"
     },{
         "title": "AWS Summit Johannesburg 2024",
         "description": [
