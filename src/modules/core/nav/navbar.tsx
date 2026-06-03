@@ -1,6 +1,7 @@
 // import { Link } from 'react-router-dom'
 import './navbar.css';
 import { useState } from 'react';
+import About from '../../../assets/jsons/about_me.json';
 
 function NavBar(){
 	let [open, setOpen] = useState(false);
@@ -48,7 +49,7 @@ function NavBar(){
 			</div>
 
 			<div className="desktopNav">
-				<p className="stat-ticker"><small ><span>Current Status: </span> Joined Kubenetes African Training Program</small></p>
+				<p className="stat-ticker"><small ><span>Current Status: </span> { About.currentStatus }</small></p>
 				<div className='navContainer'>
 					<a className='navTitle' href='/about'>About</a>
 					<a className='navTitle' href='/projects'>Projects</a>

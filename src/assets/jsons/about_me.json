@@ -9,16 +9,23 @@
 		"profile": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/profile_image.jpeg",
 		"experience": [
 			{
+				"company_name": "Secure",
+				"job_title": "Technical Sales Intern",
+				"location": "Centurion, South Africa",
+				"from": "May 2026",
+				"to": "Present"
+			},
+			{
 				"company_name": "Department of Correctional Service",
 				"job_title": "Student Intern",
-				"location": "Gauteng, South Africa",
+				"location": "Pretoria, South Africa",
 				"from": "Jun 2025",
 				"to": "Dec 2025"
 			},
 			{
 				"company_name": "Qualtrix Software Technologies",
 				"job_title": "Software Engineer Apprenticeship",
-				"location": "Gauteng, South Africa",
+				"location": "Randburg, South Africa",
 				"from": "Oct 2023",
 				"to": "Jun 2025"
 			}
@@ -73,6 +80,7 @@
 			"https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/01_me.jpeg",
 			"https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/02_me.png",
 			"https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/03_me.jpg"
-		]
+		],
+		"currentStatus": "Joined Secure Internship Program"
 	}
 
