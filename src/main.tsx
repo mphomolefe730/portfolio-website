@@ -15,6 +15,7 @@ import AboutMain from './modules/about/components/aboutMain.tsx';
 import UnderConstruction from './modules/error/components/underConstruction.tsx';
 import Contact from './modules/contact/components/contact.tsx';
 import ProjectLoader from './modules/projects/components/projectLoader.tsx';
+import Share from './modules/contact/components/share.tsx';
 
 let isScrolling = false;
 let scrollTimeout: NodeJS.Timeout;
@@ -87,6 +88,10 @@ const router = createBrowserRouter([
   {
     path:'/videos',
     element: <UnderConstruction />
+  },
+  {
+    path:'/share',
+    element: <Share />
   },
 ])
 

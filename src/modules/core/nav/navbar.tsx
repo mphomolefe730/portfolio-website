@@ -6,7 +6,7 @@ import About from '../../../assets/jsons/about_me.json';
 function NavBar(){
 	let [open, setOpen] = useState(false);
 	let qrcode: { alt:string, text: string, linkToPhoto: string } = {
-		alt: 'QR code to view webiste on phone',
+		alt: 'QR code to view website on phone',
 		text: 'scan/view on phone',
 		linkToPhoto: 'https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/website_qr_code.png'
 	};
@@ -67,7 +67,7 @@ function NavBar(){
 				</div>
 				<div style={{ display: (open) ? "grid": "none", height: "98svh", width: "100%", zIndex: 99, position: "absolute", gridTemplateColumns: "2fr 4fr"}}>
 					<div style={{ backgroundColor: "rgba(0,0,0,1)" }} onClick={()=> showNav()}>
-						<div className='socialContainer '>
+						{/* <div className='socialContainer '>
 							{
 								socials.map((socialMedia,index) => {
 									return(
@@ -75,7 +75,7 @@ function NavBar(){
 									)
 								})
 							}
-						</div>
+						</div> */}
 					</div>
 					<div style={{ backgroundColor: "rgba(255,255,255,1)", padding: "10px"}}>
 						<a className='navTitle' href='/about'><p>About</p></a>
@@ -84,6 +84,7 @@ function NavBar(){
 						<a className='navTitle' href='/games'><p>Games</p></a>
 						<a className='navTitle' href='/videos'><p>Videos</p></a>
 						<a className='navTitle contactButton' href='/contact'> GET IN TOUCH</a>
+						<a className='navTitle' href='/share'> <p>SHARE</p></a>
 					</div>
 				</div>
 			</div>
