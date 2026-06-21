@@ -26,16 +26,15 @@
 
 .alert1{
 	text-align: center;
-	background-color: red;
-	color: white;
+	/* background-color: red; */
+	color: red;
 	padding: 5px;
 	margin: 5px auto;
 	border-radius: 10px;
-	max-width: 900px;
 }
 
 .projects{
-	max-height: 75svh;
+	max-height: 68svh;
 	padding: 0 10px;
 	overflow: auto;
 	max-width: 900px;

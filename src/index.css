@@ -141,6 +141,9 @@ a:hover{
 .childGrown{
 	animation: fadeInScaleUp 0.25s forwards;
 }
+.contact{
+	max-width: 750px;
+}
 
 @keyframes fadeAnimation{
 	from{

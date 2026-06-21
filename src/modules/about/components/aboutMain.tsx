@@ -125,6 +125,7 @@ function AboutMain(){
 					}) }
 				</div>
 			</div>
+			<a className='navTitle contactButton contact' href='/contact'> Contact </a>
 			<div className='alert1'>
 				<span>IMPORTANT: scroll for more, click filters for more</span>
 			</div>

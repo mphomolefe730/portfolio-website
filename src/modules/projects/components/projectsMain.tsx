@@ -25,6 +25,7 @@ function ProjectMain(){
 				<Outlet/>
 				<ProjectsAll category={ tabs[tabIndex] }/>
 			</div>
+			<a className='navTitle contactButton contact' href='/contact'> Contact </a>
 			<div className='alert1'>
 				<span>IMPORTANT: scroll for more, click item for more details</span>
 			</div>
