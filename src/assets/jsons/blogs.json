@@ -8,7 +8,12 @@
             "This expo highlighted exactly how we can leverage modern DevOps and full-stack engineering within physical security frameworks. By containerizing lightweight microservices at the network layer or even on resource hardware. We can build smart middleware applications that parse telemetry data, secure IoT endpoints, and automate monitoring workflows. The future belongs to developers who build highly resilient, integratable systems bridging the physical and digital worlds, and I’m excited to weave these architecture principles into my upcoming software builds."
         ],
         "image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1785777129000.jpeg",
-        "display_images": [],
+        "display_images": [
+            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1787343244000.jpeg",
+            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1787343252000.jpeg",
+            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1787343250000.jpeg",
+            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1787343246000.jpeg"
+        ],
         "timeline": [],
         "people_mentioned": [],
         "highlight": true,
