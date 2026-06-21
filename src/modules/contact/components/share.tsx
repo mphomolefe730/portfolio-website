@@ -5,7 +5,7 @@ function Share() {
     { name: "LinkedIn", link: "http://linkedin.com/in/mpho-molefe-a67ab9284/" },
     { name: "TikTok", link: "https://tiktok.com/@mphomolefe730" },
     { name: "X", link: "https://x.com/mphomolefeww" },
-    { name: "Email", link: "mailto:mphomolefe730@gmail.com" }
+    { name: "Email", link: "/contact" }
   ];
 
   let qrcode: { alt:string, text: string, linkToPhoto: string } = {
@@ -27,7 +27,7 @@ function Share() {
             <a
                 key={index}
                 href={option.link}
-                target="_blank"
+                target="_blank" 
                 rel="noopener noreferrer"
                 className="informationPill"
             >
