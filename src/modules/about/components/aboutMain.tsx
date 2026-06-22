@@ -29,13 +29,9 @@ function AboutMain(){
 									key={index}
 									onLoad={() => setLoading(false)}
 									style={{
-										maxWidth: '250px',
-										maxHeight: '250px',
-										width: "100%",
-										borderRadius: '10px',
-										margin: '10px',
 										display: loading ? 'none' : 'block'
 									}}
+									className="aboutImage"
 									src={image}
 									alt={`about-me-image-${index}`}
 								/>
