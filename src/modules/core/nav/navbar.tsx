@@ -60,7 +60,7 @@ function NavBar(){
 			</div>
 			<div className="mobileNav">
 				{/* display: (open) ? "none": "flex"*/}
-				<p className="stat-ticker"><small ><span>Current Status: </span> Joined Kubenetes African Training Program</small></p>
+				<p className="stat-ticker"><small ><span>Current Status: </span> { About.currentStatus }</small></p>
 				<div style={{ display:  "flex", width:"100%", justifyContent: "space-between", padding: "0 10px"}}>
 					<a style={{ maxWidth: "50px", backgroundColor: "white", padding: "10px", borderRadius: "50%" }} href="/">MM</a>
 					<img style={{ maxWidth: "50px", backgroundColor: "white", padding: "10px", borderRadius: "50%" }} src="https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/icons/menu-burger-horizontal-svgrepo-com.svg" onClick={()=> showNav()}/>
