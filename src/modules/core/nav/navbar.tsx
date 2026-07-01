@@ -40,7 +40,7 @@ function NavBar(){
 						)
 					})
 				}
-				<a className='project' href='/contact'> EMAIL</a>
+				{/* <a className='project' href='/contact'> EMAIL</a> */}
 			</div>
 
 			<div className='qrcodeContainer desktopNav'>

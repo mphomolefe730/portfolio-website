@@ -164,7 +164,7 @@ function Contact() {
           {errors.whoAreYou && <p className="error">{errors.whoAreYou}</p>}
           
         </div>
-        <button className='contactButton' type="submit">{('GET IN TOUCH').toUpperCase()}</button>
+        <a className='contactButton' onClick={handleSubmit}>{('GET IN TOUCH').toUpperCase()}</a>
       </form>
       <div style={{ display: isSubmitting ? 'block' : 'none', margin: "auto", maxWidth: "600px", textAlign: "center", alignContent: "center", position: 'relative', height: "50svh" }}>
         <h1> {loadingIndicator} </h1>

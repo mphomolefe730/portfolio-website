@@ -121,7 +121,10 @@ function AboutMain(){
 					}) }
 				</div>
 			</div>
-			<a className='navTitle contactButton contact' href='/contact'> Contact </a>
+			<div className='contactButtonContainer'>
+				<a className='contactButton' href='/contact'> Contact </a>
+				<a className='contactButton' href='https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/Mpho Molefe CV - 01-07-2026.pdf' target='_blank' rel='noopener noreferrer'> CV </a>
+			</div>
 			<div className='alert1'>
 				<span>IMPORTANT: scroll for more, click filters for more</span>
 			</div>
