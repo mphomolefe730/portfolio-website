@@ -15,9 +15,6 @@ function NavBar(){
 			name: "LinkedIn",
 			link: "http://linkedin.com/in/mpho-molefe-a67ab9284/"
 		}, {
-			name: "TikTok",
-			link: "https://tiktok.com/@mphomolefe730"
-		}, {
 			name: "X",
 			link: "https://x.com/mphomolefeww"
 		}
@@ -54,8 +51,6 @@ function NavBar(){
 					<a className='navTitle' href='/about'>About</a>
 					<a className='navTitle' href='/projects'>Projects</a>
 					<a className='navTitle' href='/blogs'>Blogs</a>
-					<a className='navTitle' href='/games'>Games</a>
-					<a className='navTitle' href='/videos'>Videos</a>
 				</div>
 			</div>
 			<div className="mobileNav">
@@ -81,8 +76,6 @@ function NavBar(){
 						<a className='navTitle' href='/about'><p>About</p></a>
 						<a className='navTitle' href='/projects'><p>Projects</p></a>
 						<a className='navTitle' href='/blogs'><p>Blogs</p></a>
-						<a className='navTitle' href='/games'><p>Games</p></a>
-						<a className='navTitle' href='/videos'><p>Videos</p></a>
 						<a className='navTitle contactButton' href='/contact'> GET IN TOUCH</a>
 						<a className='navTitle' href='/share'> <p>SHARE</p></a>
 					</div>

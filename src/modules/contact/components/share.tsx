@@ -3,7 +3,6 @@ import './share.css';
 function Share() {
   const shareOptions = [
     { name: "LinkedIn", link: "http://linkedin.com/in/mpho-molefe-a67ab9284/" },
-    { name: "TikTok", link: "https://tiktok.com/@mphomolefe730" },
     { name: "X", link: "https://x.com/mphomolefeww" },
     { name: "Email", link: "/contact" }
   ];
