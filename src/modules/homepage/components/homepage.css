@@ -44,6 +44,66 @@
 	margin: auto;
 
 }
+.carouselHolder .carousel-item {
+	position: relative;
+	overflow: hidden;
+	border-radius: 0.5rem;
+}
+
+.carouselHolder a {
+	cursor: pointer;
+	display: block;
+}
+
+.carouselImage {
+	transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.carouselHolder a:hover .carouselImage {
+	transform: scale(1.06);
+	filter: brightness(0.6);
+}
+
+.carouselHolder .carousel-caption {
+	transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.carouselHolder a:hover .carousel-caption {
+	transform: translateY(-4px);
+}
+
+.carouselHolder a:hover .carousel-caption::after {
+	content: "Click to read more →";
+	display: block;
+	font-size: 0.8rem;
+	opacity: 0.9;
+	margin-top: 4px;
+}
+.carouselHolder .carousel-control-prev,
+.carouselHolder .carousel-control-next {
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.elements a {
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+.latest_video {
+	transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.elements a:hover .latest_video {
+	transform: scale(1.06);
+	filter: brightness(0.85);
+}
+
 .elements{
 	/* background-image: linear-gradient(to bottom, rgba(255,0,0,0),rgba(120,120,120,1));
 	padding: 0 15%; */
