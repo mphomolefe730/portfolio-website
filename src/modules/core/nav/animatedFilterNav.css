@@ -1,0 +1,132 @@
+/* --- inline nav (default state) --- */
+.animatedFilterNav-inline {
+    transition: opacity 0.25s ease, transform 0.25s ease, max-height 0.25s ease, margin 0.25s ease;
+    max-height: 100px;
+}
+
+.animatedFilterNav-inline-hidden {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    max-height: 0;
+    margin: 0 !important;
+    overflow: hidden;
+}
+
+.animatedFilterNav-floating {
+    position: absolute;
+    /* top: 15%; */
+    right: 25%; 
+    z-index: 998;
+    opacity: 0;
+    transform: translateY(-16px) scale(0.95);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.animatedFilterNav-floating-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+    animation: animatedFilterNavFlowIn 0.35s ease;
+}
+
+@keyframes animatedFilterNavFlowIn {
+    from {
+        opacity: 0;
+        transform: translateY(-24px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* --- trigger pill --- */
+.animatedFilterNav-trigger {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: 1.5px solid black;
+    background: white;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    max-width: 180px;
+}
+
+.animatedFilterNav-trigger:hover {
+    color: white;
+    border: 0;
+    padding: 9px 15px;
+    background: linear-gradient(to right, #432371, #faae7b);
+}
+
+.animatedFilterNav-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 120px;
+}
+
+.animatedFilterNav-arrow {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.animatedFilterNav-arrow-open {
+    transform: rotate(180deg);
+}
+
+/* --- dropdown menu --- */
+.animatedFilterNav-dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    min-width: 170px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(-8px) scale(0.95);
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.animatedFilterNav-dropdown-open {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
+
+.animatedFilterNav-item {
+    padding: 8px 10px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.animatedFilterNav-item:hover {
+    background: linear-gradient(to right, #432371, #faae7b);
+    color: white;
+}
+
+.animatedFilterNav-item-active {
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+}
+
+@media (max-width: 950px) {
+    .animatedFilterNav-floating {
+        /* top: 8px; */
+        right: 2%;
+    }
+}

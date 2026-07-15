@@ -1,12 +1,14 @@
 import about from '../../../assets/jsons/about_me.json';
 import './aboutMain.css'
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+import AnimatedFilterNav from '../../core/nav/animatedFilterNav.tsx';
 
 function AboutMain(){
 	const tabs = ['About','Experience','Education', 'Certificates'];
 	let [activeIndex, setActiveIndex] = useState(0);
 	const dateV = new Date();
 	const [loading, setLoading] = useState(true);
+	const scrollRef = useRef<HTMLDivElement>(null);
 	
 	let showTab = (index:number) => {
 		setActiveIndex(index);
@@ -15,10 +17,13 @@ function AboutMain(){
 
 	return (
 		<div>
-			<div className="projects" style={{ maxWidth: "650px"}}>
-				<nav>
-					{ tabs.map((t,index)=>{ return <span key={index} onClick={ ()=> showTab(index) } className={ (index == activeIndex) ? "active1" : "navElement"}> {t} </span> }) }
-				</nav>
+			<div className="projects" style={{ maxWidth: "650px"}} ref={scrollRef}>
+				<AnimatedFilterNav
+					tabs={tabs}
+					activeIndex={activeIndex}
+					onSelect={showTab}
+					scrollRef={scrollRef}
+				/>
 
 				<div style={{ display: (activeIndex == 0) ? "block" : "none" }}> 
 					<div>

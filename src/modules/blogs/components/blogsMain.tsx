@@ -1,31 +1,27 @@
 import { Outlet } from 'react-router-dom';
 import '../../projects/components/projectsMain.css';
-import { useEffect, useState } from 'react';
+import { useRef, useState } from 'react';
 import BlogAll from './blogsAll.tsx';
 import '../../homepage/components/homepage.css';
+import AnimatedFilterNav from '../../core/nav/animatedFilterNav.tsx';
 
 function BlogsMain(){
     const tabs = ['all', 'career','summit'];
     let [tabIndex,setTabIndex] = useState(0);
+    const scrollRef = useRef<HTMLDivElement>(null);
     let filterContent = (index:number) => {
         setTabIndex(index);
     }
-
-    useEffect(() => {;
-    }, []);
     
     return(
         <div>
-            <div className="projects">
-                <nav className="projectMainNav" style={{margin: '12px 0'}}>
-                {	
-                    tabs.map((tab,index)=>{
-                        return (
-                            <span key={index} onClick={ ()=> filterContent( Number(index)) } className={(tabIndex == index) ? 'active1' : 'navElement'}> { tab } </span>
-                        )
-                    })
-                }
-                </nav>
+            <div className="projects" ref={scrollRef}>
+                <AnimatedFilterNav
+                    tabs={tabs}
+                    activeIndex={tabIndex}
+                    onSelect={filterContent}
+                    scrollRef={scrollRef}
+                />
                 <Outlet/>
                 <BlogAll tag={ tabs[tabIndex] }/>
             </div>
