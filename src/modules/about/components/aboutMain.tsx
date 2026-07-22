@@ -15,6 +15,18 @@ function AboutMain(){
 		console.log(index)
 	}
 
+	const handleProjectClick = (actionName, targetUrl) => {
+		if (typeof window !== 'undefined' && typeof (window as any).cf !== 'undefined') {
+			(window as any).cf('event', { 'button_clicked': actionName });
+		}
+
+		if (targetUrl.startsWith('http')) {
+			window.open(targetUrl, '_blank', 'noopener,noreferrer');
+		} else {
+			window.location.href = targetUrl; // Fallback vanilla method
+		}
+	};
+
 	return (
 		<div>
 			<div className="projects" style={{ maxWidth: "650px"}} ref={scrollRef}>
@@ -127,8 +139,8 @@ function AboutMain(){
 				</div>
 			</div>
 			<div className='contactButtonContainer'>
-				<a className='contactButton' href='/contact'> Contact </a>
-				<a className='contactButton' href='https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/Mpho%20Molefe%20CV%20-%2001-07-2026.pdf' target='_blank' rel='noopener noreferrer'> CV </a>
+				<a onClick={() => handleProjectClick('Contact Via About', '/contact')} className='contactButton'>Contact</a>
+				<a onClick={() => handleProjectClick('Download CV', 'https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/Mpho%20Molefe%20CV%20-%2001-07-2026.pdf')} className='contactButton'>CV</a>
 			</div>
 			<div className='alert1'>
 				<span>IMPORTANT: scroll for more, click filters for more</span>

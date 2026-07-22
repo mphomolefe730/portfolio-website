@@ -17,6 +17,9 @@ function NavBar(){
 		}, {
 			name: "X",
 			link: "https://x.com/mphomolefeww"
+		}, {
+			name: "GitHub",
+			link: "https://github.com/mphomolefe730"
 		}
 	];
 	let showNav = () => {
