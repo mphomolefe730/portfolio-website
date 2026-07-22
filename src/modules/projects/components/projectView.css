@@ -23,7 +23,7 @@
 	background: -webkit-linear-gradient(to right, #432371, #faae7b); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #432371, #faae7b);
 	padding: 12px;
-	border-radius: 12px;
+	border-radius: var(--global-radius);
 }
 .iframe-container {
 	position: relative;
@@ -56,14 +56,14 @@ iframe {
 	display: grid;
 	grid-template-columns: 2fr 2fr;
 	*/
-	border-radius: 12px;
+	border-radius: var(--global-radius);
 }
 .dateContainer{
 	padding: 5px 10px;
 	margin: 0;
 	display: inline-block;
 	border: 2px solid black;
-	border-radius: 12px;
+	border-radius: var(--global-radius);
 }
 .timelineBody{
 	width: 10px;

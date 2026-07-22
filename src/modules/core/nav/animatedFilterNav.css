@@ -89,7 +89,7 @@
     right: 0;
     min-width: 170px;
     background: white;
-    border-radius: 12px;
+    border-radius: var(--global-radius);
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
     padding: 6px;
     display: flex;

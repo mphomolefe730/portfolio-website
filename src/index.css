@@ -13,6 +13,7 @@ body{
 	overflow-x: hidden;
 	scrollbar-width: thin;
 	height: 100svh;
+	--global-radius: 12px;
 	/* background-image: linear-gradient(#ffffff, 90%, #cfd3de);*/
 	/* animation: backgroundChangeColors 60s ease-in-out forwards infinite;  */
 }
@@ -52,7 +53,7 @@ a:hover{
 	max-width: 200px;
 	max-height: 200px;
 	width: 100%;
-	border-radius: 10px;
+	border-radius: var(--global-radius);
 	margin: 10px;
 }
 
@@ -94,7 +95,7 @@ a:hover{
 
 .navcenter{
 	margin: 5px auto;
-	border-radius: 12px;
+	border-radius: var(--global-radius);
 	padding: 10px 2.5px;
 	display: flex;
 	justify-content: space-between;
@@ -113,7 +114,7 @@ a:hover{
 }
 .informationPill{
 	margin: 5px 0;
-	border-radius: 12px;
+	border-radius: var(--global-radius);
 	padding: 10px;
 	/* background: linear-gradient(145deg,#f0f0f0,#cacaca); */
 	box-shadow:
@@ -147,7 +148,7 @@ a:hover{
 	/*font-weight: bold;
 	font-size: xx-large;*/
 	padding: 12px;
-	border-radius: 12px;
+	border-radius: var(--global-radius);
 	margin: 5px 10px;
 	text-transform: uppercase;
 }

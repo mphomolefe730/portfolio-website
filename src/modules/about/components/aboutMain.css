@@ -9,7 +9,7 @@
 	height: 100svh;
 	padding: 12px;
 	background-color: white;
-	border-radius: 12px;
+	border-radius: var(--global-radius);
 	/*overflow: auto;*/
 }
 .aboutHeroContainer{
@@ -17,7 +17,7 @@
 	grid-template-columns: 1fr 1fr 1fr;
 }
 .aboutHero{
-	border-radius: 12px;
+	border-radius: var(--global-radius);
 	padding: 12px;
 	margin: 10px 5px;
 	text-transform: uppercase;
