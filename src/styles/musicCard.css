@@ -1,0 +1,125 @@
+/* ============ GRID ============ */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 8px 2px 24px;
+}
+
+/* ============ CARD ============ */
+.musicCard {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 3;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #e8e8ed;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.musicCard:hover {
+  transform: scale(1.02);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
+}
+
+.musicCard:active {
+  transform: scale(0.99);
+}
+
+/* Fallback for cards without an image (e.g. about pills) */
+.musicCard.noImage {
+  background: linear-gradient(135deg, #432371, #faae7b);
+}
+
+/* ============ IMAGE + SCRIM ============ */
+.musicCardImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.musicCard:hover .musicCardImage {
+  transform: scale(1.05);
+}
+
+.musicCardScrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.78) 0%,
+    rgba(0, 0, 0, 0.4) 38%,
+    rgba(0, 0, 0, 0) 68%
+  );
+  pointer-events: none;
+}
+
+/* ============ BADGE ============ */
+.musicCardBadge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* ============ TEXT BLOCK ============ */
+.musicCardText {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 14px 16px;
+  color: #fff;
+}
+
+.musicCardCategory {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.85;
+  margin: 0 0 3px;
+}
+
+.musicCardTitle {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  text-transform: capitalize;
+  line-height: 1.2;
+}
+
+.musicCardDescription {
+  font-size: 12.5px;
+  font-weight: 400;
+  line-height: 1.35;
+  margin: 0;
+  opacity: 0.9;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .cardGrid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
+  .musicCardTitle { font-size: 15px; }
+  .musicCardDescription { font-size: 11.5px; }
+}

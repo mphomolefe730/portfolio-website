@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 
+import ServicesMain from './modules/services/components/servicesMain.tsx';
 import NavBar from './modules/core/nav/navbar.tsx';
 import HomePage from './modules/homepage/components/homepage.tsx';
 import ProjectMain from './modules/projects/components/projectsMain.tsx';
@@ -92,7 +93,10 @@ const router = createBrowserRouter([
   {
     path:'/share',
     element: <Share />
-  },
+  },{ 
+    path: '/services', 
+    element: <ServicesMain /> 
+  }
 ])
 
 createRoot(document.getElementById('root')!).render(

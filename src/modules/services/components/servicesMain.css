@@ -1,0 +1,201 @@
+.servicesContainer {
+	padding-bottom: 20px;
+}
+
+.servicesEyebrow {
+	letter-spacing: 0.15rem;
+	color: gray;
+	text-transform: uppercase;
+}
+
+/* .servicesHero {
+	text-align: center;
+	padding: 24px 16px;
+} */
+body{
+	background: linear-gradient(145deg, #ffffff, #f0f0f0);
+}
+.servicesHero .contactButtonContainer {
+	grid-template-columns: 1fr;
+}
+
+/* Why work with me */
+.servicesWhyGrid {
+	gap: 10px;
+}
+
+.servicesWhyCard {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	border: 2px solid black;
+}
+
+/* Transparency callout */
+.servicesTransparency {
+	margin-top: 14px;
+	padding: 14px 18px;
+	border-left: 4px solid;
+	border-image: linear-gradient(to bottom, #432371, #faae7b) 1;
+	font-size: 0.9rem;
+}
+
+/* Services grid */
+.servicesGrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 12px;
+}
+
+.serviceCard {
+	cursor: pointer;
+	transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.serviceCard:hover {
+	transform: translateY(-2px);
+}
+
+.serviceCardOpen {
+	background: linear-gradient(145deg, #ffffff, #f3f3f3);
+	border: 1px solid #eee;
+}
+
+.serviceCardHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.serviceToggle {
+	font-size: 1.3rem;
+	font-weight: 900;
+	background: linear-gradient(to right, #432371, #faae7b);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.serviceTagline {
+	margin: 4px 0 0;
+	font-size: 0.85rem;
+	color: gray;
+}
+
+.serviceCardBody {
+	margin-top: 10px;
+	animation: fadeInScaleUp 0.2s forwards;
+}
+
+.serviceDeliverables {
+	margin: 8px 0;
+	padding-left: 18px;
+	font-size: 0.85rem;
+}
+
+.serviceDeliverables li {
+	margin-bottom: 4px;
+}
+
+.serviceEvidenceLink {
+	display: inline-block;
+	margin-top: 6px;
+	font-weight: bold;
+	font-size: 0.85rem;
+	background: linear-gradient(to right, #432371, #faae7b);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding: 0;
+}
+
+.serviceEvidenceLink:hover {
+	background: none;
+	box-shadow: none;
+	border-radius: 0;
+	text-decoration: underline;
+}
+
+/* Process */
+.processGrid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+}
+
+.processStep {
+	text-align: center;
+}
+
+.processNumber {
+	display: block;
+	font-size: 1.6rem;
+	font-weight: 900;
+	background: linear-gradient(to right, #432371, #faae7b);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.company_name{
+	text-transform: uppercase;
+}
+/* Case studies */
+.servicesCaseGrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 12px;
+}
+
+.serviceCaseLink {
+	display: block;
+	color: inherit;
+	padding: 0;
+}
+
+.serviceCaseLink:hover {
+	background: none;
+	box-shadow: none;
+	color: inherit;
+}
+
+.serviceCaseCard {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	height: 100%;
+}
+
+.serviceCaseCard:hover {
+	background: #005aa7;
+	background: linear-gradient(to right, #432371, #faae7b);
+	color: white;
+}
+
+.serviceCaseImage {
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+	border-radius: 10px;
+	flex-shrink: 0;
+}
+
+/* CTA banner */
+.servicesCta {
+	margin-top: 30px;
+	text-align: center;
+	padding: 24px 16px;
+	/* background: linear-gradient(145deg, #ffffff, #f0f0f0); */
+}
+
+@media (max-width: 810px) {
+	.servicesGrid {
+		grid-template-columns: 1fr;
+	}
+	.servicesWhyGrid {
+		grid-template-columns: 1fr !important;
+	}
+	.processGrid {
+		grid-template-columns: 1fr 1fr;
+	}
+	.servicesCaseGrid {
+		grid-template-columns: 1fr;
+	}
+}

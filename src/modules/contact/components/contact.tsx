@@ -17,6 +17,7 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [whoAreYou, setWhoAreYou] = useState("");
+  const [notifyMe, setNotifyMe] = useState(true); // Default to true for the checkbox
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState<Errors>({});
 
@@ -53,10 +54,11 @@ function Contact() {
     return () => clearInterval(interval);
   }, [isSubmitting]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
     if (!validate()) return;
     setIsSubmitting(true);
+    console.log(e.target);
     emailjs.sendForm(
       env.VITE_EMAILJS_SERVICE_ID,
       env.VITE_EMAILJS_TEMPLATE_ID,
@@ -162,9 +164,25 @@ function Contact() {
             </div>
           </div>
           {errors.whoAreYou && <p className="error">{errors.whoAreYou}</p>}
-          
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', margin: '20px 0' }}>
+            <input
+              type="checkbox"
+              id="notifyMe"
+              name="user_notifyMe"
+              value={notifyMe ? "Yes" : "No"} 
+              checked={notifyMe}
+              onChange={(e) => setNotifyMe(e.target.checked)}
+              style={{ cursor: 'pointer' }}
+            />
+            <label htmlFor="notifyMe" className="text-muted" style={{ margin: 0, cursor: 'pointer' }}>
+              Notify me about new projects/posts
+            </label>
+          </div>
+          <button className='contactButton' type="submit">
+            {('GET IN TOUCH').toUpperCase()}
+          </button>
         </div>
-        <a className='contactButton' onClick={handleSubmit}>{('GET IN TOUCH').toUpperCase()}</a>
       </form>
       <div style={{ display: isSubmitting ? 'block' : 'none', margin: "auto", maxWidth: "600px", textAlign: "center", alignContent: "center", position: 'relative', height: "50svh" }}>
         <h1> {loadingIndicator} </h1>

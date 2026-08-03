@@ -89,7 +89,7 @@ function AboutMain(){
 							</div>
 						)
 					}) } 
-				</div>
+			</div>
 				
 				<div style={{ display: (activeIndex == 2) ? "block" : "none"}}> 
 					{ about.education.map((job, index)=>{

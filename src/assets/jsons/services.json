@@ -1,0 +1,145 @@
+{
+  "positioning": {
+    "eyebrow": "SERVICES",
+    "heading": "I build the digital groundwork and integrated systems your business actually needs",
+    "subheading": "Full-stack development, real-time platforms, physical-digital system integrations, and technical infrastructure built for security, reliability, and scale."
+  },
+  "whyMe": [
+    {
+      "title": "No Middlemen",
+      "description": "You work directly with the person writing the code and configuring the infrastructure. Every question answered fast, every decision explained in plain English."
+    },
+    {
+      "title": "Real Projects, Real Proof",
+      "description": "Every case study and service listed is backed by live products, production code, and hands-on system deployments."
+    },
+    {
+      "title": "Built To Last, Not To Depend",
+      "description": "Documented, maintainable code and full handover. The product and system architecture are yours with zero vendor lock-in."
+    }
+  ],
+  "services": [
+    {
+      "id": "web-design",
+      "title": "Web Design & Development",
+      "tagline": "Custom sites built to load fast, look sharp, and convert.",
+      "description": "Responsive, custom-built websites using React, Angular, or Dotnet — designed around your actual audience, not a template.",
+      "deliverables": [
+        "Responsive design across mobile, tablet & desktop",
+        "Clean, maintainable code you fully own",
+        "Direct collaboration from first sketch to launch"
+      ],
+      "evidenceProjectTitle": "Ecommerce Connect"
+    },
+    {
+      "id": "ecommerce",
+      "title": "Ecommerce Development",
+      "tagline": "End-to-end online stores, not just a shopping cart plugin.",
+      "description": "Custom storefronts, checkout flows, and seller/admin dashboards for tracking inventory, orders, and sales — built for small-to-medium businesses.",
+      "deliverables": [
+        "Custom storefront & checkout flow",
+        "Admin dashboards with real inventory & sales analytics",
+        "Real-time features — live chat, order status, notifications"
+      ],
+      "evidenceProjectTitle": "Ecommerce Connect"
+    },
+    {
+      "id": "realtime-platform-architecture",
+      "title": "Real-Time & Location-Based Platform Development",
+      "tagline": "Scalable dynamic pricing, tracking, and secure transaction workflows.",
+      "description": "Specialised backend and mobile-responsive platform engineering tailored for real-time operations, interactive maps, payment gateways, and automated user safety workflows.",
+      "deliverables": [
+        "Geolocation mapping & routing integration (Google Maps API)",
+        "Real-time dispatch, surge pricing & state management (Redis, SocketIO)",
+        "Secure payment gateway integration (Paystack) & automated document verification"
+      ],
+      "evidenceProjectTitle": "Rydly (Qualtrix Software Technologies)"
+    },
+    {
+      "id": "systems-integration-deployment",
+      "title": "Hardware & Software Systems Integration",
+      "tagline": "Bridging physical security systems and digital network infrastructure.",
+      "description": "End-to-end evaluation, deployment, and configuration of hardware-software systems. Ensuring seamless interoperability, optimal network communication, and high reliability across complex environments.",
+      "deliverables": [
+        "On-site technical evaluations & infrastructure deployment",
+        "Physical access control system integration",
+        "Hardware swap-outs, maintenance, and system interoperability testing"
+      ],
+      "evidenceProjectTitle": "Client Infrastructure Projects (Online Administrator T/A Secure)"
+    },
+    {
+      "id": "network-infrastructure-support",
+      "title": "Network Infrastructure & Technical Support",
+      "tagline": "Robust network configurations and SLA-backed system maintenance.",
+      "description": "Diagnosing complex network/system bottlenecks and providing tailored infrastructure solutions to ensure high uptime and security compliance.",
+      "deliverables": [
+        "Network troubleshooting & configuration (Ethernet, routing, hardware updates)",
+        "Technical SLA diagnosis and rapid incident resolution",
+        "Stakeholder technical briefings & solution mapping"
+      ],
+      "evidenceProjectTitle": "Enterprise & Public Sector Support (Department of Correctional Services & Secure)"
+    },
+    {
+      "id": "seo",
+      "title": "Technical SEO Foundations",
+      "tagline": "SEO built into the site, not added afterward.",
+      "description": "Semantic HTML, fast load times, structured data, sitemaps, and mobile-first layouts — the technical groundwork search engines actually reward.",
+      "deliverables": [
+        "Clean semantic markup & optimised load times",
+        "Meta tags, sitemaps & structured data",
+        "Mobile-first, accessible builds"
+      ],
+      "evidenceProjectTitle": "3D Printing Retailer Sitework"
+    },
+    {
+      "id": "graphic-design",
+      "title": "Graphic & UI Design",
+      "tagline": "Interfaces that match the mockup, not a rough approximation.",
+      "description": "Wireframes and UI layouts in Figma, translated pixel-for-pixel into a working interface — consistent colour, type, and spacing across every screen.",
+      "deliverables": [
+        "UI/UX layouts & wireframes in Figma",
+        "Consistent visual identity — colour, type, spacing",
+        "Interfaces built to match the design, not just 'close enough'"
+      ],
+      "evidenceProjectTitle": "Department of Correctional Services Social Worker System"
+    },
+    {
+      "id": "paid-media",
+      "title": "Paid Media Readiness",
+      "tagline": "Your site, ready to convert before you spend a rand on ads.",
+      "description": "Landing pages engineered to convert: fast load times, clear calls-to-action, and analytics wired up so you can see what's working.",
+      "deliverables": [
+        "Conversion-focused landing pages",
+        "Analytics & tracking setup (Google Analytics, conversion pixels)",
+        "Sites built to hold up under paid traffic"
+      ],
+      "evidenceProjectTitle": null
+    }
+  ],
+  "process": [
+    {
+      "title": "Discovery",
+      "description": "We talk through your goals, infrastructure requirements, and audience with zero jargon."
+    },
+    {
+      "title": "Plan & Quote",
+      "description": "You get a clear scope, timeline, and fixed price — in writing, before any hardware or code is touched."
+    },
+    {
+      "title": "Build & Deploy",
+      "description": "Regular updates, live preview links, or on-site deployment check-ins as progress happens."
+    },
+    {
+      "title": "Launch & Handover",
+      "description": "Full documentation, source code, and walkthroughs. Complete ownership transferred to you."
+    }
+  ],
+  "transparencyNote": "Every project starts with a fixed-scope quote before any work begins — no hourly guesswork, no surprise invoices.",
+  "caseStudyTitles": [
+    "Ecommerce Connect",
+    "Rydly",
+    "Secure Technical Sales & Deployments",
+    "Department of Correctional Services Social Worker System",
+    "Betway Aviator Analysis"
+  ]
+}

@@ -52,8 +52,9 @@ function NavBar(){
 				<p className="stat-ticker"><small ><span>Current Status: </span> { About.currentStatus }</small></p>
 				<div className='navContainer'>
 					<a className='navTitle' href='/about'>About</a>
-					<a className='navTitle' href='/projects'>Projects</a>
 					<a className='navTitle' href='/blogs'>Blogs</a>
+					<a className='navTitle' href='/projects'>Projects</a>
+					<a className='navTitle' href='/services'>Services</a>
 				</div>
 			</div>
 			<div className="mobileNav">
@@ -77,8 +78,9 @@ function NavBar(){
 					</div>
 					<div style={{ backgroundColor: "rgba(255,255,255,1)", padding: "10px"}}>
 						<a className='navTitle' href='/about'><p>About</p></a>
-						<a className='navTitle' href='/projects'><p>Projects</p></a>
 						<a className='navTitle' href='/blogs'><p>Blogs</p></a>
+						<a className='navTitle' href='/projects'><p>Projects</p></a>
+						<a className='navTitle' href='/services'><p>Services</p></a>
 						<a className='navTitle contactButton' href='/contact'> GET IN TOUCH</a>
 						<a className='navTitle' href='/share'> <p>SHARE</p></a>
 					</div>

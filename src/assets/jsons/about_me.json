@@ -32,6 +32,13 @@
 		],
 		"certificates":[
 			{
+				"company_name": "Gallagher Group Limited",
+				"certificate_name": "Gallagher Access Technician",
+				"date": "21 July 2025",
+				"image": "#",
+				"link": "#"
+			},
+			{
 				"company_name": "The Linux Foundation",
 				"certificate_name": "Introduction to Kubernetes (LFS158)",
 				"date": "24 March 2025",
