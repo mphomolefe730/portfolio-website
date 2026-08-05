@@ -15,8 +15,11 @@ import BlogsView from './modules/blogs/components/blogsView.tsx';
 import AboutMain from './modules/about/components/aboutMain.tsx';
 import UnderConstruction from './modules/error/components/underConstruction.tsx';
 import Contact from './modules/contact/components/contact.tsx';
+import AdminMain from './modules/admin/components/adminMain.tsx';
 import ProjectLoader from './modules/projects/components/projectLoader.tsx';
 import Share from './modules/contact/components/share.tsx';
+import AdminProjectProgress from './modules/admin/components/adminProjectProgress.tsx';
+import AdminAll from './modules/admin/components/adminAll.tsx';
 
 let isScrolling = false;
 let scrollTimeout: NodeJS.Timeout;
@@ -96,7 +99,20 @@ const router = createBrowserRouter([
   },{ 
     path: '/services', 
     element: <ServicesMain /> 
-  }
+  },{
+    path:'/admin',
+    element: <AdminMain />,
+    children:[
+      {
+        path: '/admin',
+        element:  <AdminAll/>
+      },
+      {
+        path:'/admin/status/:projectId',
+        element: <AdminProjectProgress/>
+      }
+    ]
+  },
 ])
 
 createRoot(document.getElementById('root')!).render(

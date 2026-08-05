@@ -14,8 +14,9 @@ body{
 	scrollbar-width: thin;
 	height: 100svh;
 	--global-radius: 12px;	
-	background: linear-gradient(145deg, #ffffff, #f0f0f0);
-	/* background-image: linear-gradient(#ffffff, 90%, #cfd3de);*/
+	background-color: #0000;
+	/* background: linear-gradient(145deg, #ffffff, #f0f0f0); */
+	/* background-image: linear-gradient(#ffffff, 90%, #cfd3de); */
 	/* animation: backgroundChangeColors 60s ease-in-out forwards infinite;  */
 }
 

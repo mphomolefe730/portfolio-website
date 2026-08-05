@@ -1,10 +1,14 @@
 // import { Link } from 'react-router-dom'
 import './navbar.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import About from '../../../assets/jsons/about_me.json';
 
 function NavBar(){
 	let [open, setOpen] = useState(false);
+	
+	// Check if current path includes '/admin'
+    const isAdmin = window.location.pathname.includes('/admin');
+
 	let qrcode: { alt:string, text: string, linkToPhoto: string } = {
 		alt: 'QR code to view website on phone',
 		text: 'scan/view on phone',
@@ -26,11 +30,11 @@ function NavBar(){
 		setOpen(!open);
 	};
 	
+	
 	return(
         <nav>
-			<a className='mm desktopNav' href='/'> 
-				MM
-			</a>
+			{!isAdmin ? <a className='mm desktopNav' href='/'> MM</a> : <a className='mm desktopNav' href='/admin'> MM</a>}
+			
 			<div className='socialContainer desktopNav'>
 				<p>Connect with me:</p>
 				{
@@ -50,18 +54,25 @@ function NavBar(){
 
 			<div className="desktopNav">
 				<p className="stat-ticker"><small ><span>Current Status: </span> { About.currentStatus }</small></p>
-				<div className='navContainer'>
-					<a className='navTitle' href='/about'>About</a>
-					<a className='navTitle' href='/blogs'>Blogs</a>
-					<a className='navTitle' href='/projects'>Projects</a>
-					<a className='navTitle' href='/services'>Services</a>
-				</div>
+				{!isAdmin ? (
+                    <div className='navContainer'>
+                        <a className='navTitle' href='/about'>About</a>
+                        <a className='navTitle' href='/blogs'>Blogs</a>
+                        <a className='navTitle' href='/projects'>Projects</a>
+                        <a className='navTitle' href='/services'>Services</a>
+                    </div>
+                ) : (
+					<div className='navContainer'>
+						<a className='navTitle' href='/admin'><p>Home</p></a>
+						<a className='navTitle' href='/admin/billing'><p>Billing</p></a>
+					</div>
+				)}
 			</div>
 			<div className="mobileNav">
 				{/* display: (open) ? "none": "flex"*/}
 				<p className="stat-ticker"><small ><span>Current Status: </span> { About.currentStatus }</small></p>
 				<div style={{ display:  "flex", width:"100%", justifyContent: "space-between", padding: "0 10px"}}>
-					<a style={{ maxWidth: "50px", backgroundColor: "white", padding: "10px", borderRadius: "50%" }} href="/">MM</a>
+					{!isAdmin ? <a style={{ maxWidth: "50px", backgroundColor: "white", padding: "10px", borderRadius: "50%" }} href="/">MM</a> : <a style={{ maxWidth: "50px", backgroundColor: "white", padding: "10px", borderRadius: "50%" }} href="/admin">MM</a>}
 					<img style={{ maxWidth: "50px", backgroundColor: "white", padding: "10px", borderRadius: "50%" }} src="https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/icons/menu-burger-horizontal-svgrepo-com.svg" onClick={()=> showNav()}/>
 				</div>
 				<div style={{ display: (open) ? "grid": "none", height: "98svh", width: "100%", zIndex: 99, position: "absolute", gridTemplateColumns: "2fr 4fr"}}>
@@ -76,14 +87,21 @@ function NavBar(){
 							}
 						</div> */}
 					</div>
-					<div style={{ backgroundColor: "rgba(255,255,255,1)", padding: "10px"}}>
-						<a className='navTitle' href='/about'><p>About</p></a>
-						<a className='navTitle' href='/blogs'><p>Blogs</p></a>
-						<a className='navTitle' href='/projects'><p>Projects</p></a>
-						<a className='navTitle' href='/services'><p>Services</p></a>
-						<a className='navTitle contactButton' href='/contact'> GET IN TOUCH</a>
-						<a className='navTitle' href='/share'> <p>SHARE</p></a>
-					</div>
+					{!isAdmin ? (
+						<div style={{ backgroundColor: "rgba(255,255,255,1)", padding: "10px"}}>
+							<a className='navTitle' href='/about'><p>About</p></a>
+							<a className='navTitle' href='/blogs'><p>Blogs</p></a>
+							<a className='navTitle' href='/projects'><p>Projects</p></a>
+							<a className='navTitle' href='/services'><p>Services</p></a>
+							<a className='navTitle contactButton' href='/contact'> GET IN TOUCH</a>
+							<a className='navTitle' href='/share'><p>SHARE</p></a>
+						</div>
+					) : (
+						<div style={{ backgroundColor: "rgba(255,255,255,1)", padding: "10px"}}>
+							<a className='navTitle' href='/admin'><p>Home</p></a>
+							<a className='navTitle' href='/admin/billing'><p>Billing</p></a>
+						</div>
+					)}
 				</div>
 			</div>
         </nav>
