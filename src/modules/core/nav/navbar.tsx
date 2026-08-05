@@ -1,6 +1,6 @@
 // import { Link } from 'react-router-dom'
 import './navbar.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import About from '../../../assets/jsons/about_me.json';
 
 function NavBar(){
@@ -100,6 +100,8 @@ function NavBar(){
 						<div style={{ backgroundColor: "rgba(255,255,255,1)", padding: "10px"}}>
 							<a className='navTitle' href='/admin'><p>Home</p></a>
 							<a className='navTitle' href='/admin/billing'><p>Billing</p></a>
+							<a className='navTitle contactButton' href='/contact'> GET IN TOUCH</a>
+							<a className='navTitle' href='/share'><p>SHARE</p></a>
 						</div>
 					)}
 				</div>

@@ -110,6 +110,9 @@ const router = createBrowserRouter([
       {
         path:'/admin/status/:projectId',
         element: <AdminProjectProgress/>
+      },{
+        path:'/admin/billing',
+        element: <UnderConstruction />
       }
     ]
   },

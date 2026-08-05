@@ -4,7 +4,8 @@ function Share() {
   const shareOptions = [
     { name: "LinkedIn", link: "http://linkedin.com/in/mpho-molefe-a67ab9284/" },
     { name: "X", link: "https://x.com/mphomolefeww" },
-    { name: "Email", link: "/contact" }
+    { name: "Email", link: "/contact" },
+    { name: "Admin", link: "/admin" }
   ];
 
   let qrcode: { alt:string, text: string, linkToPhoto: string } = {
