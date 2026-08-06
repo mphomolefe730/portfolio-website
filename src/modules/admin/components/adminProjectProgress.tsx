@@ -185,7 +185,7 @@ export default function AdminProjectProgress() {
                     </div>
                 </div>
 
-                <small className="musicCardDescription" style={{ marginTop: '8px', opacity: 0.6 }}>
+                <small className="musicCardDescription" style={{ marginTop: '0.5rem 0', opacity: 0.6 }}>
                     Last system check: {LastUpdated}
                 </small>
             </div>
@@ -220,7 +220,7 @@ export default function AdminProjectProgress() {
                                         <span className="musicCardCategory" style={{ color: '#4caf50' }}>{log.PhaseChangedTo || 'Update'}</span>
                                         <span style={{ fontSize: '11px', opacity: 0.5 }}>{log.Timestamp}</span>
                                     </div>
-                                    <p className="musicCardDescription" style={{ margin: '4px 0 0 0', color: '#fff' }}>
+                                    <p className="musicCardDescription" style={{ margin: '4px 0 0 0'}}>
                                         {log.ChangeSummary}
                                     </p>
                                     <small style={{ fontSize: '11px', opacity: 0.5, display: 'block', marginTop: '2px' }}>
