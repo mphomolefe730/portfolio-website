@@ -4,6 +4,10 @@ nav{
 	text-align: center;
 	padding: 10px 0;
 }
+.logout{
+	background-color: #712323;
+	color: white;
+}
 .navContainer{
 	/*background-color: white;
 	box-shadow: 0 1px 2px 0 black;*/

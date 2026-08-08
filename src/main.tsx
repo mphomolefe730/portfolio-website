@@ -20,6 +20,7 @@ import ProjectLoader from './modules/projects/components/projectLoader.tsx';
 import Share from './modules/contact/components/share.tsx';
 import AdminProjectProgress from './modules/admin/components/adminProjectProgress.tsx';
 import AdminAll from './modules/admin/components/adminAll.tsx';
+import AdminLogin from './modules/admin/components/adminLogin.tsx';
 
 let isScrolling = false;
 let scrollTimeout: NodeJS.Timeout;
@@ -106,6 +107,10 @@ const router = createBrowserRouter([
       {
         path: '/admin',
         element:  <AdminAll/>
+      },
+      {
+        path:'/admin/login',
+        element: <AdminLogin/>
       },
       {
         path:'/admin/status/:projectId',

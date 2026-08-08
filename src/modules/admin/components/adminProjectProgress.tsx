@@ -2,11 +2,18 @@ import { useEffect, useState } from 'react';
 import Papa from 'papaparse';
 import { useParams } from 'react-router';
 import { env } from '../../../configs/environment';
+import { useLocation } from 'react-router-dom';
 
 const PROJECTS_CSV_URL = env.GOOGLE_DRIVE_PROJECTS_TRACKER;
 const LOGS_CSV_URL = env.GOOGLE_DRIVE_PROJECTS_TRACKER_LOGS; // Add your 3rd CSV URL in environment configs
 
 export default function AdminProjectProgress() {
+    const location = useLocation();
+    if (sessionStorage.getItem('adminLoggedIn') !== 'true') {
+        if (location.pathname !== '/admin/login') {
+            window.location.href = '/admin/login';
+        }
+    }
     const { projectId } = useParams();
     const [projectData, setProjectData] = useState(null);
     const [logs, setLogs] = useState([]);

@@ -5,6 +5,11 @@ import About from '../../../assets/jsons/about_me.json';
 
 function NavBar(){
 	let [open, setOpen] = useState(false);
+	const logout = () => {
+		sessionStorage.removeItem('adminLoggedIn');
+		window.location.href = '/admin/login';
+	}
+	const isUserLoggedIn = sessionStorage.getItem('adminLoggedIn') === 'true';
 	
 	// Check if current path includes '/admin'
     const isAdmin = window.location.pathname.includes('/admin');
@@ -65,6 +70,9 @@ function NavBar(){
 					<div className='navContainer'>
 						<a className='navTitle' href='/admin'><p>Home</p></a>
 						<a className='navTitle' href='/admin/billing'><p>Billing</p></a>
+						<a className='navTitle logout' style={{display: isUserLoggedIn ? "block" : "none"}} onClick={logout}>
+							<p>Logout</p>
+						</a>
 					</div>
 				)}
 			</div>
@@ -100,6 +108,9 @@ function NavBar(){
 						<div style={{ backgroundColor: "rgba(255,255,255,1)", padding: "10px"}}>
 							<a className='navTitle' href='/admin'><p>Home</p></a>
 							<a className='navTitle' href='/admin/billing'><p>Billing</p></a>
+							<a className='navTitle logout' onClick={logout} style={{display: isUserLoggedIn ? "block" : "none"}}>
+								<p>Logout</p>
+							</a>
 							<a className='navTitle contactButton' href='/contact'> GET IN TOUCH</a>
 							<a className='navTitle' href='/share'><p>SHARE</p></a>
 						</div>

@@ -92,7 +92,8 @@ export default function AdminAll() {
 
   useEffect(() => {
     setLoading(true);
-    fetchUserProjects('019fd2ef-c194-7151-b2c1-6d4de1fb5ed7')
+    const adminUserId = sessionStorage.getItem('adminUserId');
+    fetchUserProjects(adminUserId)
       .then((data) => {
         setProjects(data);
         setLoading(false);
