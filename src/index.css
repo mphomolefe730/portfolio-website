@@ -1,3 +1,42 @@
+/* ===== Button press/spring interaction ===== */
+button,
+.contactButton,
+.navElement,
+.active1,
+.animatedFilterNav-trigger,
+.animatedFilterNav-item,
+.mm {
+	transition: transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1),
+		box-shadow 0.15s ease;
+	will-change: transform;
+}
+
+button:active,
+.contactButton:active,
+.navElement:active,
+.active1:active,
+.animatedFilterNav-trigger:active,
+.animatedFilterNav-item:active,
+.mm:active {
+	transform: scale(0.94);
+	transition: transform 0.08s ease-out;
+}
+
+/* Optional: give clickable pill-style elements the same treatment */
+.informationPill.clickable,
+.serviceCard,
+.serviceCaseCard,
+.musicCard {
+	transition: transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.serviceCard:active,
+.serviceCaseCard:active,
+.musicCard:active {
+	transform: scale(0.97);
+	transition: transform 0.08s ease-out;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 ::-webkit-scrollbar-track {

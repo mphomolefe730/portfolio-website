@@ -69,6 +69,7 @@ function NavBar(){
                 ) : (
 					<div className='navContainer'>
 						<a className='navTitle' href='/admin'><p>Home</p></a>
+						<a className='navTitle' href='/admin/files'><p>Files</p></a>
 						<a className='navTitle' href='/admin/billing'><p>Billing</p></a>
 						<a className='navTitle logout' style={{display: isUserLoggedIn ? "block" : "none"}} onClick={logout}>
 							<p>Logout</p>
@@ -107,6 +108,7 @@ function NavBar(){
 					) : (
 						<div style={{ backgroundColor: "rgba(255,255,255,1)", padding: "10px"}}>
 							<a className='navTitle' href='/admin'><p>Home</p></a>
+						<a className='navTitle' href='/admin/files'><p>Files</p></a>
 							<a className='navTitle' href='/admin/billing'><p>Billing</p></a>
 							<a className='navTitle logout' onClick={logout} style={{display: isUserLoggedIn ? "block" : "none"}}>
 								<p>Logout</p>

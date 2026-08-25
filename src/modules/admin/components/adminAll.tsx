@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { env } from "../../../configs/environment";
 import Papa from 'papaparse';
-import { Link } from 'react-router-dom';
 
 export default function AdminAll() {  
   const USERS_CSV_URL = env.GOOGLE_DRIVE_USER;
@@ -89,6 +88,17 @@ export default function AdminAll() {
       throw error;
     }
   }
+  const handleProjectClick = (actionName, targetUrl) => {
+		if (typeof window !== 'undefined' && typeof (window as any).cf !== 'undefined') {
+			(window as any).cf('event', { 'button_clicked': actionName });
+		}
+
+		if (targetUrl.startsWith('http')) {
+			window.open(targetUrl, '_blank', 'noopener,noreferrer');
+		} else {
+			window.location.href = targetUrl; 
+		}
+	};
 
   useEffect(() => {
     setLoading(true);
@@ -140,8 +150,8 @@ export default function AdminAll() {
         const hasVideo = Boolean(proj.DemoVideoURL && proj.DemoVideoURL.trim() !== '');
 
         return (
-          <Link
-            to={`/admin/status/${proj.ProjectID}`}
+          <div
+            onClick={() => handleProjectClick('Project Click', `/admin/status/${proj.ProjectID}`)}
             key={proj.ProjectID}
             className={`musicCard${hasVideo ? '' : ' noImage'}`}
           >
@@ -172,7 +182,7 @@ export default function AdminAll() {
                 />
               </div>
             </div>
-          </Link>
+          </div>
         );
       })}
     </div>

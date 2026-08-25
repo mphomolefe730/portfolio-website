@@ -3,6 +3,7 @@ import './projectsMain.css';
 import { useRef, useState } from 'react';
 import ProjectsAll from './projectsAll.tsx';
 import AnimatedFilterNav from '../../core/nav/animatedFilterNav.tsx';
+import { env } from '../../../configs/environment.ts';
 
 function ProjectMain(){
 	const tabs = ['all','personal','commercial','data science','hackathon','collaborations'];
@@ -38,7 +39,7 @@ function ProjectMain(){
 			</div>
 			<div className='contactButtonContainer'>
 				<a onClick={() => handleProjectClick('Contact Via Projects', '/contact')} className='contactButton'>Contact</a>
-				<a onClick={() => handleProjectClick('Download CV', 'https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/Mpho%20Molefe%20CV%20-%2001-07-2026.pdf')} className='contactButton'>CV</a>
+				<a onClick={() => handleProjectClick('Download CV', env.CV)} className='contactButton'>CV</a>
 			</div>
 			<div className='alert1'>
 				<span>IMPORTANT: scroll for more, click item for more details</span>

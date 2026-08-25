@@ -16,6 +16,7 @@ import AboutMain from './modules/about/components/aboutMain.tsx';
 import UnderConstruction from './modules/error/components/underConstruction.tsx';
 import Contact from './modules/contact/components/contact.tsx';
 import AdminMain from './modules/admin/components/adminMain.tsx';
+import AdminUserFileList from './modules/admin/components/adminUseFileList.tsx';
 import ProjectLoader from './modules/projects/components/projectLoader.tsx';
 import Share from './modules/contact/components/share.tsx';
 import AdminProjectProgress from './modules/admin/components/adminProjectProgress.tsx';
@@ -111,6 +112,9 @@ const router = createBrowserRouter([
       {
         path:'/admin/login',
         element: <AdminLogin/>
+      },{
+        path:'/admin/files/',
+        element: <AdminUserFileList/>
       },
       {
         path:'/admin/status/:projectId',

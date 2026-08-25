@@ -11,6 +11,7 @@ function AdminLogin() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [hashedPassword, setHashedPassword] = useState("");
+  const [generatedHashedPassword, setGeneratedHashedPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState<string[]>([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -145,14 +146,30 @@ function AdminLogin() {
             onChange={(e) => setHashedPassword(e.target.value)}
           />
           <p className='adminLoginUtilityNote'>
-            Note: password hashing adds a layer of security to protect user credentials.
+            Note: password hashing adds a layer of security to protect user credentials. This function generates a hashed version of the password, which can be stored securely in the database instead of the plain text password. Only for Mpho's use, do not share the hashed password with anyone else.
           </p>
+          {generatedHashedPassword && (
+            <a
+              href={`https://wa.me/${env.PHONE_NUMBER}?text=${encodeURIComponent(
+                `Generated Hashed Password: ${generatedHashedPassword}`
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={async () => {
+                await navigator.clipboard.writeText(generatedHashedPassword);
+                alert("Copied to clipboard! Opening WhatsApp...");
+              }}
+            >
+              <h5>Generated Hashed Password:</h5>
+              <p>{generatedHashedPassword}</p>
+            </a>
+          )}
           <button
             className='contactButton'
             type="button"
             onClick={async () => {
               const hash = await hashingOfPassword(hashedPassword);
-              console.log("Generated Hash:", hash);
+              setGeneratedHashedPassword(hash);
             }}
           >
             HASH PASSWORD

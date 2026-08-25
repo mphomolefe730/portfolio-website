@@ -1,17 +1,9 @@
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
 import { useParams } from "react-router";
 import projects from '../../../assets/jsons/personal_projects.json';
 import ProjectModel from "../../../models/projectModel";
 
 function ProjectLoader(){
-  const location = useLocation();
-
-  if (sessionStorage.getItem('adminLoggedIn') !== 'true') {
-    if (location.pathname !== '/admin/login') {
-      window.location.href = '/admin/login';
-    }
-  }
   const [ messageContext, setMessageContext ] = useState({
     displayMessage: "starting server",
     errorMessage: "error launching server, a message has been sent to the developer",

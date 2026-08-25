@@ -2,6 +2,7 @@ import about from '../../../assets/jsons/about_me.json';
 import './aboutMain.css'
 import { useRef, useState } from 'react';
 import AnimatedFilterNav from '../../core/nav/animatedFilterNav.tsx';
+import { env } from '../../../configs/environment.ts';
 
 function AboutMain(){
 	const tabs = ['About','Experience','Education', 'Certificates'];
@@ -140,7 +141,7 @@ function AboutMain(){
 			</div>
 			<div className='contactButtonContainer'>
 				<a onClick={() => handleProjectClick('Contact Via About', '/contact')} className='contactButton'>Contact</a>
-				<a onClick={() => handleProjectClick('Download CV', 'https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/Mpho%20Molefe%20CV%20-%2001-07-2026.pdf')} className='contactButton'>CV</a>
+				<a onClick={() => handleProjectClick('Download CV', env.CV)} className='contactButton'>CV</a>
 			</div>
 			<div className='alert1'>
 				<span>IMPORTANT: scroll for more, click filters for more</span>
