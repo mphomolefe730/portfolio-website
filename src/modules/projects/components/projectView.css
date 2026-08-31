@@ -19,9 +19,7 @@
 }
 .x:hover{
 	background-color: white;
-	background: #005aa7; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #432371, #faae7b); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #432371, #faae7b);
+	background: var(--theme-gradient);/* fallback for old browsers */
 	padding: 12px;
 	border-radius: var(--global-radius);
 }
@@ -38,8 +36,7 @@ iframe {
 	display: none;
 }
 .function{
-	background: -webkit-linear-gradient(to right, #432371, #faae7b); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #432371, #faae7b);
+	background: var(--theme-gradient);
 	color: white;
 }
 

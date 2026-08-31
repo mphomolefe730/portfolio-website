@@ -1,5 +1,80 @@
 [
 	{
+		"title": "Slip-to-Ledger Automation",
+		"description": [
+			"A small home bakery I keep books for was losing hours every week to a painfully manual process: photograph a till slip, then manually retype every line item - date, store, price, discount, category - into an Excel cash-flow sheet. It's the kind of tedious, error-prone task that's exactly what LLMs with vision capabilities are good at removing, so I built a pipeline to do it instead.",
+			"The flow is deliberately low-friction on the human side. Scan a slip on your phone, drop it into a shared drive folder (local or cloud, your choice), and run one Python script. The script reads each image with a vision-capable model, forces the response into a strict schema with Pydantic so the output is always shaped the same way regardless of which model reads it, and appends the extracted line items to a running CSV log and Excel ledger with a live running balance.",
+			"Every processed slip is renamed to `date - uuid.extension` and moved into an archive folder, and a SHA-256 hash of the file is logged so re-running the script or accidentally dropping the same slip in twice - never double-counts a transaction. Rate-limit handling was a real constraint worth designing for: the free tier of most vision-model APIs caps out around 40 slips/day, so the script backs off and retries with exponential delay instead of failing outright when it hits a quota wall.",
+			"Both the model and the output schema are treated as swappable, not hardcoded assumptions. The Pydantic model defines exactly what fields come back - swap in different fields and the model's output follows. The extraction call is isolated in one function, so pointing it at a different vision model is a one-line change, not a rewrite."
+		],
+		"image": "#",
+		"timeline": [
+			{
+				"date": "Phase 1 - Manual baseline",
+				"description": "Identified the actual bottleneck: not the bookkeeping logic itself, but the manual data entry from paper slips into the spreadsheet. This framed the project as a data-extraction problem, not an accounting-software problem."
+			},
+			{
+				"date": "Phase 2 - Structured extraction",
+				"description": "Introduced a vision-capable LLM to read slip images, with a Pydantic schema constraining the output to consistent fields (date, description, cost per unit, quantity, discount, payment type, category, credit). This removed the inconsistent-formatting problem that comes with unstructured model output."
+			},
+			{
+				"date": "Phase 3 - v3.1: reliability pass",
+				"description": "Added SHA-256 hash-based duplicate detection, automatic file renaming and archiving, exponential backoff on API rate limits, and a running-balance calculation written directly into the Excel ledger."
+			},
+			{
+				"date": "Phase 4 - Portfolio hardening",
+				"description": "Removed a hardcoded API key fallback before publishing, moved model name and file paths into a clearly labeled config block, and added CLI flags for input directory and dry-run mode."
+			}
+		],
+		"function": [
+			{
+				"title": "Structured Extraction via Pydantic Schema",
+				"description": "Rather than trusting free-text model output, a Pydantic schema defines the exact fields expected back from the model (date, description, store, cost per unit, quantity, discount, payment type, category, credit). This makes the output format independent of which model is doing the reading.",
+				"src": []
+			},
+			{
+				"title": "Hash-Based Duplicate Detection",
+				"description": "Every processed file is hashed with SHA-256 and logged. Before processing, the script checks the hash log first, so re-running the script on a folder - or accidentally re-adding the same slip - never creates duplicate ledger entries.",
+				"src": []
+			},
+			{
+				"title": "Rate-Limit-Aware Retry Logic",
+				"description": "Free-tier vision-model APIs cap requests per minute and per day. Instead of failing on a 429, the script catches the rate-limit error specifically and retries with exponential backoff (15s, 30s, 60s...) before giving up.",
+				"src": []
+			},
+			{
+				"title": "Auto-Archiving & Running Balance",
+				"description": "Successfully processed slips are renamed to `date - uuid.extension` and moved to an archive folder, keeping the raw-image folder always representing only unprocessed work. Each new row also recalculates a running total balance written into the Excel ledger.",
+				"src": []
+			}
+		],
+		"resource_images": [
+			{
+				"title": "Python",
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/python.jpeg"
+			},
+			{
+				"title": "Pandas",
+				"image_link": "https://tse3.mm.bing.net/th/id/OIP.q_4UA8Cu4drhaJr_jOwsIAHaC_?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+			},
+			{
+				"title": "Pydantic",
+				"image_link": "https://tse1.mm.bing.net/th/id/OIP.NMvrEAeSPC8HPw3c6vhsOwHaEL?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+			},
+			{
+				"title": "Google Gemini",
+				"image_link": "https://www.gstatic.com/lamda/images/gemini_aurora_thumbnail_4g_e74822ff0ca4259beb718.png"
+			}
+		],
+		"type": "analysis",
+		"warning": false,
+		"project_status": "Done",
+		"project_link": "#",
+		"video_link": "#",
+		"category": ["all", "personal", "data science"],
+		"last_update": "26 August 2026"
+	},
+	{
 		"title": "Reverse 2048",
 		"description": [
 			"Write C++ code for a program that reads in an unknown number of “Reverse 2048” games. The program must then use an algorithm to solve each of the solvable puzzles given in the input file", 

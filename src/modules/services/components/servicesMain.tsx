@@ -34,7 +34,7 @@ function ServicesMain() {
 					<h1 className="company_name" style={{ margin: '4px 0' }}>
 						{servicesData.positioning.heading}
 					</h1>
-					<p className="text-muted">{servicesData.positioning.subheading}</p>
+					<p>{servicesData.positioning.subheading}</p>
 					{/* <div className="contactButtonContainer" style={{ maxWidth: '400px', margin: '10px 0 0' }}>
 						<a className="contactButton" href="/contact">Get a Fixed Quote</a>
 					</div> */}
@@ -113,7 +113,7 @@ function ServicesMain() {
 
 				{/* Case studies / proof */}
 				<h3 style={{ marginTop: '30px' }} className="company_name">Proof, Not Promises</h3>
-				<p className="text-muted" style={{ marginTop: '-8px' }}>
+				<p style={{ marginTop: '-8px' }}>
 					Every service above shows up in a real, working project below — click through to see it live.
 				</p>
 				<div className="servicesCaseGrid">

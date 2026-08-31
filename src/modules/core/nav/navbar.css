@@ -21,13 +21,13 @@ nav{
 .mm{
 	padding: 15px 5px;
 	border: 2px solid;
-	border-image: linear-gradient(to right, #432371, #faae7b) 1;
+	border-image:  var(--theme-gradient) 1;
 	margin: 0 15px;
 	display: inline-flex;
 	position: absolute;
 	left: 5px;
 	top: 5px;
-	background: linear-gradient(to right, #432371, #faae7b);
+	background:  var(--theme-gradient);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -42,7 +42,7 @@ nav{
 	background-clip: initial;
 	color: white;
 	padding: 17px 7px;
-	background: linear-gradient(to right, #432371, #faae7b);
+	background: var(--theme-gradient);
 }
 .navTitle{
 	text-transform: uppercase;
@@ -86,10 +86,10 @@ nav{
 }
 
 @media (max-width: 950px) {
-	.mobileNav{
+	.mobileNav {
 		display: block;
 	}
-	.desktopNav{
+	.desktopNav {
 		display: none;
 	}
 }

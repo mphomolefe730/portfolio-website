@@ -1,0 +1,25 @@
+body[data-theme='solarpunk'] {
+	--global-radius: 8px;
+	--theme-gradient-start: #0077b6;
+	--theme-gradient-end: #d4a373;
+	--theme-gradient: linear-gradient(135deg, var(--theme-gradient-start), var(--theme-gradient-end));
+	--theme-accent: #0077b6;
+	--theme-accent-secondary: #d4a373;
+	--theme-background: #edf6f9;
+	--theme-surface: #ffffff;
+	--theme-text: #1d3557;
+	--theme-on-accent: #ffffff;
+	--theme-badge-bg: #ffffff;
+	--theme-heading-font: system-ui, sans-serif;
+	--theme-shadow-soft: 0 4px 20px rgba(0, 119, 182, 0.1);
+
+	background-color: var(--theme-background);
+	color: var(--theme-text);
+	background-image: radial-gradient(rgba(0, 119, 182, 0.15) 1px, transparent 1px);
+	background-size: 16px 16px;
+}
+
+body[data-theme='solarpunk'] .mm {
+	color: var(--theme-accent);
+	border: 2px dashed var(--theme-accent);
+}

@@ -1,0 +1,17 @@
+body[data-theme='default'],
+body:not([data-theme]) {
+	--global-radius: 12px;
+	--theme-gradient-start: #432371;
+	--theme-gradient-end: #faae7b;
+	--theme-gradient: linear-gradient(to right, var(--theme-gradient-start), var(--theme-gradient-end));
+	--theme-accent: #432371;
+	--theme-accent-secondary: #faae7b;
+	--theme-background: #ffffff;
+	--theme-surface: #ffffff;
+	--theme-text: #1a1a1a;
+	--theme-on-accent: #ffffff;
+	--theme-badge-bg: #ffffff;
+	--theme-heading-font: 'Roboto', system-ui;
+	--theme-shadow-soft: 8px 8px 16px rgba(0,0,0,0.15), -4px -4px 12px rgba(255,255,255,0.7);
+	background: var(--theme-background);
+}

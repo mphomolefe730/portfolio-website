@@ -12,7 +12,7 @@
     margin-top: 20px;
 }
 .share-container h3{
-	background: linear-gradient(to right, #432371, #faae7b);
+	background:  var(--theme-gradient);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }

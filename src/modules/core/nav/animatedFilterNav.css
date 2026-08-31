@@ -63,7 +63,7 @@
     color: white;
     border: 0;
     padding: 9px 15px;
-    background: linear-gradient(to right, #432371, #faae7b);
+    background:  var(--theme-gradient);
 }
 
 .animatedFilterNav-label {
@@ -115,7 +115,7 @@
 }
 
 .animatedFilterNav-item:hover {
-    background: linear-gradient(to right, #432371, #faae7b);
+    background: var(--theme-gradient);
     color: white;
 }
 

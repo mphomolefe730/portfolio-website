@@ -1,0 +1,23 @@
+body[data-theme='luxury'] {
+	--global-radius: 2px;
+	--theme-gradient-start: #d4af37;
+	--theme-gradient-end: #aa7c11;
+	--theme-gradient: linear-gradient(135deg, var(--theme-gradient-start), var(--theme-gradient-end));
+	--theme-accent: #d4af37;
+	--theme-accent-secondary: #aa7c11;
+	--theme-background: #121212;
+	--theme-surface: #1e1e1e;
+	--theme-text: #e0e0e0;
+	--theme-on-accent: #121212;
+	--theme-badge-bg: #1e1e1e;
+	--theme-heading-font: 'Times New Roman', serif;
+	--theme-shadow-soft: 0 4px 20px rgba(212, 175, 55, 0.15);
+
+	background-color: var(--theme-background);
+	color: var(--theme-text);
+}
+
+body[data-theme='luxury'] .mm {
+	color: var(--theme-accent);
+	border: 1px solid var(--theme-accent);
+}

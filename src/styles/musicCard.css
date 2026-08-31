@@ -30,7 +30,7 @@
 
 /* Fallback for cards without an image (e.g. about pills) */
 .musicCard.noImage {
-  background: linear-gradient(135deg, #432371, #faae7b);
+  background: var(--theme-gradient);
 }
 
 /* ============ IMAGE + SCRIM ============ */

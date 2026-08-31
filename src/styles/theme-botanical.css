@@ -1,0 +1,23 @@
+body[data-theme='botanical'] {
+	--global-radius: 16px;
+	--theme-gradient-start: #4a6b5d;
+	--theme-gradient-end: #c07a50;
+	--theme-gradient: linear-gradient(135deg, var(--theme-gradient-start), var(--theme-gradient-end));
+	--theme-accent: #4a6b5d;
+	--theme-accent-secondary: #c07a50;
+	--theme-background: #f4f0ea;
+	--theme-surface: #eae3d9;
+	--theme-text: #2c3531;
+	--theme-on-accent: #f4f0ea;
+	--theme-badge-bg: #eae3d9;
+	--theme-heading-font: Georgia, serif;
+	--theme-shadow-soft: 4px 4px 12px rgba(0, 0, 0, 0.05);
+
+	background-color: var(--theme-background);
+	color: var(--theme-text);
+}
+
+body[data-theme='botanical'] .mm {
+	color: var(--theme-on-accent);
+	border-radius: 50%;
+}

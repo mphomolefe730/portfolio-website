@@ -81,7 +81,7 @@ function BlogsView() {
                         <h5 className="card-text m-0">
                             {blogInfo.title.toUpperCase()}
                         </h5>
-                        <small className="text-muted">
+                        <small>
                             last updated: {blogInfo.last_update}
                         </small>
                     </div>
@@ -89,7 +89,7 @@ function BlogsView() {
 
                 <div style={{ margin: '0 5px' }}>
                     {blogInfo.description?.map((sentence: string, index: number) => (
-                        <p key={index} className="text-muted p-2">
+                        <p key={index} className="p-2">
                             {sentence}
                         </p>
                     ))}

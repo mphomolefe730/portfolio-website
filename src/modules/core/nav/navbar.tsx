@@ -1,5 +1,6 @@
 // import { Link } from 'react-router-dom'
 import './navbar.css';
+import ThemeToggle from '../theme/themeToggle.tsx';
 import { useState } from 'react';
 import About from '../../../assets/jsons/about_me.json';
 
@@ -38,7 +39,7 @@ function NavBar(){
 	
 	return(
         <nav>
-			{!isAdmin ? <a className='mm desktopNav' href='/'> MM</a> : <a className='mm desktopNav' href='/admin'> MM</a>}
+			{!isAdmin ? <a className='mm desktopNav' href='/'> MM</a> : <a className='mm desktopNav' href='/admin'> MM</a>}			
 			
 			<div className='socialContainer desktopNav'>
 				<p>Connect with me:</p>
@@ -55,6 +56,7 @@ function NavBar(){
 			<div className='qrcodeContainer desktopNav'>
 				<img src={qrcode.linkToPhoto} alt={qrcode.alt} />
 				<h6> {qrcode.text.toUpperCase()} </h6>
+				<ThemeToggle />
 			</div>
 
 			<div className="desktopNav">
@@ -77,6 +79,7 @@ function NavBar(){
 					</div>
 				)}
 			</div>
+
 			<div className="mobileNav">
 				{/* display: (open) ? "none": "flex"*/}
 				<p className="stat-ticker"><small ><span>Current Status: </span> { About.currentStatus }</small></p>
@@ -104,6 +107,7 @@ function NavBar(){
 							<a className='navTitle' href='/services'><p>Services</p></a>
 							<a className='navTitle contactButton' href='/contact'> GET IN TOUCH</a>
 							<a className='navTitle' href='/share'><p>SHARE</p></a>
+							<ThemeToggle/>
 						</div>
 					) : (
 						<div style={{ backgroundColor: "rgba(255,255,255,1)", padding: "10px"}}>

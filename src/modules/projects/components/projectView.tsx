@@ -53,7 +53,7 @@ function ProjectView(){
 				<div style={{ display:'grid', gridTemplateColumns: '2fr 1fr', margin: " 10px 5px" }}>
 					<div>
 						<h5 className="company_name card-text m-0"> { projectInfo?.title?.toUpperCase() }</h5>
-						<small className="text-muted">
+						<small>
 							<div> created: { projectInfo?.last_update } </div>
 							<div> status: { projectInfo?.project_status } </div>
 						</small>
@@ -68,7 +68,7 @@ function ProjectView(){
 				</div>
 				<div style={{ position: 'relative', margin: '0 5px' }}>	
 					{ projectInfo?.description.map((sentence,index)=>{
-							return (<p key={index} className="text-muted p-2"> { sentence } </p>)
+							return (<p key={index} className="p-2"> { sentence } </p>)
 						}) 
 					}
 					

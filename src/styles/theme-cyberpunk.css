@@ -1,0 +1,41 @@
+body[data-theme='cyberpunk'] {
+	--global-radius: 0px;
+	--theme-gradient-start: #ff007f;
+	--theme-gradient-end: #00f3ff;
+	--theme-gradient: linear-gradient(135deg, var(--theme-gradient-start), var(--theme-gradient-end));
+	--theme-accent: #ff007f;
+	--theme-accent-secondary: #00f3ff;
+	--theme-background: #0d0e15;
+	--theme-surface: #161925;
+	--theme-text: #00f3ff;
+	--theme-on-accent: #0d0e15;
+	--theme-badge-bg: #161925;
+	--theme-heading-font: system-ui, sans-serif;
+	--theme-shadow-soft: 0 0 10px rgba(255, 0, 127, 0.5);
+
+	background-color: var(--theme-background);
+	color: var(--theme-text);
+	background-image: 
+		linear-gradient(rgba(0, 243, 255, 0.05) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(0, 243, 255, 0.05) 1px, transparent 1px);
+	background-size: 20px 20px;
+}
+
+body[data-theme='cyberpunk'] .mm {
+	color: var(--theme-accent);
+	border: 2px solid var(--theme-accent);
+	box-shadow: 0 0 8px var(--theme-accent);
+	border-radius: 0;
+}
+
+body[data-theme='cyberpunk'] a{
+	color: var(--theme-accent-secondary);
+	/* border: 2px solid var(--theme-accent); */
+}
+body[data-theme='cyberpunk'] .navElement{
+	border: 1.5px solid var(--theme-accent);
+}
+
+body[data-theme='cyberpunk'] .active1{
+	background-color: var(--theme-accent);
+}

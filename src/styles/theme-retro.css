@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@keyframes retroGridScroll {
+	0% {
+		background-position: 0 0, 0 0, 0 0;
+	}
+	100% {
+		background-position: 40px 40px, -40px 40px, 0 0;
+	}
+}
+
+body[data-theme='retro'] {
+	--global-radius: 4px;
+	--theme-gradient-start: #C9702B;
+	--theme-gradient-end: #2E6F6E;
+	--theme-gradient: linear-gradient(135deg, var(--theme-gradient-start), var(--theme-gradient-end));
+	--theme-accent: #C9702B;
+	--theme-accent-secondary: #2E6F6E;
+	--theme-background: #F2E9DC;
+	--theme-surface: #FBF6EC;
+	--theme-text: #241F1B;
+	--theme-on-accent: #FBF6EC;
+	--theme-badge-bg: #F2E9DC;
+	--theme-heading-font: 'Bebas Neue', 'Roboto', system-ui;
+	--theme-shadow-soft: 6px 6px 0 0 var(--theme-text);
+	--bs-focus-ring-color: #035d96;
+
+	color: var(--theme-text);
+	background-color: var(--theme-background);
+
+	/* Playful Retro Background Patterns */
+	background-image: 
+		radial-gradient(circle, rgba(201, 112, 43, 0.12) 2px, transparent 2px),
+		radial-gradient(circle, rgba(46, 111, 110, 0.10) 2px, transparent 2px),
+		linear-gradient(135deg, rgba(242, 233, 220, 0.95), rgba(251, 246, 236, 0.95));
+	background-size: 40px 40px, 40px 40px, 100% 100%;
+	background-position: 0 0, 20px 20px, 0 0;
+	
+	/* Smooth continuous background loop */
+	animation: retroGridScroll 15s linear infinite;
+}
+
+/* MM Badge Override */
+body[data-theme='retro'] .mm {
+	-webkit-background-clip: initial;
+	-webkit-text-fill-color: initial;
+	color: var(--theme-accent);
+	border: 3px solid var(--theme-accent);
+	border-radius: 50%;
+	width: 42px;
+	height: 42px;
+	align-items: center;
+	justify-content: center;
+	font-weight: 900;
+	box-shadow: var(--theme-shadow-soft);
+}
+
+body[data-theme='retro'] .mm:hover {
+	color: var(--theme-on-accent);
+	border-radius: 50%;
+	padding: 0;
+}
+
+/* Typography */
+body[data-theme='retro'] h1,
+body[data-theme='retro'] h2,
+body[data-theme='retro'] h3 {
+	font-family: var(--theme-heading-font);
+	letter-spacing: 0.03em;
+}
+
+/* UI Elements */
+body[data-theme='retro'] .informationPill, body[data-theme='retro'] .carouselHolder {
+	background: var(--theme-surface);
+	font-weight: 900;
+	box-shadow: var(--theme-shadow-soft);   
+	color: var(--theme-accent);
+	border: 3px solid var(--theme-accent);
+}
+
+body[data-theme='retro'] .contactButton {
+	background-color: #dc3545;
+}

@@ -22,7 +22,7 @@
 }
 
 .welcomeText h1{
-	background: linear-gradient(to right, #432371, #faae7b);
+	background:var(--theme-gradient);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }

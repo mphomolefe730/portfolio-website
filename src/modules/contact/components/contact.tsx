@@ -81,7 +81,7 @@ function Contact() {
     <div className='contactContainer'>
       <form onSubmit={handleSubmit}  style={{ display: isSubmitting ? 'none' : 'block' }} noValidate>
         <h1 className="company_name card-text m-0">{heroCaption.toUpperCase()}</h1>
-        <p className="text-muted">
+        <p>
           {heroSubCaption}
         </p>
         <div>
@@ -142,7 +142,7 @@ function Contact() {
               <label htmlFor="individual" className={`widget-option${whoAreYou === "Individual" ? " selected" : ""}`}>
                 <span>{('Individual').toUpperCase()}</span>
                 <span>
-                  <p className="text-muted">I am an individual seeking contact with you</p>
+                  <p>I am an individual seeking contact with you</p>
                 </span>
               </label>
             </div>
@@ -158,7 +158,7 @@ function Contact() {
               <label htmlFor="organisation" className={`widget-option${whoAreYou === "Organisation" ? " selected" : ""}`}>
                 <span>{('Organisation').toUpperCase()}</span>
                 <span>
-                  <p className="text-muted">I am a member of an organisation seeking contact with you</p>
+                  <p>I am a member of an organisation seeking contact with you</p>
                 </span>
               </label>
             </div>
@@ -175,7 +175,7 @@ function Contact() {
               onChange={(e) => setNotifyMe(e.target.checked)}
               style={{ cursor: 'pointer' }}
             />
-            <label htmlFor="notifyMe" className="text-muted" style={{ margin: 0, cursor: 'pointer' }}>
+            <label htmlFor="notifyMe" style={{ margin: 0, cursor: 'pointer' }}>
               Notify me about new projects/posts
             </label>
           </div>

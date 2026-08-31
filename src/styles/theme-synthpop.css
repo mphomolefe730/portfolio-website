@@ -1,0 +1,23 @@
+body[data-theme='synthpop'] {
+	--global-radius: 12px;
+	--theme-gradient-start: #ff0055;
+	--theme-gradient-end: #ff9900;
+	--theme-gradient: linear-gradient(135deg, var(--theme-gradient-start), var(--theme-gradient-end));
+	--theme-accent: #ff0055;
+	--theme-accent-secondary: #ff9900;
+	--theme-background: #1a002c;
+	--theme-surface: #2d004d;
+	--theme-text: #ffcc00;
+	--theme-on-accent: #ffffff;
+	--theme-badge-bg: #2d004d;
+	--theme-heading-font: system-ui, sans-serif;
+	--theme-shadow-soft: 4px 4px 0px #ff0055;
+
+	background-color: var(--theme-background);
+	color: var(--theme-text);
+}
+
+body[data-theme='synthpop'] .mm {
+	color: #ffffff;
+	border: 2px solid #ffcc00;
+}

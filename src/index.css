@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import './styles/theme-default.css';
+@import './styles/theme-retro.css';
+@import './styles/theme-default.css';
+@import './styles/theme-retro.css';
+@import './styles/theme-cyberpunk.css';
+@import './styles/theme-botanical.css';
+@import './styles/theme-solarpunk.css';
+@import './styles/theme-bioluminescence.css';
+@import './styles/theme-terminal.css';
+@import './styles/theme-monochrome.css';
+@import './styles/theme-synthpop.css';
+@import './styles/theme-luxury.css';
+
 /* ===== Button press/spring interaction ===== */
 button,
 .contactButton,
@@ -37,7 +52,6 @@ button:active,
 	transition: transform 0.08s ease-out;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 ::-webkit-scrollbar-track {
   background: transparent;
@@ -71,9 +85,7 @@ a{
 
 a:hover{
 	cursor: pointer;
-	background: #005aa7; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #432371, #faae7b); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #432371, #faae7b);
+	background: var(--theme-gradient); /* fallback for old browsers */
 	color: white;
 	border-radius: 15px;
 	box-shadow:
@@ -108,9 +120,7 @@ a:hover{
 
 .projectContainer:hover{
 	background-color: white;
-	background: #005aa7; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #432371, #faae7b); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #432371, #faae7b);
+	background: var(--theme-gradient); /* fallback for old browsers */
 	padding: 12px;
 	border-radius: 16px;
 	box-shadow:
@@ -223,7 +233,7 @@ a:hover{
 	 }
 	 50%{
 		letter-spacing: 0.05rem;
-		background: linear-gradient(to right, #432371, #faae7b);
+		background: var(--theme-gradient);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	 }
@@ -233,7 +243,7 @@ a:hover{
 }
 
 @keyframes colorAnimation{
-	background: linear-gradient(to right, #432371, #faae7b);
+	background: var(--theme-gradient);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -246,17 +256,6 @@ a:hover{
 		transform: rotate(360deg);
 	}
 }
-/* @keyframes backgroundChangeColors{
-	0%{
-		background-image: linear-gradient(#ffffff, 90%, #cfd3de);
-	}
-	50%{
-		background-image: linear-gradient(#ffffff, 90%, #43237169);
-	}
-	100%{
-		background-image: linear-gradient(#ffffff, 90%, #faae7b8f);
-	}
-} */
 
 @keyframes unblur {
 	from {

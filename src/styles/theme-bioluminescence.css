@@ -1,0 +1,24 @@
+body[data-theme='bioluminescence'] {
+	--global-radius: 24px;
+	--theme-gradient-start: #00f5d4;
+	--theme-gradient-end: #7b2cbf;
+	--theme-gradient: linear-gradient(135deg, var(--theme-gradient-start), var(--theme-gradient-end));
+	--theme-accent: #00f5d4;
+	--theme-accent-secondary: #7b2cbf;
+	--theme-background: #03045e;
+	--theme-surface: #070a52;
+	--theme-text: #caf0f8;
+	--theme-on-accent: #03045e;
+	--theme-badge-bg: #070a52;
+	--theme-heading-font: system-ui, sans-serif;
+	--theme-shadow-soft: 0 0 20px rgba(0, 245, 212, 0.25);
+
+	background-color: var(--theme-background);
+	color: var(--theme-text);
+}
+
+body[data-theme='bioluminescence'] .mm {
+	color: var(--theme-accent);
+	border: 1px solid var(--theme-accent);
+	box-shadow: 0 0 12px rgba(0, 245, 212, 0.4);
+}
