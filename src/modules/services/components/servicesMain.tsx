@@ -143,7 +143,7 @@ function ServicesMain() {
 			</div>
 
 			<div className="contactButtonContainer">
-				<a className="contactButton" href="/contact"> Contact </a>
+				<a className='contactButton' href='/onboarding'>Get Started</a>
 				<a className="contactButton" href={env.CV} target="_blank" rel="noopener noreferrer"> CV </a>
 			</div>
 			<div className="alert1">

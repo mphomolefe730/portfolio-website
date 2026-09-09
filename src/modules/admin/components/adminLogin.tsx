@@ -137,6 +137,13 @@ function AdminLogin() {
         </div>
 
         <div className='adminLoginUtility informationPill childGrown'>
+          <h5 className='company_name'>Onboarding</h5>
+          <a className='contactButton' href='/onboarding'>Get Started</a>  
+        </div>
+        
+        <br/>
+        
+        <div className='adminLoginUtility informationPill childGrown'>
           <h5 className='company_name'>Password Hasher</h5>
           <input
             className='inputTag'

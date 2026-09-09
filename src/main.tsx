@@ -22,6 +22,7 @@ import Share from './modules/contact/components/share.tsx';
 import AdminProjectProgress from './modules/admin/components/adminProjectProgress.tsx';
 import AdminAll from './modules/admin/components/adminAll.tsx';
 import AdminLogin from './modules/admin/components/adminLogin.tsx';
+import OnboardingChat from './modules/onboarding/components/onboardingChat.tsx';
 
 let isScrolling = false;
 let scrollTimeout: NodeJS.Timeout;
@@ -87,15 +88,10 @@ const router = createBrowserRouter([
   },{
     path: '/load/:projectName',
     element: <ProjectLoader />
+  },{ 
+  path: '/onboarding', 
+    element: <OnboardingChat /> 
   },{
-    path:'/games',
-    element: <UnderConstruction />
-  },
-  {
-    path:'/videos',
-    element: <UnderConstruction />
-  },
-  {
     path:'/share',
     element: <Share />
   },{ 

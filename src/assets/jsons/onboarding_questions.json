@@ -1,0 +1,222 @@
+{
+  "intro": {
+    "botName": "MM",
+    "greetingLines": [
+      "Hey there \uD83D\uDC4B I'm Mpho's onboarding assistant.",
+      "Before we start building anything, I'd love to get to know you and your business properly \u2014 kind of like a check-up before a prescription.",
+      "It only takes about 3 minutes. Ready?"
+    ],
+    "startButtonLabel": "Let's go"
+  },
+  "outro": {
+    "lines": [
+      "That's everything I need for now \uD83C\uDF89",
+      "Mpho will personally read through this and get back to you shortly.",
+      "In the meantime, feel free to look around the rest of the site."
+    ],
+    "ctaLabel": "Back to homepage",
+    "ctaLink": "/"
+  },
+  "sections": [
+    {
+      "id": "about_you",
+      "title": "About You",
+      "questions": [
+        {
+          "id": "fullName",
+          "type": "text",
+          "botMessage": "Let's start simple \u2014 what's your name?",
+          "placeholder": "Your full name",
+          "required": true
+        },
+        {
+          "id": "businessName",
+          "type": "text",
+          "botMessage": "Nice to meet you, {fullName}! Do you have a business or brand name, or are you approaching this as an individual?",
+          "placeholder": "Business name (or type 'Individual')",
+          "required": true
+        },
+        {
+          "id": "roleTitle",
+          "type": "select",
+          "botMessage": "And what's your role there?",
+          "options": ["Owner / Founder", "Manager", "Employee", "Freelancer", "Individual / N/A"],
+          "required": true
+        },
+        {
+          "id": "email",
+          "type": "email",
+          "botMessage": "What's the best email to reach you on?",
+          "placeholder": "you@example.com",
+          "required": true
+        },
+        {
+          "id": "phone",
+          "type": "text",
+          "botMessage": "And a phone number, if you're comfortable sharing one? (optional)",
+          "placeholder": "e.g. +27 00 000 0000",
+          "required": false
+        },
+        {
+          "id": "preferredContactMethod",
+          "type": "select",
+          "botMessage": "How would you prefer I keep in touch during the project?",
+          "options": ["Email", "WhatsApp", "Phone Call", "No preference"],
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "the_business",
+      "title": "The Business",
+      "questions": [
+        {
+          "id": "industry",
+          "type": "text",
+          "botMessage": "What industry or sector are you in?",
+          "placeholder": "e.g. Retail, Hospitality, Logistics, NGO",
+          "required": true
+        },
+        {
+          "id": "referralSource",
+          "type": "select",
+          "botMessage": "Quick one \u2014 how did you hear about me?",
+          "options": ["LinkedIn", "Referral / Word of Mouth", "GitHub", "A tech expo/summit", "Google Search", "Other"],
+          "required": true
+        },
+        {
+          "id": "existingSiteLink",
+          "type": "text",
+          "botMessage": "Do you already have a website or system in place? Drop the link if so \u2014 otherwise just say 'none'.",
+          "placeholder": "https:// or 'none'",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "the_project",
+      "title": "The Project",
+      "questions": [
+        {
+          "id": "servicesInterested",
+          "type": "multiselect",
+          "botMessage": "What are you hoping I can help with? (pick all that apply)",
+          "options": [
+            "Web Design & Development",
+            "Ecommerce Development",
+            "Real-Time / Location-Based Platforms",
+            "Hardware & Software Systems Integration",
+            "Network Infrastructure & Support",
+            "Technical SEO",
+            "Graphic & UI Design",
+            "Paid Media Readiness",
+            "Not sure yet"
+          ],
+          "required": true
+        },
+        {
+          "id": "problemToSolve",
+          "type": "textarea",
+          "botMessage": "In your own words \u2014 what's the main problem you're trying to solve right now?",
+          "placeholder": "e.g. \"Customers can't order from us online\"",
+          "required": true
+        },
+        {
+          "id": "targetAudience",
+          "type": "textarea",
+          "botMessage": "Who are you building this for? Describe your typical customer or user.",
+          "placeholder": "Age range, location, habits, whatever comes to mind",
+          "required": true
+        },
+        {
+          "id": "mustHaveFeatures",
+          "type": "textarea",
+          "botMessage": "Any must-have features you already know you want?",
+          "placeholder": "e.g. online payments, booking calendar, live chat",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "the_vision",
+      "title": "The Vision",
+      "questions": [
+        {
+          "id": "primaryGoal",
+          "type": "textarea",
+          "botMessage": "Zooming out \u2014 what does success look like in 6\u201312 months?",
+          "placeholder": "e.g. \"30% more online orders\" or \"a system my team can finally trust\"",
+          "required": true
+        },
+        {
+          "id": "growthStage",
+          "type": "select",
+          "botMessage": "Where's the business right now?",
+          "options": ["Just an idea", "Early-stage startup", "Established small business", "Scaling / multiple locations", "Enterprise / large org"],
+          "required": true
+        },
+        {
+          "id": "brandPersonality",
+          "type": "textarea",
+          "botMessage": "If your brand were a personality, how would you describe it? (playful, premium, no-nonsense, colours you love, etc.)",
+          "placeholder": "A few words is plenty",
+          "required": false
+        },
+        {
+          "id": "competitorsAdmired",
+          "type": "textarea",
+          "botMessage": "Any competitors or websites you admire \u2014 or ones you definitely don't want to look like?",
+          "placeholder": "Links or names are fine",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "logistics",
+      "title": "Logistics",
+      "questions": [
+        {
+          "id": "budgetRange",
+          "type": "select",
+          "botMessage": "What budget range are you working with? This just helps me scope something realistic \u2014 no judgment either way.",
+          "options": ["Under R10,000", "R10,000 - R30,000", "R30,000 - R60,000", "R60,000+", "Not sure yet / let's discuss"],
+          "required": true
+        },
+        {
+          "id": "timeline",
+          "type": "select",
+          "botMessage": "What's your ideal timeline?",
+          "options": ["ASAP / within a month", "1-3 months", "3-6 months", "No rush, exploring options"],
+          "required": true
+        },
+        {
+          "id": "decisionProcess",
+          "type": "select",
+          "botMessage": "Last logistics question \u2014 are you the sole decision maker, or is there a team/committee involved?",
+          "options": ["Sole decision maker", "Small team input", "Formal approval process"],
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "anything_else",
+      "title": "Anything Else",
+      "questions": [
+        {
+          "id": "additionalNotes",
+          "type": "textarea",
+          "botMessage": "Anything else you'd like me to know before we chat properly?",
+          "placeholder": "Optional \u2014 leave blank and hit send if not",
+          "required": false
+        },
+        {
+          "id": "consentUpdates",
+          "type": "select",
+          "botMessage": "Last thing \u2014 okay if I email you occasional project/portfolio updates?",
+          "options": ["Yes, keep me posted", "No, project-related only"],
+          "required": true
+        }
+      ]
+    }
+  ]
+}
