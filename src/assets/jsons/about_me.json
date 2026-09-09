@@ -6,7 +6,7 @@
 			"Beyond formal roles, worked with Qualtrix Software Technologies on an e‑hailing platform (Rydly) and built an ecommerce management platform (Ecommerce Connect), focusing on security, reliability, and real‑time user experiences. Preferred tools and technologies include Angular, ASP.NET, Node.js/Express, MongoDB, PostgreSQL, Redis, AWS, Docker, Linux, and Git.",
 			"In free time, enjoy flying drones, exploring new visual perspectives, attending tech expos, diving into statistical analysis projects, and tinkering with mechanical and engineering concepts. Always open to collaborating, learning, and creating impactful digital products. Feel free to reach out via the Email or LinkedIn."
 		],
-		"profile": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/profile_image.jpeg",
+		"profile": "src/assets/profile_image.jpeg",
 		"experience": [
 			{
 				"company_name": "Secure",
@@ -63,7 +63,7 @@
 				"company_name": "Amazon Web Service",
 				"certificate_name": "Cloud Practitioner Essentials",
 				"date": "17 January 2025",
-				"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/certificates/cloud_practitioner_essentials.png",
+				"image": "src/assets/certificates/cloud_practitioner_essentials.png",
 				"link": "#"
 			}
 		],
@@ -84,9 +84,9 @@
 			}
 		],
 		"images":[
-			"https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/01_me.jpeg",
-			"https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/03_me.jpeg",
-			"https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/02_me.gif"
+			"src/assets/website_images/01_me.jpeg",
+			"src/assets/website_images/03_me.jpeg",
+			"src/assets/website_images/02_me.gif"
 		],
 		"currentStatus": "Joined Secure Internship Program"
 	}

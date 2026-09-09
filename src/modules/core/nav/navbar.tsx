@@ -18,7 +18,7 @@ function NavBar(){
 	let qrcode: { alt:string, text: string, linkToPhoto: string } = {
 		alt: 'QR code to view website on phone',
 		text: 'scan/view on phone',
-		linkToPhoto: 'https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/website_qr_code.png'
+		linkToPhoto: 'src/assets/website_images/website_qr_code.png'
 	};
 	let socials: { name: string, link: string }[] = [
 		{
@@ -85,7 +85,7 @@ function NavBar(){
 				<p className="stat-ticker"><small ><span>Current Status: </span> { About.currentStatus }</small></p>
 				<div style={{ display:  "flex", width:"100%", justifyContent: "space-between", padding: "0 10px"}}>
 					{!isAdmin ? <a style={{ maxWidth: "50px", backgroundColor: "white", padding: "10px", borderRadius: "50%" }} href="/">MM</a> : <a style={{ maxWidth: "50px", backgroundColor: "white", padding: "10px", borderRadius: "50%" }} href="/admin">MM</a>}
-					<img style={{ maxWidth: "50px", backgroundColor: "white", padding: "10px", borderRadius: "50%" }} src="https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/icons/menu-burger-horizontal-svgrepo-com.svg" onClick={()=> showNav()}/>
+					<img style={{ maxWidth: "50px", backgroundColor: "white", padding: "10px", borderRadius: "50%" }} src="src/assets/icons/menu-burger-horizontal-svgrepo-com.svg" onClick={()=> showNav()}/>
 				</div>
 				<div style={{ display: (open) ? "grid": "none", height: "98svh", width: "100%", zIndex: 99, position: "absolute", gridTemplateColumns: "2fr 4fr"}}>
 					<div style={{ backgroundColor: "rgba(0,0,0,1)" }} onClick={()=> showNav()}>

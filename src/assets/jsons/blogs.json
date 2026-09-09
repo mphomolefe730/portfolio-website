@@ -7,12 +7,12 @@
             "As a developer with hands-on experience configuring security groups, access control, and VMS networks, these systems felt incredibly familiar yet deeply progressive. The key takeaway here is that the modern security objective isn't just to build isolated software solutions, but to engineer highly functional, deeply integratable systems that plug seamlessly into existing infrastructures. In an industry where lives and enterprise assets are on the line, operational reliability and absolute consistency are the foundational keys.",
             "This expo highlighted exactly how we can leverage modern DevOps and full-stack engineering within physical security frameworks. By containerizing lightweight microservices at the network layer or even on resource hardware. We can build smart middleware applications that parse telemetry data, secure IoT endpoints, and automate monitoring workflows. The future belongs to developers who build highly resilient, integratable systems bridging the physical and digital worlds, and I’m excited to weave these architecture principles into my upcoming software builds."
         ],
-        "image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1785777129000.jpeg",
+        "image": "src/assets/images/1785777129000.jpeg",
         "display_images": [
-            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1787343244000.jpeg",
-            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1787343252000.jpeg",
-            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1787343250000.jpeg",
-            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1787343246000.jpeg"
+            "src/assets/images/1787343244000.jpeg",
+            "src/assets/images/1787343252000.jpeg",
+            "src/assets/images/1787343250000.jpeg",
+            "src/assets/images/1787343246000.jpeg"
         ],
         "timeline": [],
         "people_mentioned": [],
@@ -29,13 +29,13 @@
             "Working in such a sensitive environment has shown me the powerful role the Department plays-not only in ensuring security, but also in rehabilitation. Rehabilitation goes beyond physical systems; it includes mental and spiritual well-being. Just this week, I attended a service hosted by the Spiritual Care Department that focused on strengthening mental health and spiritual growth, a reminder of the holistic approach the Department takes.",
             "On the technical side, my learning has been just as rich: strengthening social and communication skills while working in diverse teams, gaining hands-on exposure to security groups and large-scale network configurations, adapting to internal systems unique to the Department, and recognizing the impact of my work on something larger than myself."
         ],
-        "image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1755420827757.jpg",
+        "image": "src/assets/images/1755420827757.jpg",
         "display_images": [
-            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1755420827757.jpg",
-            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1755420783378.jpg",
-            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1755420746512.jpg",
-            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1755420679216.jpg",
-            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1755420273039.jpg"
+            "src/assets/images/1755420827757.jpg",
+            "src/assets/images/1755420783378.jpg",
+            "src/assets/images/1755420746512.jpg",
+            "src/assets/images/1755420679216.jpg",
+            "src/assets/images/1755420273039.jpg"
         ],
         "timeline": [],
         "people_mentioned": [],
@@ -51,11 +51,11 @@
             "I also enjoyed the ML/AI presentation and was impressed by AWS's commitment to using their own infrastructure to develop new protocols like Nitro. Their re-imagining of hypervisors, hardware, and security demonstrates dedication to cutting-edge solutions.",
             "I wish I'd networked more with participants-something I'll prioritize at the next one. Special thanks to Amogelang Chaane, Ororiseng Mabaso, Letlotlo Leballo, and Qualtrix Software Technologies for their support."
         ],
-        "image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/background_images/WhatsApp Image 2024-08-29 at 9.23.45 PM.jpeg",
+        "image": "src/assets/background_images/WhatsApp Image 2024-08-29 at 9.23.45 PM.jpeg",
         "display_images": [
-            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1725023741171.jpg",
-            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1725023741119.jpg",
-            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/images/1725023741268.jpg"
+            "src/assets/images/1725023741171.jpg",
+            "src/assets/images/1725023741119.jpg",
+            "src/assets/images/1725023741268.jpg"
         ],
         "timeline": [],
         "people_mentioned": [

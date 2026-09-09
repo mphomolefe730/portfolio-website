@@ -11,7 +11,7 @@ function Share() {
   let qrcode: { alt:string, text: string, linkToPhoto: string } = {
 		alt: 'QR code to view website on phone',
 		text: 'scan/view on phone',
-		linkToPhoto: 'https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/website_qr_code.png'
+		linkToPhoto: 'src/assets/website_images/website_qr_code.png'
 	};
 
   return (
