@@ -125,17 +125,17 @@ export default function AdminProjectProgress() {
         <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '24px' }}>
             
             {/* ==================== MAIN STATUS CARD ==================== */}
-            <div className="musicCard statusCardContainer" style={{ padding: '24px', height: 'auto', display: 'flex', flexDirection: 'column', gap: '16px', aspectRatio: 'unset !important' }}>
+            <div className="statusCardContainer" style={{ padding: '24px', height: 'auto', display: 'flex', flexDirection: 'column', gap: '16px', aspectRatio: 'unset !important' }}>
                 
                 {/* Header with SVG Icon & Title */}
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', color: 'white' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="projectHeaderSvg">
                             <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
                             <line x1="12" y1="11" x2="12" y2="17"></line>
                             <line x1="9" y1="14" x2="15" y2="14"></line>
                         </svg>
-                        <h2 className="musicCardTitle" style={{ margin: 0, fontSize: '1.5rem' }}>{ProjectName}</h2>
+                        <h2 className="musicCardTitle" style={{ margin: 0, fontSize: '1.5rem', color: 'white' }}>{ProjectName}</h2>
                     </div>
                     <div className="musicCardBadge">{OverallProgress}%</div>
                 </div>

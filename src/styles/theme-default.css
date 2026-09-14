@@ -22,6 +22,10 @@ body:not([data-theme]) {
 body[data-theme='default']{
 	background-color: black;
 }
+body[data-theme='default'] .mobileNav a{
+	color:black;
+}
+
 body[data-theme='default'] a {
 	color: white;
 }
