@@ -4,7 +4,7 @@ import servicesData from '../../../assets/jsons/services.json';
 import projects from '../../../assets/jsons/personal_projects.json';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import { env } from '../../../configs/environment';
+// import { env } from '../../../configs/environment';
 
 interface ServiceItem {
 	id: string;
@@ -142,9 +142,9 @@ function ServicesMain() {
 				</div>
 			</div>
 
-			<div className="contactButtonContainer">
+			<div style={{display: "block"}} className="contactButtonContainer">
 				<a className='contactButton' href='/onboarding'>Get Started</a>
-				<a className="contactButton" href={env.CV} target="_blank" rel="noopener noreferrer"> CV </a>
+				{/* <a className="contactButton" href={env.CV} target="_blank" rel="noopener noreferrer"> CV </a> */}
 			</div>
 			<div className="alert1">
 				<span>IMPORTANT: click a service to expand it, click any project to see the full case study</span>

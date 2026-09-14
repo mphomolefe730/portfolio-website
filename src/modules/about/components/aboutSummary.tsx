@@ -9,7 +9,7 @@ function AboutSummary(){
 				{about.profile && (
 					<tr>
 						<td colSpan={2} className="summaryPanel-image">
-							<img src={about.profile} alt={about.name} className="summaryPanel-profileImg" />
+							<img src={about.images[0]} alt={about.name} className="summaryPanel-profileImg" />
 							<div className="summaryPanel-caption">
 								{about.experience[0]?.job_title} at {about.experience[0]?.company_name}
 							</div>

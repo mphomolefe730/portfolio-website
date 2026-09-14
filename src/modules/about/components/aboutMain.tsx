@@ -4,6 +4,7 @@ import { useRef, useState } from 'react';
 import AnimatedFilterNav from '../../core/nav/animatedFilterNav.tsx';
 // import { env } from '../../../configs/environment.ts';
 import AboutSummary from './aboutSummary.tsx';
+import { env } from '../../../configs/environment.ts';
 
 function AboutMain(){
 	const tabs = ['About','Experience','Education', 'Certificates'];
@@ -146,7 +147,7 @@ function AboutMain(){
 			</div>
 			<div className='contactButtonContainer'>
 				<a onClick={() => handleProjectClick('Contact Via About', '/contact')} className='contactButton'>Contact</a>
-				<a onClick={() => handleProjectClick('Download CV', 'https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/Mpho%20Molefe%20CV%20-%2001-07-2026.pdf')} className='contactButton'>CV</a>
+				<a className="contactButton" href={env.CV} target="_blank" rel="noopener noreferrer"> CV </a>
 				<a onClick={() => setShowSummary(prev => !prev)} className='contactButton summarizeButton'>{showSummary ? 'Full Profile' : 'Summarize'}</a>
 			</div>
 			<div className='alert1'>

@@ -37,7 +37,7 @@ function BlogsMain(){
                 <Outlet/>
                 <BlogAll tag={ tabs[tabIndex] }/>
             </div>
-			<div className='contactButtonContainer'>
+			<div className='contactButtonContainer'  style={{gridTemplateColumns: "3fr 1fr"}}>
 				<a onClick={() => handleProjectClick('Contact Via Blogs', '/contact')} className='contactButton'>Contact</a>
 				<a onClick={() => handleProjectClick('Download CV', env.CV)} className='contactButton'>CV</a>
 			</div>

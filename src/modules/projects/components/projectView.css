@@ -44,7 +44,7 @@ iframe {
 	margin: auto;
 	max-height: 90svh;
 	/*height: 100svh;*/
-	overflow: scroll;
+	overflow-y: scroll;
 	padding: 10px;
 	width: 100%;
 	max-width: 900px;
