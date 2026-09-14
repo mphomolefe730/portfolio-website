@@ -129,7 +129,7 @@
                 ]
             }
         ],
-        "highlight": false,
+        "highlight": true,
         "video_link": "#",
         "tags": ["all", "summit", "Motsepe Foundation", "networking"],
         "last_update": "24 July 2024"
@@ -156,24 +156,6 @@
                     {
                         "social_name": "LinkedIn",
                         "link": "https://www.linkedin.com/in/mixo-ngoveni/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Btin%2BNmcIR2GXYeq6JPOTcQ%3D%3D"
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "socials": [
-                    {
-                        "social_name": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "socials": [
-                    {
-                        "social_name": "",
-                        "link": ""
                     }
                 ]
             },
