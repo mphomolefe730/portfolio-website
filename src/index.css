@@ -67,10 +67,23 @@ body{
 	scrollbar-width: thin;
 	height: 100svh;
 	--global-radius: 12px;	
-	background-color: #0000;
+	/* background-color: #0000; */
 	/* background: linear-gradient(145deg, #ffffff, #f0f0f0); */
-	/* background-image: linear-gradient(#ffffff, 90%, #cfd3de); */
 	/* animation: backgroundChangeColors 60s ease-in-out forwards infinite;  */
+}
+.blue-mesh-gradient {
+  height: 100svh;
+  /* background-color: #ffffff;   */
+  /* Stacked radial gradients for the mesh blobs + a linear gradient for the bottom fade */
+  /* background-image: 
+    linear-gradient(to bottom, #ffffff 15%, transparent 100%, #ffffff 15%),
+    radial-gradient(circle at 10% 0%, #1d4ed8 0%, transparent 60%),
+    radial-gradient(circle at 90% 10%, #3b82f6 0%, transparent 55%),
+    radial-gradient(circle at 50% -10%, #60a5fa 0%, transparent 50%);   */
+  /* Restrict the gradient background height to the top 60% of the container */
+  /* background-size: 100% 90%, 100% 90%, 100% 90%, 100% 90%; */
+  /* background-position: top left;*/
+  /* background-repeat: no-repeat;  */
 }
 
 body.is-scrolling {
@@ -174,12 +187,18 @@ a:hover{
 		8px 8px 16px rgba(0,0,0,0.15), /* drop shadow for lift */
 		0px 0px 2px rgba(255,255,255,0.7); /* soft outer glow */
 }
+
 .contactButtonContainer{
-	display: grid;
-	grid-template-columns: 6fr 1fr;
-	max-width: 650px;
 	margin: auto;
+	max-width: 650px;
+	display: grid;
+	grid-template-columns: 4fr 1fr 4fr;
 }
+
+.summarizeButton {
+	background: linear-gradient(to right, #432371, #faae7b);
+}
+
 .contactButton{
 	background: green;
 	color: white;

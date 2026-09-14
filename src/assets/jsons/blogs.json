@@ -100,5 +100,78 @@
         "video_link": "#",
         "tags": ["all", "summit", "aws", "networking"],
         "last_update": "14 December 2025"
+    },{
+        "title": " Motsepe Foundation Youth Tech Expo 2024",
+        "description": [
+            "Kicked off the weekend on a positive note! It was a stimulating experience to engage with insightful thought leaders at the Motsepe Foundation hashtag#youthtechexpo . I particularly appreciate their initiative to empower the youth, give as much information as possible and opportunities to talk to drivers. Inspired by my passion for knowledge sharing, I conducted interviews at several booths. Unfortunately, the information on my SD card became corrupted, but I'm happy to share my key takeaways below:",
+            "Khenn Institute",
+            "Focuses on equipping interns with the right mindset and professional behaviors for workplace success. I particularly loved their book, it also has a centralized portal for accessing school resources, bursary opportunities, and internship placements.",
+            "SA Youth Employment ",
+            "Harambee Youth Employment Accelerator a key partner in the sayouth.mobi platform.This platform provides a field-agnostic opportunity for young people to access free learning and earning opportunities through a data-free mobile site.Sa Youth collaborates with various stakeholders including government institutions, NGOs, businesses, and entrepreneurs to connect youth with these opportunities. What I loved about it, it was none field specific. ",
+            "Geekulcha",
+            "A tech community for all - youth, skilled, ambitious etc. Though not my first time seeing/interacting with the organisation this time I had the opportunity to speak with one it's co-founder Mixo Ngoveni and he spoke about his journey from pushing to just getting a booth at the event to now being one of the speakers. He had this energy that kept reminding me of his drive to accomplish goals and help others without it feeling forced. This is a go to community I always recommend for new and already established people in tech."
+        ],
+        "image": "https://media.licdn.com/dms/image/v2/D4D22AQHVmZMygfoPeg/feedshare-shrink_1280/feedshare-shrink_1280/0/1720868610866?e=1790812800&v=beta&t=Oy2OVYs9x9GAkUe8CHtRRMNjLmMtn2JTGYtlWT62JmI",
+        "display_images": [
+            "https://media.licdn.com/dms/image/v2/D4D22AQHVmZMygfoPeg/feedshare-shrink_1280/feedshare-shrink_1280/0/1720868610866?e=1790812800&v=beta&t=Oy2OVYs9x9GAkUe8CHtRRMNjLmMtn2JTGYtlWT62JmI",
+            "https://media.licdn.com/dms/image/v2/D4D22AQEI7gc_dyw_OQ/feedshare-image-high-res/feedshare-image-high-res/0/1720868611286?e=1790812800&v=beta&t=TL5pO7XRi7ZPp2mtfIA67sakkyzoXX4CbmNsb-v-Nig",
+            "https://media.licdn.com/dms/image/v2/D4D22AQE0c9GuZxA-Jg/feedshare-image-high-res/feedshare-image-high-res/0/1720868612269?e=1790812800&v=beta&t=oHrQQkbVsei2Kzim-7XpdMIoDxBcQWwiL8rRZhNU_lE"
+        ],
+        "timeline": [],
+        "people_mentioned": [
+            {
+                "name": "Mixo Ngoveni ",
+                "socials": [
+                    {
+                        "social_name": "LinkedIn",
+                        "link": "https://www.linkedin.com/in/mixo-ngoveni/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Btin%2BNmcIR2GXYeq6JPOTcQ%3D%3D"
+                    }
+                ]
+            }
+        ],
+        "highlight": true,
+        "video_link": "#",
+        "tags": ["all", "summit", "Motsepe Foundation", "networking"],
+        "last_update": "24 July 2024"
+    },{
+        "title": "Geekulture UNISA Hackathon 2023",
+        "description": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/background_images/53232095831_d69beeb347_k.jpg",
+        "display_images": [
+            "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/background_images/53232095831_d69beeb347_k.jpg",
+            "https://media.licdn.com/dms/image/v2/D4E22AQFa4d1duYQzOg/feedshare-shrink_1280/feedshare-shrink_1280/0/1696247772930?e=1790812800&v=beta&t=8Lwi9Z5r4gJBjzugGQk5bZrZRnT9c30TQ-_5MI4zSFY",
+            "https://media.licdn.com/dms/image/v2/D4E22AQHSo1JJuXMarQ/feedshare-image-high-res/feedshare-image-high-res/0/1696247773991?e=1790812800&v=beta&t=EWnDCuq47SWBUC4sIUF9bWOZzEo_F2sjO78uTOwCDaw",
+            "https://media.licdn.com/dms/image/v2/D4E22AQFOrLV6ahX3kw/feedshare-shrink_1280/feedshare-shrink_1280/0/1696247776764?e=1790812800&v=beta&t=u8XINf6d95X0kBEKbm9oTeRPPRg17fRe22DpCp2TFAM"
+        ],
+        "timeline": [],
+        "people_mentioned": [
+            {
+                "name": "Mixo Ngoveni ",
+                "socials": [
+                    {
+                        "social_name": "LinkedIn",
+                        "link": "https://www.linkedin.com/in/mixo-ngoveni/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Btin%2BNmcIR2GXYeq6JPOTcQ%3D%3D"
+                    }
+                ]
+            },
+            {
+                "name": "Ororiseng Mabaso",
+                "socials": [
+                    {
+                        "social_name": "LinkedIn",
+                        "link": "https://www.linkedin.com/in/ororiseng-mabaso-355480234/"
+                    }
+                ]
+            }
+        ],
+        "highlight": true,
+        "video_link": "#",
+        "tags": ["all", "hackathon", "UNISA", "networking"],
+        "last_update": "10 October 2023"
     }
 ]

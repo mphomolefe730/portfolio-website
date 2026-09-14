@@ -13,5 +13,46 @@ body:not([data-theme]) {
 	--theme-badge-bg: #ffffff;
 	--theme-heading-font: 'Roboto', system-ui;
 	--theme-shadow-soft: 8px 8px 16px rgba(0,0,0,0.15), -4px -4px 12px rgba(255,255,255,0.7);
-	background: var(--theme-background);
+	color:white;
+	/* background-image: url('https://pbs.twimg.com/media/HR0l1Q0bMAAY_QF?format=jpg&name=4096x4096'); */
+	background-image: url('https://pbs.twimg.com/media/DQ4a7nCWsAEpnU-?format=jpg&name=4096x4096');
+	background-repeat: no-repeat; 
+	background-size: cover;
+}
+body[data-theme='default']{
+	background-color: black;
+}
+body[data-theme='default'] .mobileNav a{
+	color:black;
+}
+
+body[data-theme='default'] a {
+	color: white;
+}
+body[data-theme='default'] .projectInformationContainer, 
+body[data-theme='default'] .projectInformationContainer a {
+    /* overflow: hidden; */
+	/* background: white; */
+	color: black;
+}
+body[data-theme='default'] .navcenter {
+	color: black;
+	/* border-bottom: 2px solid black; */
+	/* border-radius: 0; */
+}
+
+body[data-theme='default'] .elements {
+	background: transparent;
+}
+
+body[data-theme='default'] .navContainer{
+	border-bottom: 1.5px solid var(--theme-background);
+}
+body[data-theme='default'] .projectContainer{
+	border-bottom: 1.5px solid var(--theme-background);
+}
+
+body[data-theme='default'] .servicesWhyCard, 
+body[data-theme='default'] .project{	
+    border: 2px solid var(--theme-background);
 }

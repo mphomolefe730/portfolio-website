@@ -1,0 +1,101 @@
+/* ============ SHARED SUMMARY PANEL (Wikipedia-style condensed view) ============ */
+.summaryPanel {
+	background-color: #f8f9fa;
+	color: #202122;
+	margin: 20px auto;
+	padding: 0;
+	width: 100%;
+	max-width: 420px;
+	font-family: sans-serif;
+	font-size: 88%;
+	line-height: 1.5em;
+	border-collapse: collapse;
+	border-radius: var(--global-radius);
+	border: 1px solid #a2a9b1;
+	border-top: 3px solid;
+	border-image: linear-gradient(to right, #432371, #faae7b) 1;
+	overflow: hidden;
+	animation: fadeInScaleUp 0.25s forwards;
+}
+
+.summaryPanel-title {
+	font-size: 125%;
+	font-weight: bold;
+	padding: 0.5em;
+	text-align: center;
+	background-color: #eaecf0;
+	border-bottom: 1px solid #a2a9b1;
+}
+
+.summaryPanel-image {
+	text-align: center;
+	padding: 8px;
+}
+
+.summaryPanel-profileImg {
+	max-width: 100%;
+	height: auto;
+	border-radius: 4px;
+}
+
+.summaryPanel-caption {
+	font-size: 85%;
+	color: #54595d;
+	margin-top: 4px;
+}
+
+.summaryPanel th.summaryPanel-label {
+	vertical-align: top;
+	text-align: left;
+	padding: 5px 8px;
+	font-weight: bold;
+	width: 34%;
+	border-top: 1px solid #a2a9b1;
+}
+
+.summaryPanel td.summaryPanel-data {
+	vertical-align: top;
+	padding: 5px 8px;
+	border-top: 1px solid #a2a9b1;
+}
+
+.summaryPanel-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.summaryPanel-list li {
+	margin-bottom: 6px;
+}
+
+.summaryPanel-badge {
+	display: inline-block;
+	font-weight: bold;
+	color: #0f5132;
+	background-color: #d1e7dd;
+	padding: 2px 6px;
+	border-radius: 4px;
+	font-size: 80%;
+}
+
+.summaryPanel-subtext {
+	font-size: 80%;
+	color: #555;
+	margin-top: 2px;
+}
+
+/* ============ Wide variant, for list-style summaries (Projects / Blogs) ============ */
+.summaryPanel-wide {
+	max-width: 700px;
+}
+
+.summaryPanel-wide .summaryPanel-data a {
+	font-weight: bold;
+}
+
+.summaryPanel-wide .summaryPanel-data small {
+	display: block;
+	color: #54595d;
+	font-size: 90%;
+}

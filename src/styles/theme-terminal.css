@@ -12,10 +12,14 @@ body[data-theme='terminal'] {
 	--theme-badge-bg: #0a0a0a;
 	--theme-heading-font: 'Courier New', monospace;
 	--theme-shadow-soft: none;
-
 	background: var(--theme-background);
 	color: var(--theme-text);
 	font-family: 'Courier New', monospace;
+}
+
+body[data-theme='terminal'] .blue-mesh-gradient{
+	background-image: none;
+	background-color: var(--theme-background);
 }
 
 body[data-theme='terminal'] .navTitle, body[data-theme='terminal'] a{

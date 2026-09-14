@@ -87,7 +87,7 @@ function HomePage(){
 
 
 	return(
-		<div style={{ height: '89svh', display:'grid' , gridTemplateRows: '2fr 4fr'}}>
+		<div style={{ height: '89svh', display:'grid' , gridTemplateRows: '2fr 4fr'}} >
 			<div style={{ display: (close) ? 'none' : 'flex'}} className='welcomeText'>
 				<h1>{ welcomeMessage }</h1>
 				<p>Welcome to my portfolio website, your gateway to exploring my professional skills, creative projects, 
@@ -120,7 +120,7 @@ function HomePage(){
 			<div className='mainContainer' style={{ display: (!close) ? 'none' : 'grid'}}>
 				<div className='elements company_name informationPill'>
 					<h1 style={{margin:'0'}}>MPHO MOLEFE</h1>
-					<div><span>Starred Project(s): </span> <a href="projects/Reverse-2048" className='project'>Reverse 2048</a></div>
+					<div><span>Starred Project(s): </span> <a href="projects/Slip-to-Ledger-Automation" className='project'>Slip to Ledger Automation</a></div>
 					<div><a href="/projects/Ecommerce-Connect" className='project'>Ecommerce Connect</a></div>
 				</div>
 				<div className='elements informationPill' style={{textAlign:'center'}}>

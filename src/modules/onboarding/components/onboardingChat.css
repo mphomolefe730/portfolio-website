@@ -1,0 +1,306 @@
+.onboardingContainer {
+	max-width: 600px;
+	margin: 12px auto;
+	padding: 0 10px;
+	display: flex;
+	flex-direction: column;
+	height: 75svh;
+}
+
+.onboardingHeader {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 4px 2px 10px;
+}
+
+.onboardingAvatar {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	flex-shrink: 0;
+	font-weight: 700;
+	font-size: 0.75rem;
+	color: white;
+	background: linear-gradient(135deg, #432371, #faae7b);
+}
+
+.onboardingAvatarSmall {
+	width: 26px;
+	height: 26px;
+	font-size: 0.65rem;
+	margin-top: 4px;
+}
+
+.onboardingAvatarLarge {
+	width: 52px;
+	height: 52px;
+	font-size: 1rem;
+	margin: 0 auto 4px;
+}
+
+.onboardingProgressTrack {
+	width: 100%;
+	height: 5px;
+	border-radius: 3px;
+	background: rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.onboardingProgressFill {
+	height: 100%;
+	background: linear-gradient(to right, #432371, #faae7b);
+	transition: width 0.4s ease;
+}
+
+.onboardingWindow {
+	flex: 1;
+	overflow-y: auto;
+	scrollbar-width: thin;
+	padding: 6px 4px 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.onboardingStartCard,
+.onboardingFinishedCard {
+	text-align: center;
+	padding: 28px 20px;
+	margin: auto 0;
+}
+
+.onboardingBubbleRow {
+	display: flex;
+	align-items: flex-end;
+	gap: 8px;
+	animation: onboardingBubbleIn 0.25s ease;
+}
+
+.onboardingBubbleRow-user {
+	justify-content: flex-end;
+}
+
+.onboardingBubble {
+	max-width: 78%;
+	padding: 10px 14px;
+	border-radius: 16px;
+	font-size: 0.92rem;
+	line-height: 1.4;
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.onboardingBubble-bot {
+	background: white;
+	color: #1a1a1a;
+	border-bottom-left-radius: 4px;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.onboardingBubble-user {
+	background: linear-gradient(to right, #432371, #faae7b);
+	color: white;
+	border-bottom-right-radius: 4px;
+}
+
+.onboardingTypingBubble {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	padding: 14px 16px;
+}
+
+.onboardingTypingDot {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #999;
+	animation: onboardingTypingBounce 1.1s infinite ease-in-out;
+}
+
+.onboardingTypingDot:nth-child(2) {
+	animation-delay: 0.15s;
+}
+
+.onboardingTypingDot:nth-child(3) {
+	animation-delay: 0.3s;
+}
+
+.onboardingInputArea {
+	padding: 10px 4px 4px;
+	border-top: 1px solid rgba(0, 0, 0, 0.08);
+	animation: onboardingBubbleIn 0.2s ease;
+}
+
+.onboardingTextForm {
+	display: flex;
+	gap: 8px;
+	align-items: flex-end;
+}
+
+.onboardingTextInput {
+	flex: 1;
+	border: 1.5px solid #ccc;
+	border-radius: 18px;
+	padding: 10px 16px;
+	font-family: inherit;
+	font-size: 0.9rem;
+	resize: none;
+}
+
+.onboardingTextInput:focus {
+	outline: none;
+	border-color: #432371;
+}
+
+.onboardingTextarea {
+	min-height: 42px;
+}
+
+.onboardingSendButton {
+	width: 40px;
+	height: 40px;
+	flex-shrink: 0;
+	border-radius: 50%;
+	border: none;
+	color: white;
+	background: linear-gradient(to right, #432371, #faae7b);
+	cursor: pointer;
+	font-size: 1rem;
+	transition: transform 0.15s ease;
+}
+
+.onboardingSendButton:hover {
+	transform: scale(1.08);
+}
+
+.onboardingOptionGrid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.onboardingOptionPill {
+	border: 1.5px solid #432371;
+	background: white;
+	color: #432371;
+	border-radius: 18px;
+	padding: 8px 14px;
+	font-size: 0.85rem;
+	cursor: pointer;
+	transition: background 0.15s ease, color 0.15s ease, transform 0.1s ease;
+}
+
+.onboardingOptionPill:hover {
+	background: linear-gradient(to right, #432371, #faae7b);
+	color: white;
+	transform: translateY(-1px);
+}
+
+.onboardingOptionPill-selected {
+	background: linear-gradient(to right, #432371, #faae7b);
+	color: white;
+}
+
+.onboardingStartButton {
+	width: auto;
+	display: inline-flex;
+	padding: 10px 22px;
+	border-radius: 18px;
+}
+
+.onboardingSkipLink {
+	display: block;
+	margin: 8px auto 0;
+	background: none;
+	border: none;
+	color: gray;
+	text-decoration: underline;
+	font-size: 0.8rem;
+	cursor: pointer;
+}
+
+.onboardingCheckmark svg {
+	width: 56px;
+	height: 56px;
+	margin: 0 auto 10px;
+	display: block;
+}
+
+.onboardingCheckmarkCircle {
+	stroke: #4caf50;
+	stroke-width: 2;
+	stroke-dasharray: 166;
+	stroke-dashoffset: 166;
+	animation: onboardingDrawCircle 0.5s ease forwards;
+}
+
+.onboardingCheckmarkTick {
+	stroke: #4caf50;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-dasharray: 48;
+	stroke-dashoffset: 48;
+	animation: onboardingDrawTick 0.35s ease 0.45s forwards;
+}
+
+@keyframes onboardingBubbleIn {
+	from {
+		opacity: 0;
+		transform: translateY(8px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes onboardingTypingBounce {
+	0%, 60%, 100% {
+		transform: translateY(0);
+		opacity: 0.5;
+	}
+	30% {
+		transform: translateY(-4px);
+		opacity: 1;
+	}
+}
+
+@keyframes onboardingDrawCircle {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes onboardingDrawTick {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.onboardingBubbleRow,
+	.onboardingInputArea,
+	.onboardingTypingDot,
+	.onboardingCheckmarkCircle,
+	.onboardingCheckmarkTick {
+		animation: none !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.onboardingContainer {
+		height: 80svh;
+		padding: 0 6px;
+	}
+	.onboardingBubble {
+		max-width: 86%;
+		font-size: 0.88rem;
+	}
+}

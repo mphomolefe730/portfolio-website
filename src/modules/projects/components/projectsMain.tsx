@@ -37,7 +37,7 @@ function ProjectMain(){
 				<Outlet/>
 				<ProjectsAll category={ tabs[tabIndex] }/>
 			</div>
-			<div className='contactButtonContainer'>
+			<div className='contactButtonContainer' style={{gridTemplateColumns: "3fr 1fr"}}>
 				<a onClick={() => handleProjectClick('Contact Via Projects', '/contact')} className='contactButton'>Contact</a>
 				<a onClick={() => handleProjectClick('Download CV', env.CV)} className='contactButton'>CV</a>
 			</div>
