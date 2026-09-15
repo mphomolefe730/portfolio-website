@@ -61,6 +61,49 @@ nav{
 	border-radius: 16px;
  }
 
+.adminControls{
+    display: flex;
+	position: absolute;
+	width: 100%;
+	max-width: fit-content;
+	right: 2%;
+	margin: 0 15px;
+	top: 5%;
+	text-transform: uppercase;
+	border-radius: 16px;
+}
+
+.adminControls:hover{
+	/* background: var(--theme-gradient); */
+	cursor: pointer;
+}
+
+.appSwitchLogo{
+	padding: 10px;
+	position: relative;
+}
+
+.appSwitchSubMenu{
+	display: none;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 200px;
+	z-index: 1;
+}
+
+.appContainer{
+	display: flex;
+}
+.appSwitchSubMenu .navTitle{
+	display: block;
+}
+
+.appSwitchSubMenu svg{
+	max-width: 2rem;
+	max-height: 2rem;
+}
+
 .qrcodeContainer {
 	position: absolute;
 	right: 5px;
