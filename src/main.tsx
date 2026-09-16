@@ -23,6 +23,7 @@ import AdminProjectProgress from './modules/admin/components/adminProjectProgres
 import AdminAll from './modules/admin/components/adminAll.tsx';
 import AdminLogin from './modules/admin/components/adminLogin.tsx';
 import OnboardingChat from './modules/onboarding/components/onboardingChat.tsx';
+import IconPortal from './modules/icons/components/iconPortal.tsx';
 
 let isScrolling = false;
 let scrollTimeout: NodeJS.Timeout;
@@ -97,6 +98,9 @@ const router = createBrowserRouter([
   },{ 
     path: '/services', 
     element: <ServicesMain /> 
+  },{
+    path: '/icons',
+    element: <IconPortal />
   },{
     path:'/admin',
     element: <AdminMain />,

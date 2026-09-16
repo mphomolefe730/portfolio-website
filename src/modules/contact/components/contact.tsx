@@ -130,7 +130,7 @@ function Contact() {
           
           <h5>{('Who are you?').toUpperCase()}</h5>
           <div className='widget-radio-group'>
-            <div>
+            <div className='whoAreYouOption'>
               <input
                 type="radio"
                 id="individual"
@@ -146,7 +146,7 @@ function Contact() {
                 </span>
               </label>
             </div>
-            <div>
+            <div className='whoAreYouOption'>
               <input
                 type="radio"
                 id="organisation"

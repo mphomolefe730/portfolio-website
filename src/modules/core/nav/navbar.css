@@ -88,8 +88,9 @@ nav{
 	position: absolute;
 	top: 100%;
 	right: 0;
-	width: 200px;
+	width: 400px;
 	z-index: 1;
+	background: var(--theme-text)
 }
 
 .appContainer{
@@ -100,8 +101,8 @@ nav{
 }
 
 .appSwitchSubMenu svg{
-	max-width: 2rem;
-	max-height: 2rem;
+	max-width: 3rem;
+	max-height: 3rem;
 }
 
 .qrcodeContainer {

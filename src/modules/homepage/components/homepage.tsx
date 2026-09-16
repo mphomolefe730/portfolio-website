@@ -4,134 +4,122 @@ import { useState, useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import blogs from '../../../assets/jsons/blogs.json';
 
-function HomePage(){
-	const key = 'alertPortfolioWebsite';
-	const expiryDays = 7;
+const WELCOME_MESSAGES = [
+    { language: 'English', text: 'WELCOME' },
+    { language: 'isiZulu', text: 'SIYAKWAMUKELA' },
+    { language: 'isiXhosa', text: 'WAMOHELEKILE' },
+    { language: 'Afrikaans', text: 'WELKOM' },
+    { language: 'Sepedi', text: 'REA GO AMOGELA' },
+    { language: 'Setswana', text: 'RE A GO AMOGELA' },
+    { language: 'Sesotho', text: 'AMOHELANG' },
+    { language: 'Xitsonga', text: 'AMUKELAMA' },
+    { language: 'siSwati', text: 'SIYAKWAMUKELA' },
+    { language: 'Tshivenda', text: 'NO TANGANEDZIWA' },
+    { language: 'isiNdebele', text: 'SIYAKWAMUKELA' },
+];
 
-	const [welcomeMessage, setWelcomeMessage] = useState('WELCOME');
-	const [visible, setVisible] = useState(1);
-	const [count, setCount] = useState(0);
-	const [close, setClose] = useState(false);
-	const [loading, setLoading] = useState(true);
+function HomePage() {
+    const key = 'alertPortfolioWebsite';
+    const expiryDays = 7;
 
-	const [storedValue, setStoredValue] = useState(() => {
-		if (typeof window === "undefined") return false;
-		try {
-			const item = localStorage.getItem(key);
-			if (!item) {
-				const now = new Date();
-				const item_1 = {
-					value: false,
-					expiry: now.getTime() + expiryDays * 24 * 60 * 60 * 1000,
-				};
-				localStorage.setItem(key, JSON.stringify(item_1));
-				return false;
-			} else {
-				const parsedItem = JSON.parse(item);
-				const now = new Date();
-				if (now.getTime() > parsedItem.expiry) {
-					localStorage.removeItem(key);
-					return false;
-				}
-				return parsedItem.value;
-			}
-		} catch {
-			return false;
-		}
-	});
+    const [messageIndex, setMessageIndex] = useState(0);
+    const [close, setClose] = useState(false);
+    const [loading, setLoading] = useState(true);
 
-	useEffect(() => {
-		setClose(storedValue); 
-	}, [storedValue]);
+    const [storedValue, setStoredValue] = useState(() => {
+        if (typeof window === "undefined") return false;
+        try {
+            const item = localStorage.getItem(key);
+            if (!item) {
+                const now = new Date();
+                const item_1 = {
+                    value: false,
+                    expiry: now.getTime() + expiryDays * 24 * 60 * 60 * 1000,
+                };
+                localStorage.setItem(key, JSON.stringify(item_1));
+                return false;
+            } else {
+                const parsedItem = JSON.parse(item);
+                const now = new Date();
+                if (now.getTime() > parsedItem.expiry) {
+                    localStorage.removeItem(key);
+                    return false;
+                }
+                return parsedItem.value;
+            }
+        } catch {
+            return false;
+        }
+    });
 
-	useEffect(() => {
-		if (close) return;
-		const timer = setTimeout(() => {
-			switch (visible) {
-				case 1:
-					setWelcomeMessage('UYAKWAMUKELA');
-					break;
-				case 2:
-					setWelcomeMessage('WELKOM');
-					break;
-				case 3:
-					setWelcomeMessage('AMOHELANG');
-					break;
-				default:
-					setWelcomeMessage('WELCOME');
-					break;
-			}
-			if (visible < 4 && count < 9999) {
-				setVisible(prev => prev + 1);
-				setCount(prev => prev + 1);
-			} else {
-				setVisible(0);
-			}
-		}, 500);
-		return () => clearTimeout(timer);
-	}, [visible, count, close]);
+    useEffect(() => {
+        setClose(storedValue);
+    }, [storedValue]);
 
-	function closeWelcomeMessage() {
-		setCount(9999);
-		setVisible(0);
-		setClose(true);
+    useEffect(() => {
+        if (close) return;
 
-		const now = new Date();
-		const item = {
-			value: true,
-			expiry: now.getTime() + expiryDays * 24 * 60 * 60 * 1000,
-		};
-		localStorage.setItem(key, JSON.stringify(item));
-		setStoredValue(true);
-	}
+        const timer = setInterval(() => {
+            setMessageIndex((prevIndex) => (prevIndex + 1) % WELCOME_MESSAGES.length);
+        }, 800);
 
+        return () => clearInterval(timer);
+    }, [close]);
 
-	return(
-		<div style={{ height: '89svh', display:'grid' , gridTemplateRows: '2fr 4fr'}} >
-			<div style={{ display: (close) ? 'none' : 'flex'}} className='welcomeText'>
-				<h1>{ welcomeMessage }</h1>
-				<p>Welcome to my portfolio website, your gateway to exploring my professional skills, creative projects, 
-					and accomplishments. Here, you'll find a curated selection of my work that demonstrates my expertise 
-					and passion in my field. Whether you're a potential client, employer, or collaborator, this portfolio
-					offers a clear and concise showcase of what I can bring to the table. Take your time to browse through 
-					the various sections and discover how my experience and creativity align with your needs.
-				</p>
-				<button type="button" onClick={ closeWelcomeMessage }>CONTINUE</button>
-			</div>
-			
-			<Carousel fade className='carouselHolder childGrown' style={{ display: (!close) ? 'none' : 'block', backgroundColor: 'black', borderRadius: '0.5rem'}}>
-				{ 
-					blogs.map((blog, index) => {
-						return(
-							<Carousel.Item key={index} style={{ display: (blog.highlight) ? 'block' :'none' }}>
-								{loading && <div id="loader" />}
-								<Link to={`blogs/${blog?.title?.replace(' ','-')}`}>
-								<img onLoad={() => setLoading(false)} className="carouselImage" src={blog.image}/>
-								<Carousel.Caption>
-									<p>{ blog.title }</p>
-								</Carousel.Caption>
-								</Link>
-							</Carousel.Item>
-						)
-					})                    
-				}
-			</Carousel>
-			
-			<div className='mainContainer' style={{ display: (!close) ? 'none' : 'grid'}}>
-				<div className='elements company_name informationPill'>
-					<h1 style={{margin:'0'}}>MPHO MOLEFE</h1>
-					<div><span>Starred Project(s): </span> <a href="projects/Slip-to-Ledger-Automation" className='project'>Slip to Ledger Automation</a></div>
-					<div><a href="/projects/Ecommerce-Connect" className='project'>Ecommerce Connect</a></div>
-				</div>
-				<div className='elements informationPill' style={{textAlign:'center'}}>
-					<p>Latest Video:</p>
-					<a href='https://www.linkedin.com/posts/mpho-molefe-a67ab9284_eduverge-opensource-softwareengineering-activity-7437029634392776704-N2hg?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEU39a8BRgf2xosbm5ZS2K-k5xWeguq_n5M'>
-						<img className='latest_video' alt='Latest Tech Video' src='src/assets/latest_video.gif'/>
-					</a>
-				</div>
-			</div>
-		</div>
-	)
-};
+    function closeWelcomeMessage() {
+        setClose(true);
+
+        const now = new Date();
+        const item = {
+            value: true,
+            expiry: now.getTime() + expiryDays * 24 * 60 * 60 * 1000,
+        };
+        localStorage.setItem(key, JSON.stringify(item));
+        setStoredValue(true);
+    }
+
+    return (
+        <div style={{ height: '89svh', display: 'grid', gridTemplateRows: '2fr 4fr' }}>
+            <div style={{ display: close ? 'none' : 'flex' }} className='welcomeText'>
+                <h1>{WELCOME_MESSAGES[messageIndex].text}</h1>
+                <p>Welcome to my portfolio website, your gateway to exploring my professional skills, creative projects, 
+                    and accomplishments. Here, you'll find a curated selection of my work that demonstrates my expertise 
+                    and passion in my field. Whether you're a potential client, employer, or collaborator, this portfolio
+                    offers a clear and concise showcase of what I can bring to the table. Take your time to browse through 
+                    the various sections and discover how my experience and creativity align with your needs.
+                </p>
+                <button type="button" onClick={closeWelcomeMessage}>CONTINUE</button>
+            </div>
+            
+            <Carousel fade className='carouselHolder childGrown' style={{ display: !close ? 'none' : 'block', backgroundColor: 'black', borderRadius: '0.5rem' }}>
+                {blogs.map((blog, index) => (
+                    <Carousel.Item key={index} style={{ display: blog.highlight ? 'block' : 'none' }}>
+                        {loading && <div id="loader" />}
+                        <Link to={`blogs/${blog?.title?.replace(' ', '-')}`}>
+                            <img onLoad={() => setLoading(false)} className="carouselImage" src={blog.image} alt={blog.title} />
+                            <Carousel.Caption>
+                                <p>{blog.title}</p>
+                            </Carousel.Caption>
+                        </Link>
+                    </Carousel.Item>
+                ))}
+            </Carousel>
+            
+            <div className='mainContainer' style={{ display: !close ? 'none' : 'grid' }}>
+                <div className='elements company_name informationPill'>
+                    <h1 style={{ margin: '0' }}>MPHO MOLEFE</h1>
+                    <div><span>Starred Project(s): </span> <a href="projects/Slip-to-Ledger-Automation" className='project'>Slip to Ledger Automation</a></div>
+                    <div><a href="/projects/Ecommerce-Connect" className='project'>Ecommerce Connect</a></div>
+                </div>
+                <div className='elements informationPill' style={{ textAlign: 'center' }}>
+                    <p>Latest Video:</p>
+                    <a href='https://www.linkedin.com/posts/mpho-molefe-a67ab9284_eduverge-opensource-softwareengineering-activity-7437029634392776704-N2hg?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEU39a8BRgf2xosbm5ZS2K-k5xWeguq_n5M'>
+                        <img className='latest_video' alt='Latest Tech Video' src='https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/latest_video.gif' />
+                    </a>
+                </div>
+            </div>
+        </div>
+    );
+}
 
 export default HomePage;

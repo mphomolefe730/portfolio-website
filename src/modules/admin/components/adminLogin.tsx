@@ -10,8 +10,6 @@ const creditList = env.GOOGLE_DRIVE_USER;
 function AdminLogin() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [hashedPassword, setHashedPassword] = useState("");
-  const [generatedHashedPassword, setGeneratedHashedPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState<string[]>([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -27,11 +25,6 @@ function AdminLogin() {
     }, 250);
     return () => clearInterval(interval);
   }, [isSubmitting]);
-
-  const hashingOfPassword = async (userPassword: string) => {
-    const salt = await bcrypt.genSalt(10);
-    return await bcrypt.hash(userPassword, salt);
-  };
 
   const validateUserPassword = async (userPassword: string, enteredPassword: string) => {
     const isMatch = await bcrypt.compare(enteredPassword, userPassword);
@@ -131,57 +124,6 @@ function AdminLogin() {
             LOGIN
           </button>
         </form>
-
-        <div className='adminLoginDivider'>
-          <span>Utility</span>
-        </div>
-
-        <div className='adminLoginUtility informationPill childGrown'>
-          <h5 className='company_name'>Onboarding</h5>
-          <a className='contactButton' href='/onboarding'>Get Started</a>  
-        </div>
-        
-        <br/>
-        
-        <div className='adminLoginUtility informationPill childGrown'>
-          <h5 className='company_name'>Password Hasher</h5>
-          <input
-            className='inputTag'
-            type="text"
-            placeholder="Enter password to hash"
-            value={hashedPassword}
-            onChange={(e) => setHashedPassword(e.target.value)}
-          />
-          <p className='adminLoginUtilityNote'>
-            Note: password hashing adds a layer of security to protect user credentials. This function generates a hashed version of the password, which can be stored securely in the database instead of the plain text password. Only for Mpho's use, do not share the hashed password with anyone else.
-          </p>
-          {generatedHashedPassword && (
-            <a
-              href={`https://wa.me/${env.PHONE_NUMBER}?text=${encodeURIComponent(
-                `Generated Hashed Password: ${generatedHashedPassword}`
-              )}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={async () => {
-                await navigator.clipboard.writeText(generatedHashedPassword);
-                alert("Copied to clipboard! Opening WhatsApp...");
-              }}
-            >
-              <h5>Generated Hashed Password:</h5>
-              <p>{generatedHashedPassword}</p>
-            </a>
-          )}
-          <button
-            className='contactButton'
-            type="button"
-            onClick={async () => {
-              const hash = await hashingOfPassword(hashedPassword);
-              setGeneratedHashedPassword(hash);
-            }}
-          >
-            HASH PASSWORD
-          </button>
-        </div>
       </div>
     </div>
   );

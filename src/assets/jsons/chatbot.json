@@ -20,19 +20,19 @@
 				"description":"Implemented core features: Trip Advisor API integration for travel searches, user account management with wallet functionality, dark/light mode toggle, and comprehensive travel exploration interface."
 			}
 		],
-		"image": "src/assets/website_images/#",
+		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/#",
 		"resource_images": [
 			{
 				"title": "Angular",
-				"image_link": "src/assets/logos/icon_angular.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/icon_angular.svg"
 			},
 			{
 				"title": "Tailwind",
-				"image_link": "src/assets/logos/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg"
 			},
 			{
 				"title": "Php",
-				"image_link": "src/assets/logos/Official_PHP_Logo.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/Official_PHP_Logo.svg"
 			}
 		],
 		"type": "website",
@@ -49,7 +49,7 @@
 			"Designed and developed a comprehensive social media network inspired by major platforms like Facebook and Instagram. The platform connects individuals and businesses with features for content sharing, user interaction, and community building.",
 			"Built with PHP and MySQL for robust backend functionality, and Docker for containerized deployment ensuring scalability and consistent environments."
 		],
-		"image": "src/assets/website_images/social_media.png",
+		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/social_media.png",
 		"timeline": [
 			{
 				"date": "Architecture Planning",
@@ -67,15 +67,15 @@
 		"resource_images": [
 			{
 				"title": "Php",
-				"image_link": "src/assets/logos/Official_PHP_Logo.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/Official_PHP_Logo.svg"
 			},
 			{
 				"title": "Docker",
-				"image_link": "src/assets/logos/docker_logo.png"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/docker_logo.png"
 			},
 			{
 				"title": "MySQL",
-				"image_link": "src/assets/logos/sql.png"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/sql.png"
 			}
 		],
 		"type": "website",

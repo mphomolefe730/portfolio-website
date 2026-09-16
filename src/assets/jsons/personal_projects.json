@@ -51,7 +51,7 @@
 		"resource_images": [
 			{
 				"title": "Python",
-				"image_link": "src/assets/logos/python.jpeg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/python.jpeg"
 			},
 			{
 				"title": "Pandas",
@@ -80,7 +80,7 @@
 			"Write C++ code for a program that reads in an unknown number of “Reverse 2048” games. The program must then use an algorithm to solve each of the solvable puzzles given in the input file", 
 			"Reverse 2048 is a variation of the classic 2048 puzzle game, a sliding tile game that is played on a 4×4 grid. Unlike the original game, where the goal is to merge tiles to reach 2048, in Reverse 2048, the player must divide tiles to reach the smallest possible value, typically tile 2. The game is played using numerical tiles, each having values that are powers of 2. The main rules of the game are:"
 		],
-		"image": "src/assets/website_images/reverse_2048.png",
+		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/reverse_2048.png",
 		"timeline": [
 			{
 				"date": "Problem to be solved",
@@ -128,7 +128,7 @@
 		"resource_images": [
 			{
 				"title": "C++",
-				"image_link": "src/assets/logos/ISO_C++_Logo.png"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/ISO_C++_Logo.png"
 			}
 		],
 		"type": "game",
@@ -141,17 +141,17 @@
 	},{
 		"title": "Betway Aviator Analysis",
 		"description": ["This project aims to analyze a popular gambling game to uncover patterns that can potentially increase the win rate for players. By leveraging data collection techniques such as screen scraping, we gathered extensive data on betting outcomes and odds. The analysis was conducted using Python, Beautiful Soup for web scraping, and Jupyter Notebook for data visualization and exploration - also side Pandasa and more"],
-		"image":"src/assets/website_images/betway_video.png",
+		"image":"https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/betway_video.png",
 		"timeline":[],
 		"function":[],
 		"resource_images": [
 			{
 				"title":"Python",
-				"image_link": "src/assets/logos/python.jpeg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/python.jpeg"
 			},
 			{
 				"title": "Jutyper Notebook",
-				"image_link": "src/assets/logos/Jupyter_logo.png"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/Jupyter_logo.png"
 			},{
 				"title": "BeatifulSoap",
 				"image_link": "#"
@@ -216,26 +216,26 @@
                 "src": []
 		    }
 		],
-		"image": "src/assets/website_images/ecommerce_connect.png",
+		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/ecommerce_connect.png",
 		"resource_images": [
 			{
 				"title": "Angular",
-				"image_link": "src/assets/logos/icon_angular.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/icon_angular.svg"
 			},{
 				"title": "MongoDB",
-				"image_link": "src/assets/logos/9074155_mongodb_icon.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/9074155_mongodb_icon.svg"
 			},{
 				"title": "Redis",
-				"image_link": "src/assets/logos/redis_logo.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/redis_logo.svg"
 			},{
 				"title": "SocketIO",
-				"image_link": "src/assets/logos/socketio-icon.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/socketio-icon.svg"
 			},{
 				"title": "Docker",
-				"image_link": "src/assets/logos/docker_logo.png"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/docker_logo.png"
 			},{
 				"title": "ExpressJs",
-				"image_link": "src/assets/logos/expressjs_logo.png"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/expressjs_logo.png"
 			},{
 				"title": "NGINX",
 				"image_link": "#"
@@ -268,26 +268,26 @@
 			}
 		],
 		"function":[],
-		"image": "src/assets/website_images/rydly.png",
+		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/rydly.png",
 		"resource_images": [
 			{
 				"title": "Ionic Angular",
-				"image_link": "src/assets/logos/ionic_logo.png"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/ionic_logo.png"
 			},{
 				"title": "PostgresSQL",
-				"image_link": "src/assets/logos/postgresSQL_elephant_logo.png"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/postgresSQL_elephant_logo.png"
 			},{
 				"title": "Redis",
-				"image_link": "src/assets/logos/redis_logo.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/redis_logo.svg"
 			},{
 				"title": "Dotnet MVC",
-				"image_link": "src/assets/logos/dotnet_mvc_logo.png"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/dotnet_mvc_logo.png"
 			},{
 				"title": "AWS",
-				"image_link": "src/assets/logos/aws_logo.png"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/aws_logo.png"
 			},{
 				"title": "Docker",
-				"image_link": "src/assets/logos/docker_logo.png"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/docker_logo.png"
 			}
 		],
 		"type": "website",
@@ -302,17 +302,17 @@
 		"description": ["This website takes in code and fixes it using chatGPT3/gpt-3. The API has been disabled so contact me if you want to try it out and I'll temporarily activate it"],
 		"timeline":[],
 		"function":[],
-		"image": "src/assets/website_images/code_pilot.png",
+		"image": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/code_pilot.png",
 		"resource_images": [
 			{
 				"title": "React",
-				"image_link": "src/assets/logos/1174949_js_react js_logo_react_react native_icon.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/1174949_js_react js_logo_react_react native_icon.svg"
 			},{
 				"title": "Firebase",
-				"image_link": "src/assets/logos/Logomark_Monochrome_Optimized_Black.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/Logomark_Monochrome_Optimized_Black.svg"
 			},{
 				"title": "Bootstrap",
-				"image_link": "src/assets/logos/bootstrap-4.svg"
+				"image_link": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/logos/bootstrap-4.svg"
 			}
 		],
 		"type": "website",

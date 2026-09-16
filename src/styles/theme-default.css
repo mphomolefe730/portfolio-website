@@ -22,17 +22,24 @@ body:not([data-theme]) {
 body[data-theme='default']{
 	background-color: black;
 }
-body[data-theme='default'] .mobileNav a{
-	color:black;
+
+body[data-theme='default'] .appSwitchSubMenu{
+	/* background: var(--theme-background);
+	color: var(--theme-text); */
+}
+
+body[data-theme='default'] .text-muted{
+	color: white !important;
 }
 
 body[data-theme='default'] a {
 	color: white;
 }
 body[data-theme='default'] .projectInformationContainer, 
-body[data-theme='default'] .projectInformationContainer a {
-    /* overflow: hidden; */
-	/* background: white; */
+body[data-theme='default'] .projectInformationContainer a,
+body[data-theme='default'] .mobileNav a,
+body[data-theme='default'] .whoAreYouOption,
+body[data-theme='default'] .summaryPanel {
 	color: black;
 }
 body[data-theme='default'] .navcenter {
@@ -45,9 +52,7 @@ body[data-theme='default'] .elements {
 	background: transparent;
 }
 
-body[data-theme='default'] .navContainer{
-	border-bottom: 1.5px solid var(--theme-background);
-}
+body[data-theme='default'] .navContainer,
 body[data-theme='default'] .projectContainer{
 	border-bottom: 1.5px solid var(--theme-background);
 }
