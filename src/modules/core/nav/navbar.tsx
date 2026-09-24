@@ -7,13 +7,14 @@ import AppSwitcher from './appSwitcher.tsx';
 
 function NavBar(){
 	let [open, setOpen] = useState(false);
+	
 	const logout = () => {
 		sessionStorage.removeItem('adminLoggedIn');
 		window.location.href = '/admin/login';
 	}
-	const isUserLoggedIn = sessionStorage.getItem('adminLoggedIn') === 'true';
-	
-	// Check if current path includes '/admin'
+
+	const isUserLoggedIn = sessionStorage.getItem('adminLoggedIn') === 'true';	
+	const isAuthenticated = sessionStorage.getItem('isAuthenticated') === 'true';	
     const isAdmin = window.location.pathname.includes('/admin');
 
 	let qrcode: { alt:string, text: string, linkToPhoto: string } = {
@@ -60,7 +61,7 @@ function NavBar(){
 						Logout <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
 					</a>
 				</div>
-				<AppSwitcher isUserLoggedIn={isUserLoggedIn} />
+				<AppSwitcher isUserLoggedIn={isUserLoggedIn} isAuthenticated={isAuthenticated} />
 			</div>
 
 			<div className='qrcodeContainer desktopNav'>

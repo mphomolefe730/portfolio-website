@@ -2,7 +2,7 @@ import bcrypt from 'bcryptjs';
 import { useState } from 'react';
 import { env } from "../../../configs/environment";
 
-function AppSwitcher({ isUserLoggedIn }: { isUserLoggedIn: boolean }){    
+function AppSwitcher({ isUserLoggedIn, isAuthenticated }: { isUserLoggedIn: boolean; isAuthenticated: boolean }){    
 	const [hashedPassword, setHashedPassword] = useState("");
 	const [generatedHashedPassword, setGeneratedHashedPassword] = useState("");
 
@@ -74,7 +74,40 @@ function AppSwitcher({ isUserLoggedIn }: { isUserLoggedIn: boolean }){
                                 </g>
                             </svg>
                             <p>ADMIN</p>
+                        </a>                        
+
+                        <a className='navTitle' href='/admin/vault' style={{display: isUserLoggedIn && isAuthenticated ? "block" : "none" }}>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+                                <defs>
+                                    <linearGradient id="vaultGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#1e293b" />
+                                        <stop offset="50%" stop-color="#0f172a" />
+                                        <stop offset="100%" stop-color="#020617" />
+                                    </linearGradient>
+                                    
+                                    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#fbbf24" />
+                                        <stop offset="100%" stop-color="#d97706" />
+                                    </linearGradient>
+                                    
+                                    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+                                        <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.25" />
+                                    </filter>
+                                </defs>
+
+                                <rect x="32" y="32" width="448" height="448" rx="100" fill="url(#vaultGrad)" filter="url(#shadow)" />
+                                <g fill="#ffffff">
+                                    <rect x="116" y="116" width="280" height="280" rx="36" fill="none" stroke="#ffffff" stroke-width="16" opacity="0.2" />
+                                    <circle cx="256" cy="256" r="100" fill="none" stroke="#ffffff" stroke-width="12" opacity="0.4" />
+                                    <path d="M 256 132 V 148 M 256 364 V 380 M 132 256 H 148 M 364 256 H 380 M 168 168 L 180 180 M 332 332 L 344 344 M 168 344 L 180 332 M 332 180 L 344 168" stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity="0.5" />
+                                    <circle cx="256" cy="256" r="64" fill="url(#goldGrad)" />
+                                    <path d="M 256 232 A 12 12 0 0 0 248 252 L 244 276 C 244 280 248 284 256 284 C 264 284 268 280 268 276 L 264 252 A 12 12 0 0 0 256 232 Z" fill="#0f172a" />
+                                    <circle cx="256" cy="256" r="8" fill="#ffffff" />
+                                </g>
+                            </svg>
+                            <p>VAULT</p>
                         </a>
+
                         <a className='navTitle' href='/onboarding'>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
                                 <defs>

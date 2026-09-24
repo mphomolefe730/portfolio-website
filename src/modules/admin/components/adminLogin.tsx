@@ -57,6 +57,9 @@ function AdminLogin() {
       if (isMatch) {
         sessionStorage.setItem('adminLoggedIn', 'true');
         sessionStorage.setItem('adminUserId', currentUser.UserID || '');
+        if (currentUser.Username == env.SUPER_USER_ID) {
+          sessionStorage.setItem('isAuthenticated', 'true');
+        }
         window.location.href = '/admin';
       } else {
         console.warn("Invalid password.");

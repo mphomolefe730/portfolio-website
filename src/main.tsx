@@ -24,6 +24,7 @@ import AdminAll from './modules/admin/components/adminAll.tsx';
 import AdminLogin from './modules/admin/components/adminLogin.tsx';
 import OnboardingChat from './modules/onboarding/components/onboardingChat.tsx';
 import IconPortal from './modules/icons/components/iconPortal.tsx';
+import AdminVault from './modules/admin/components/adminVault.tsx';
 
 let isScrolling = false;
 let scrollTimeout: NodeJS.Timeout;
@@ -115,8 +116,10 @@ const router = createBrowserRouter([
       },{
         path:'/admin/files/',
         element: <AdminUserFileList/>
-      },
-      {
+      },{
+        path: '/admin/vault',
+        element: <AdminVault />
+      },      {
         path:'/admin/status/:projectId',
         element: <AdminProjectProgress/>
       },{
