@@ -9,16 +9,23 @@
 		"profile": "https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/profile_image.jpeg",
 		"experience": [
 			{
+				"company_name": "National Lottery Commission",
+				"job_title": "ICT Administrative Graduate Intern",
+				"location": "Hatfield, South Africa",
+				"from": "November 2026",
+				"to": "Present"
+			},
+			{
 				"company_name": "Secure",
 				"job_title": "Technical Sales Intern",
 				"location": "Centurion, South Africa",
 				"from": "May 2026",
-				"to": "Present"
+				"to": "October 2026"
 			},
 			{
 				"company_name": "Department of Correctional Service",
 				"job_title": "Student Intern",
-				"location": "Pretoria, South Africa",
+				"location": "Pretoria CBD, South Africa",
 				"from": "Jun 2025",
 				"to": "Dec 2025"
 			},
@@ -95,6 +102,6 @@
 			"https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/02_me.JPG",
 			"https://raw.githubusercontent.com/mphomolefe730/portfolio-website/refs/heads/main/src/assets/website_images/03_me.jpg"
 		],
-		"currentStatus": "Joined Secure Internship Program"
+		"currentStatus": "Joined NLC ICT Graduate Program"
 	}
 
